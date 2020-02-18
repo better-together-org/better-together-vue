@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-md">
         <p>
-          If you're interested in learning more or want to contribute, please send us and email at
+          If you're interested in learning more or want to contribute, please send us an email at
           <a href="mailto: info@bettertogethersolutions.com">
             info@bettertogethersolutions.com
           </a>
