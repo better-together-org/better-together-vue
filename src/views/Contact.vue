@@ -8,11 +8,9 @@
     <div class="row">
       <div class="col-md">
         <p>
+          If you're interested in learning more or want to contribute, please send us and email at
           <a href="mailto: info@bettertogethersolutions.com">
             info@bettertogethersolutions.com
-          </a><br />
-          <a href="tel: (514) 791-7911">
-            (514) 791-7911
           </a>
         </p>
       </div>
