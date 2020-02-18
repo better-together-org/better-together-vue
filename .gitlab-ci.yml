@@ -2,8 +2,7 @@ pages: # the job must be named pages
   image: node:latest
   stage: deploy
   script:
-    - yarn install --frozen-lockfile
-    - yarn build
+    - ./deploy/build.sh
     - mv public public-vue # GitLab Pages hooks on the public folder
     - mv dist public # rename the dist folder (result of npm run build)
     # optionally, you can activate gzip support wih the following line:
