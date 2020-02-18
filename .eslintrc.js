@@ -1,42 +1,42 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es6': true
+  env: {
+    browser: true,
+    es6: true,
   },
-  'extends': [
+  extends: [
     'eslint:recommended',
     // 'plugin:vue/essential',
     'airbnb-base',
-    'plugin:vue/recommended'
+    'plugin:vue/recommended',
   ],
-  'globals': {
-    'Atomics': 'readonly',
-    'SharedArrayBuffer': 'readonly'
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
-  'parserOptions': {
-    'ecmaVersion': 2018,
-    'sourceType': 'module',
-    'parser': 'babel-eslint'
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    parser: 'babel-eslint',
   },
-  'plugins': [
-    'vue'
+  plugins: [
+    'vue',
   ],
-  'rules': {
-    'indent': [
+  rules: {
+    indent: [
       'error',
-      2
+      2,
     ],
     'linebreak-style': [
       'error',
-      'unix'
+      'unix',
     ],
-    'quotes': [
+    quotes: [
       'error',
-      'single'
+      'single',
     ],
-    'semi': [
+    semi: [
       'error',
-      'never'
-    ]
-  }
+      'never',
+    ],
+  },
 }

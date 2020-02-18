@@ -1,13 +1,19 @@
 <template>
   <div class="home">
-    <div id="main" class="container">
+    <div
+      id="main"
+      class="container"
+    >
       <div class="row">
         <div class="col-md">
           <h1>Better Together Kindness Accelerator</h1>
           <h3>Kindness is better together!</h3>
         </div>
       </div>
-      <div id="introduction" class="row">
+      <div
+        id="introduction"
+        class="row"
+      >
         <div class="col">
           <p>Better Together is an organization of progressive people and organizations working together to build a better world through acts of kindness. We promote local resilience by encouraging people to be kind, communicate with and support one another, and share their knowledge, skills, resources and time.</p>
         </div>
@@ -18,7 +24,11 @@
         <ul>
           <li>
             <h5>
-              <a href="https://github.com/better-together-org/community-engine" target="bt-community-engine" title="DRAW: Data Rescue Archives and Weather">
+              <a
+                href="https://github.com/better-together-org/community-engine"
+                target="bt-community-engine"
+                title="DRAW: Data Rescue Archives and Weather"
+              >
                 Better Together Community Engine
               </a>
             </h5>
@@ -26,7 +36,11 @@
           </li>
           <li>
             <h5>
-              <a href="https://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership" target="joatu" title="Joatu">
+              <a
+                href="https://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+                target="joatu"
+                title="Joatu"
+              >
                 Joatu Community Exchange
               </a>
             </h5>
@@ -34,7 +48,11 @@
           </li>
           <li>
             <h5>
-              <a href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership" target="draw" title="DRAW: Data Rescue Archives and Weather">
+              <a
+                href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+                target="draw"
+                title="DRAW: Data Rescue Archives and Weather"
+              >
                 DRAW: Data Rescue Archives and Weather
               </a>
             </h5>
@@ -47,14 +65,38 @@
         <h2>Our Partners</h2>
         <p>Better Together is proud to partner with organizations that support our goals. If you would like to become a partner, please <a href="mailto: info@bettertogethersolutions.com">get in touch</a>.</p>
         <p>
-          <a href="http://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership" target="joatu" title="Joatu">
-            <img src="assets/images/partners/joatu.png" alt="Joatu" width="300">
+          <a
+            href="http://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+            target="joatu"
+            title="Joatu"
+          >
+            <img
+              src="assets/images/partners/joatu.png"
+              alt="Joatu"
+              width="300"
+            >
           </a>
-          <a href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership" target="draw" title="DRAW: Data Rescue Archives and Weather">
-            <img src="assets/images/partners/DRAW.png" alt="DRAW: Data Rescue Archives and Weather" width="300">
+          <a
+            href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+            target="draw"
+            title="DRAW: Data Rescue Archives and Weather"
+          >
+            <img
+              src="assets/images/partners/DRAW.png"
+              alt="DRAW: Data Rescue Archives and Weather"
+              width="300"
+            >
           </a>
-          <a href="https://www.colibri-software.com/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership" target="draw" title="Colibri Software">
-            <img src="assets/images/partners/colibri-software-logo-and-text-large.png" alt="Colibri Software" width="300">
+          <a
+            href="https://www.colibri-software.com/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+            target="draw"
+            title="Colibri Software"
+          >
+            <img
+              src="assets/images/partners/colibri-software-logo-and-text-large.png"
+              alt="Colibri Software"
+              width="300"
+            >
           </a>
         </p>
       </div>
