@@ -15,7 +15,13 @@
         class="row"
       >
         <div class="col">
-          <p>Better Together is an organization of progressive people and organizations working together to build a better world through acts of kindness. We promote local resilience by encouraging people to be kind, communicate with and support one another, and share their knowledge, skills, resources and time.</p>
+          <p>
+            Better Together is an organization of progressive people and
+            organizations working together to build a better world through
+            acts of kindness. We promote local resilience by encouraging
+            people to be kind, communicate with and support one another, and
+            share their knowledge, skills, resources and time.
+          </p>
         </div>
       </div>
 
@@ -32,7 +38,11 @@
                 Better Together Community Engine
               </a>
             </h5>
-            <p>The better together community engine is a Ruby on Rails gem that allows developers to build community features into their apps with ease.</p>
+            <p>
+              The better together community engine is a Ruby on Rails plugin
+              that allows developers to build community features into their
+              apps with ease.
+            </p>
           </li>
           <li>
             <h5>
@@ -44,7 +54,12 @@
                 Joatu Community Exchange
               </a>
             </h5>
-            <p>Joatu is an application that allows people and organizations to come together to exchange goods, services, and volunteering. Joatu aims to work with community organizations to reduce waste and excess consumption.</p>
+            <p>
+              Joatu is an application that allows people and organizations to
+              come together to exchange goods, services, and volunteering.
+              Joatu aims to work with community organizations to reduce waste
+              and excess consumption.
+            </p>
           </li>
           <li>
             <h5>
@@ -56,14 +71,22 @@
                 DRAW: Data Rescue Archives and Weather
               </a>
             </h5>
-            <p>DRAW is a citizen science project that aims to engage citizens to recover historic weather observations from the archives and make the data available for use in climate research.</p>
+            <p>
+              DRAW is a citizen science project that aims to engage citizens
+              to recover historic weather observations from the archives and
+              make the data available for use in climate research.
+            </p>
           </li>
         </ul>
       </div>
 
       <div id="partners">
         <h2>Our Partners</h2>
-        <p>Better Together is proud to partner with organizations that support our goals. If you would like to become a partner, please <a href="mailto: info@bettertogethersolutions.com">get in touch</a>.</p>
+        <p>
+          Better Together is proud to partner with organizations that support
+          our goals. If you would like to become a partner, please
+          <a href="mailto: info@bettertogethersolutions.com">get in touch</a>.
+        </p>
         <p>
           <a
             href="http://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
