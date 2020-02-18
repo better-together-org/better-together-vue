@@ -6,7 +6,7 @@
       type="light"
       variant="light"
     >
-      <b-navbar-brand href="#">
+      <b-navbar-brand href="/">
         Better Together Kindness Accelerator
       </b-navbar-brand>
 
