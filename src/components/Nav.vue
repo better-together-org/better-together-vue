@@ -58,7 +58,8 @@ export default {
     font-weight: bold;
     color: #2c3e50;
 
-    &.router-link-exact-active {
+    &.router-link-exact-active,
+    &:hover {
       color: #42b983;
     }
   }
