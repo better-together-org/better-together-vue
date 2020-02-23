@@ -8,6 +8,16 @@
     <div class="row">
       <div class="col-md">
         <p>
+          Better Together builds bridges between our partners and their
+          communities. When we work together, we can achieve more than when
+          we work alone! Every person and organization has their own
+          strengths and weaknesses, but we're stronger together.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <p>
           Better Together is proud to partner with organizations that support
           our goals. If you would like to become a partner, please
           <a href="mailto: info@bettertogethersolutions.com">get in touch</a>.
