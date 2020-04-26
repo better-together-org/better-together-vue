@@ -10,9 +10,7 @@
       type="dark"
       variant="dark"
     >
-      <b-navbar-brand href="/">
-        Better Together
-      </b-navbar-brand>
+      <BtBrandingLogo />
 
       <b-navbar-toggle target="footer-collapse" />
 
@@ -57,8 +55,13 @@
 </template>
 
 <script>
+import BtBrandingLogo from './BrandingLogo.vue'
+
 export default {
   name: 'BtFooter',
+  components: {
+    BtBrandingLogo,
+  },
 }
 </script>
 

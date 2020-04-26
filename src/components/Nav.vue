@@ -9,9 +9,7 @@
       type="dark"
       variant="dark"
     >
-      <b-navbar-brand href="/">
-        Better Together
-      </b-navbar-brand>
+      <BtBrandingLogo />
 
       <b-navbar-toggle target="nav-collapse" />
 
@@ -56,8 +54,13 @@
 </template>
 
 <script>
+import BtBrandingLogo from './BrandingLogo.vue'
+
 export default {
   name: 'BtNav',
+  components: {
+    BtBrandingLogo,
+  },
 }
 </script>
 
