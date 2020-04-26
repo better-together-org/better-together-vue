@@ -6,7 +6,7 @@
     >
       <div class="row">
         <div class="col-md">
-          <h2>Kindness is Better Together</h2>
+          <h2>We are Better Together</h2>
         </div>
       </div>
       <div

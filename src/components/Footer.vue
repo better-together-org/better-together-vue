@@ -1,10 +1,11 @@
 
 <template>
-  <div
-    id="nav"
-    class="container-fluid mb-4"
+  <footer
+    id="footer"
+    class="mt-4 container-fluid"
   >
     <b-navbar
+      id="footer-navbar"
       toggleable="lg"
       type="dark"
       variant="dark"
@@ -13,10 +14,10 @@
         Better Together
       </b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse" />
+      <b-navbar-toggle target="footer-collapse" />
 
       <b-collapse
-        id="nav-collapse"
+        id="footer-collapse"
         is-nav
       >
         <b-navbar-nav
@@ -52,26 +53,29 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-  </div>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'BtNav',
+  name: 'BtFooter',
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-#nav {
+#footer {
   position: fixed;
+  bottom: 0;
   width: 100vw;
-  top: 0;
   padding: 0;
 
+  #footer-navbar {
+    min-height: 10vh;
+  }
   a {
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
 
     &.router-link-exact-active,
     &:hover {

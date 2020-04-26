@@ -1,5 +1,8 @@
 <template>
-  <div id="contact" class="contact container">
+  <div
+    id="contact"
+    class="contact container"
+  >
     <div class="row">
       <div class="col-md">
         <h2>Contact us</h2>

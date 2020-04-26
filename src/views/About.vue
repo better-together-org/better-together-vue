@@ -1,5 +1,8 @@
 <template>
-  <div id="about" class="about container">
+  <div
+    id="about"
+    class="about container"
+  >
     <div class="row">
       <div class="col-md">
         <h2>About</h2>

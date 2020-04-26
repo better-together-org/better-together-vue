@@ -1,5 +1,8 @@
 <template>
-  <div id="projects" class="projects container">
+  <div
+    id="projects"
+    class="projects container"
+  >
     <div class="row">
       <div class="col-md">
         <h2>Our Projects</h2>

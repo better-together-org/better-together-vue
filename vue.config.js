@@ -7,6 +7,6 @@ module.exports = {
     ? '/'
     : '/',
   pwa: {
-    name: "Better Together"
-  }
+    name: 'Better Together',
+  },
 }
