@@ -18,4 +18,8 @@ export default {
   .logo {
     height: 100px;
   }
+  .navbar-brand {
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
 </style>

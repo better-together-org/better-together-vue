@@ -2,17 +2,13 @@
 <template>
   <header
     id="nav"
-    class="container-fluid mb-4"
+    class="container-fluid"
   >
     <b-navbar
       toggleable="lg"
       type="dark"
       variant="dark"
     >
-      <BtBrandingLogo />
-
-      <b-navbar-toggle target="nav-collapse" />
-
       <b-collapse
         id="nav-collapse"
         is-nav
@@ -20,13 +16,8 @@
         <b-navbar-nav
           class="ml-auto"
           pills
-          align="right"
+          align="center"
         >
-          <b-nav-item
-            :to="'/'"
-          >
-            Home
-          </b-nav-item>
           <b-nav-item
             to="/about"
           >
@@ -37,6 +28,22 @@
           >
             Projects
           </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+
+      <BtBrandingLogo />
+
+      <b-navbar-toggle target="nav-collapse" />
+
+      <b-collapse
+        id="nav-collapse"
+        is-nav
+      >
+        <b-navbar-nav
+          class="mr-auto"
+          pills
+          align="center"
+        >
           <b-nav-item
             to="/partners"
           >
@@ -67,17 +74,5 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #nav {
-  width: 100vw;
-  padding: 0;
-
-  a {
-    font-weight: bold;
-    color: #ffffff;
-
-    &.router-link-exact-active,
-    &:hover {
-      color: #42b983;
-    }
-  }
 }
 </style>

@@ -1,18 +1,13 @@
 <template>
-  <section
+  <div
     id="home"
     class="container"
   >
-    <div class="row">
-      <div class="col-md">
-        <h2>We are Better Together</h2>
-      </div>
-    </div>
-    <div
+    <section
       id="introduction"
-      class="row mt-4"
     >
       <div class="col">
+        <h2>We are Better Together</h2>
         <p>
           Better Together is an organization of progressive people and
           organizations working together to build a better world through
@@ -21,9 +16,9 @@
           share their knowledge, skills, resources and time.
         </p>
       </div>
-    </div>
+    </section>
 
-    <div id="projects">
+    <section id="projects">
       <h2>Our Projects</h2>
       <h5>
         <a
@@ -68,9 +63,9 @@
         to recover historic weather observations from the archives and
         make the data available for use in climate research.
       </p>
-    </div>
+    </section>
 
-    <div id="partners">
+    <section id="partners">
       <h2>Our Partners</h2>
       <p>
         Better Together is proud to partner with organizations that support
@@ -112,8 +107,8 @@
           >
         </a>
       </p>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -123,3 +118,9 @@ export default {
   name: 'Home',
 }
 </script>
+
+<style scoped lang="scss">
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+</style>

@@ -2,32 +2,22 @@
 <template>
   <footer
     id="footer"
-    class="mt-4 container-fluid"
+    class="container-fluid"
   >
     <b-navbar
-      id="footer-navbar"
       toggleable="lg"
       type="dark"
       variant="dark"
     >
-      <BtBrandingLogo />
-
-      <b-navbar-toggle target="footer-collapse" />
-
       <b-collapse
-        id="footer-collapse"
+        id="nav-collapse"
         is-nav
       >
         <b-navbar-nav
           class="ml-auto"
           pills
-          align="right"
+          align="center"
         >
-          <b-nav-item
-            :to="'/'"
-          >
-            Home
-          </b-nav-item>
           <b-nav-item
             to="/about"
           >
@@ -38,6 +28,22 @@
           >
             Projects
           </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+
+      <BtBrandingLogo />
+
+      <b-navbar-toggle target="nav-collapse" />
+
+      <b-collapse
+        id="nav-collapse"
+        is-nav
+      >
+        <b-navbar-nav
+          class="mr-auto"
+          pills
+          align="center"
+        >
           <b-nav-item
             to="/partners"
           >
@@ -70,17 +76,5 @@ export default {
 #footer {
   position: fixed;
   bottom: 0;
-  width: 100vw;
-  padding: 0;
-
-  a {
-    font-weight: bold;
-    color: #fff;
-
-    &.router-link-exact-active,
-    &:hover {
-      color: #42b983;
-    }
-  }
 }
 </style>

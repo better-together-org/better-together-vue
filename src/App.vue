@@ -1,19 +1,21 @@
 <template>
   <div id="app">
     <BtNav />
-    <router-view />
+    <BtMainContent />
     <BtFooter />
   </div>
 </template>
 
 <script>
 import BtNav from './components/Nav.vue'
+import BtMainContent from './components/MainContent.vue'
 import BtFooter from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     BtNav,
+    BtMainContent,
     BtFooter,
   },
 }
@@ -33,6 +35,33 @@ export default {
 
     &:hover {
       color: #42b983;
+    }
+  }
+
+  header,
+  footer {
+    width: 100vw;
+    height: 15vh;
+    padding: 0;
+
+    .navbar-nav {
+      a {
+        font-weight: bold;
+        color: #ffffff;
+
+        &.router-link-exact-active,
+        &:hover {
+          color: #42b983;
+        }
+      }
+
+      li {
+        margin-right: 5vw;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
