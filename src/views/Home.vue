@@ -63,6 +63,14 @@
         to recover historic weather observations from the archives and
         make the data available for use in climate research.
       </p>
+      <h5>
+        Camp Better Together
+      </h5>
+      <p>
+        Camp Better Together is a one-of-a-kind Really Remote Work (RRW)
+        co-working and co-living wilderness camping community. If you work
+        remotely and enjoy hiking, camping, and adventure, this is for you!
+      </p>
     </section>
 
     <section id="partners">
