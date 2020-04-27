@@ -1,6 +1,6 @@
 
 <template>
-  <div
+  <header
     id="nav"
     class="container-fluid mb-4"
   >
@@ -50,7 +50,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -67,9 +67,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 #nav {
-  position: fixed;
   width: 100vw;
-  top: 0;
   padding: 0;
 
   a {

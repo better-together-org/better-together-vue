@@ -1,6 +1,10 @@
 <template>
   <b-navbar-brand href="/">
-    Better Together
+    <img
+      class="logo"
+      src="../assets/better-together-logo.png"
+      alt="Better Together"
+    >
   </b-navbar-brand>
 </template>
 
@@ -11,5 +15,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+  .logo {
+    height: 100px;
+  }
 </style>

@@ -73,9 +73,6 @@ export default {
   width: 100vw;
   padding: 0;
 
-  #footer-navbar {
-    min-height: 10vh;
-  }
   a {
     font-weight: bold;
     color: #fff;

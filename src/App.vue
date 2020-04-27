@@ -26,8 +26,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 15vh;
 
   a {
     color: #42b983;
