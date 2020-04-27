@@ -1,7 +1,7 @@
 <template>
-  <div
+  <section
     id="contact"
-    class="contact container"
+    class="container"
   >
     <div class="row">
       <div class="col-md">
@@ -18,7 +18,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

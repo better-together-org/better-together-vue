@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     id="about"
     class="about container"
   >
@@ -19,7 +19,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -10,8 +10,8 @@
         <h2>We are Better Together</h2>
         <p>
           Better Together is an organization of progressive people and
-          organizations working together to build a better world through
-          acts of kindness. We promote local resilience by encouraging
+          organizations working together to build a better world.
+          We promote local resilience by encouraging
           people to be kind, communicate with and support one another, and
           share their knowledge, skills, resources and time.
         </p>
@@ -63,13 +63,16 @@
         to recover historic weather observations from the archives and
         make the data available for use in climate research.
       </p>
-      <h5>
+    </section>
+    <section>
+      <h2>
         Camp Better Together
-      </h5>
+      </h2>
       <p>
         Camp Better Together is a one-of-a-kind Really Remote Work (RRW)
         co-working and co-living wilderness camping community. If you work
         remotely and enjoy hiking, camping, and adventure, this is for you!
+        For more information <router-link to="/contact">contact us!</router-link>
       </p>
     </section>
 

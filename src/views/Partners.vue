@@ -1,7 +1,7 @@
 <template>
-  <div
+  <section
     id="partners"
-    class="partners container"
+    class="container"
   >
     <div class="row">
       <div class="col-md">
@@ -62,7 +62,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
