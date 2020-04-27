@@ -24,7 +24,7 @@ export default {
 
     section {
       background: #ffffff;
-      border-radius: 5px;
+      border-radius: 10px;
       margin-bottom: 20px;
       padding: 15px;
     }
