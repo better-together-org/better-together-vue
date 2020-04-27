@@ -1,10 +1,10 @@
 <template>
-<main
-  id="main-content"
-  class="container-fluid"
->
-  <router-view/>
-</main>
+  <main
+    id="main-content"
+    class="container-fluid"
+  >
+    <router-view />
+  </main>
 </template>
 
 <script>
@@ -24,7 +24,10 @@ export default {
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
 
-  text-align: center;
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
   section {
     background: #ffffff;

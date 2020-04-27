@@ -20,18 +20,18 @@
       <div class="row">
         <div class="col-md">
           <h5>
-            <a
-              href="https://github.com/better-together-org/community-engine"
-              target="bt-community-engine"
-              title="DRAW: Data Rescue Archives and Weather"
+            <router-link
+              to="/projects/community-engine"
+              title="Better Together Community Engine"
             >
               Better Together Community Engine
-            </a>
+            </router-link>
           </h5>
           <p>
-            The better together community engine is a Ruby on Rails plugin
+            The Better Together Community Engine is an open-source  plugin
             that allows developers to build community features into their
-            apps with ease.
+            apps with ease. There is currently a Ruby on Rails gem and a
+            Django package version.
           </p>
           <h5>
             <a
@@ -73,7 +73,10 @@
         Camp Better Together is a one-of-a-kind Really Remote Work (RRW)
         co-working and co-living wilderness camping community. If you work
         remotely and enjoy hiking, camping, and adventure, this is for you!
-        For more information <router-link to="/contact">contact us!</router-link>
+        For more information
+        <router-link to="/contact">
+          contact us!
+        </router-link>
       </p>
     </section>
   </div>
