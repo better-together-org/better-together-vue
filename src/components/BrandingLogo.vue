@@ -15,11 +15,21 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
+
+.logo {
+  height: 10vh;
+}
+.navbar-brand {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+@include media-breakpoint-down(lg) {
   .logo {
-    height: 100px;
+    height: 7vh;
   }
-  .navbar-brand {
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
+}
 </style>

@@ -10,8 +10,9 @@
       variant="dark"
     >
       <b-collapse
-        id="nav-collapse"
+        id="left-collapse"
         is-nav
+        invisible
       >
         <b-navbar-nav
           class="ml-auto"
@@ -33,17 +34,50 @@
 
       <BtBrandingLogo />
 
-      <b-navbar-toggle target="nav-collapse" />
+      <b-navbar-toggle target="mobile-collapse" />
 
       <b-collapse
-        id="nav-collapse"
+        id="right-collapse"
         is-nav
+        invisible
       >
         <b-navbar-nav
           class="mr-auto"
           pills
           align="center"
         >
+          <b-nav-item
+            to="/partners"
+          >
+            Partners
+          </b-nav-item>
+          <b-nav-item
+            to="/contact"
+          >
+            Contact
+          </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+
+      <b-collapse
+        id="mobile-collapse"
+        is-nav
+      >
+        <b-navbar-nav
+          class="m-auto d-block d-sm-none d-md-none d-lg-none"
+          pills
+          align="center"
+        >
+          <b-nav-item
+            to="/about"
+          >
+            About
+          </b-nav-item>
+          <b-nav-item
+            to="/projects"
+          >
+            Projects
+          </b-nav-item>
           <b-nav-item
             to="/partners"
           >
@@ -73,6 +107,30 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
+
 #nav {
+  .navbar {
+    z-index: 1000;
+  }
+
+  #mobile-collapse.show {
+    li {
+      text-align: center;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    #mobile-collapse {
+      display: none !important;
+    }
+  }
+
+  .navbar-toggler >>> .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
 }
 </style>

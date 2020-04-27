@@ -22,13 +22,15 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-
-  padding-bottom: 15vh;
 
   a {
     color: #42b983;
@@ -55,13 +57,22 @@ export default {
         }
       }
 
-      li {
-        margin-right: 5vw;
+      @include media-breakpoint-up(lg) {
+        li {
+          margin-right: 5vw;
 
-        &:last-child {
-          margin-right: 0;
+          &:last-child {
+            margin-right: 0;
+          }
         }
       }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    header,
+    footer {
+      height: 10vh;
     }
   }
 }

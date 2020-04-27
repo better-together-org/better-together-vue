@@ -14,19 +14,29 @@ export default {
 </script>
 
 <style lang="scss">
-  #main-content {
-    height: 70vh;
-    overflow-y: scroll;
-    padding-top: 2.5vh;
-    padding-bottom: 2.5vh;
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
 
-    text-align: center;
+#main-content {
+  height: 70vh;
+  overflow-y: scroll;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
 
-    section {
-      background: #ffffff;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      padding: 15px;
-    }
+  text-align: center;
+
+  section {
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
   }
+}
+
+@include media-breakpoint-down(lg) {
+  #main-content {
+    height: auto;
+  }
+}
 </style>
