@@ -57,7 +57,7 @@ export default {
         }
       }
 
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(md) {
         li {
           margin-right: 5vw;
 

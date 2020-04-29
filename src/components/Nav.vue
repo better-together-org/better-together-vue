@@ -5,7 +5,7 @@
     class="container-fluid"
   >
     <b-navbar
-      toggleable="lg"
+      toggleable="md"
       type="dark"
       variant="dark"
     >
@@ -64,7 +64,7 @@
         is-nav
       >
         <b-navbar-nav
-          class="m-auto d-block d-sm-none d-md-none d-lg-none"
+          class="m-auto d-block d-lg-none"
           pills
           align="center"
         >
@@ -122,7 +122,7 @@ export default {
     }
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     #mobile-collapse {
       display: none !important;
     }
