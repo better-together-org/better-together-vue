@@ -13,10 +13,10 @@
         <div class="card">
           <div class="card-body">
             <p class="card-text">
-            Better Together is a cooperative organization. It represents an
-            alliance of progressive people and teams who work together and
-            support one another in the pursuit of shared goals that help make
-            the world a better place for everyone.
+              Better Together is a cooperative organization. It represents an
+              alliance of progressive people and teams who work together and
+              support one another in the pursuit of shared goals that help make
+              the world a better place for everyone.
             </p>
             <p class="card-text">
               In line with the values proposed in The Leap's Green New Deal,

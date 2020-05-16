@@ -32,7 +32,6 @@
         </div>
       </div>
       <div class="row">
-
         <div class="col-md">
           <div class="card">
             <div class="card-body">
@@ -56,7 +55,9 @@
                   to="/projects/community-engine"
                   title="Better Together Community Engine"
                   class="btn btn-primary card-action"
-                >Learn more</router-link>
+                >
+                  Learn more
+                </router-link>
               </div>
             </div>
           </div>
