@@ -2,7 +2,7 @@
   <b-navbar-brand href="/">
     <img
       class="logo"
-      src="../assets/better-together-logo.png"
+      src="../assets/better-together-logo-centered-1500x430px.png"
       alt="Better Together"
     >
   </b-navbar-brand>
