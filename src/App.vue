@@ -35,6 +35,17 @@ export default {
     &:hover {
       color: #42b983;
     }
+
+    &.btn-primary {
+      color: #ffffff;
+      background-color: #42b983;
+      border-color: #42b983;
+
+      &:hover, &:focus, &:active {
+        background-color: #399f71;
+        border-color: #399f71;
+      }
+    }
   }
 
   header,

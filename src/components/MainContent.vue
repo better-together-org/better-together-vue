@@ -30,10 +30,14 @@ export default {
   }
 
   section {
-    background: #ffffff;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 15px;
+
+    .heading {
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
   }
 }
 
