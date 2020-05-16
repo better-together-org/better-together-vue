@@ -6,7 +6,7 @@
     <section>
       <div class="row">
         <div class="col-md">
-          <h2>Our Projects</h2>
+          <h2>Projects</h2>
           <p>
             Better Together aims to bring people together to build great
             things!

@@ -28,7 +28,7 @@
     </section>
 
     <section id="projects">
-      <h2>Our Projects</h2>
+      <h2>Projects</h2>
       <h5>
         <router-link
           to="/projects/community-engine"
@@ -89,7 +89,7 @@
     </section>
 
     <section id="partners">
-      <h2>Our Partners</h2>
+      <h2>Partners</h2>
       <p>
         Better Together is proud to partner with organizations that support
         our goals. If you would like to become a partner, please

@@ -5,7 +5,7 @@
   >
     <div class="row">
       <div class="col-md">
-        <h2>Our Partners</h2>
+        <h2>Partners</h2>
       </div>
     </div>
     <div class="row">
