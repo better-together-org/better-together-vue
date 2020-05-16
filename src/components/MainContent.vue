@@ -1,7 +1,7 @@
 <template>
   <main
     id="main-content"
-    class=""
+    class="container"
   >
     <router-view />
   </main>
@@ -33,10 +33,24 @@ export default {
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 15px;
+    background-color: #fff;
 
     .heading {
-      margin-bottom: 20px;
-      color: #ffffff;
+      margin-top: 20px;
+    }
+
+    .card {
+      border: none;
+      .card-header, .card-footer {
+        background: none;
+        border: none;
+      }
+
+      .card-header {
+        h5 {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

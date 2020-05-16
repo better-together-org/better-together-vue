@@ -10,17 +10,13 @@
     </div>
     <div class="row">
       <div class="col-md">
-        <div class="card">
-          <div class="card-body">
-            <p class="card-text">
-              If you're interested in learning more or want to contribute,
-              please send us an email at
-              <a href="mailto: info@bettertogethersolutions.com">
-                info@bettertogethersolutions.com
-              </a>
-            </p>
-          </div>
-        </div>
+        <p>
+          If you're interested in learning more or want to contribute,
+          please send us an email at
+          <a href="mailto: info@bettertogethersolutions.com">
+            info@bettertogethersolutions.com
+          </a>
+        </p>
       </div>
     </div>
   </section>

@@ -1,9 +1,8 @@
 <template>
   <section
     id="partners"
-    class="container"
   >
-    <div class="row">
+    <div class="row heading">
       <div class="col-md">
         <h2>Partners</h2>
       </div>
@@ -21,8 +20,8 @@
     <div class="row">
       <div class="col-md">
         <p>
-          Better Together is proud to partner with organizations that support
-          our goals. If you would like to become a partner, please
+          Better Together is proud to partner with organizations that
+          support our goals. If you would like to become a partner, please
           <a href="mailto: info@bettertogethersolutions.com">get in touch</a>.
         </p>
         <p>
