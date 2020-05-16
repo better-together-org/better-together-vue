@@ -14,12 +14,16 @@
           Better Together is looking for members who want to make a difference.
           Join us as we work together to make the world a better place!
         </p>
-        <h5 class="text-left">Membership Types</h5>
+        <h5 class="text-left">
+          Membership Types
+        </h5>
         <ul>
           <li>Individual</li>
           <li>Organization</li>
         </ul>
-        <h5 class="text-left">Skill Sets</h5>
+        <h5 class="text-left">
+          Skill Sets
+        </h5>
         <p>
           We need people with the following skills:
         </p>

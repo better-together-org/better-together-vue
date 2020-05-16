@@ -40,7 +40,7 @@
                 <img
                   src="assets/images/partners/joatu.png"
                   alt="Joatu"
-                  class='card-img-top'
+                  class="card-img-top"
                 >
               </a>
             </div>
@@ -60,7 +60,7 @@
                 <img
                   src="assets/images/partners/DRAW.png"
                   alt="DRAW: Data Rescue Archives and Weather"
-                  class='card-img-top'
+                  class="card-img-top"
                 >
               </a>
             </div>
@@ -81,7 +81,7 @@
                 <img
                   src="assets/images/partners/colibri-software-logo-and-text-large.png"
                   alt="Colibri Software"
-                  class='card-img-top'
+                  class="card-img-top"
                 >
               </a>
             </div>
