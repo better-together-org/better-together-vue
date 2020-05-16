@@ -1,7 +1,7 @@
 <template>
   <main
     id="main-content"
-    class="container-fluid"
+    class=""
   >
     <router-view />
   </main>
@@ -19,10 +19,10 @@ export default {
 @import 'bootstrap/scss/_mixins.scss';
 
 #main-content {
-  height: 70vh;
-  overflow-y: scroll;
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
+  // height: 70vh;
+  // overflow-y: scroll;
+  // padding-top: 2.5vh;
+  margin-bottom: 5vh;
 
   h1, h2, h3, h4, h5, h6 {
     text-align: center;

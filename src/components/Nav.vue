@@ -2,7 +2,7 @@
 <template>
   <header
     id="nav"
-    class="container-fluid"
+    class=""
   >
     <b-navbar
       toggleable="md"

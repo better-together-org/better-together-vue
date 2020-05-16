@@ -2,21 +2,18 @@
   <div id="app">
     <BtNav />
     <BtMainContent />
-    <BtFooter />
   </div>
 </template>
 
 <script>
 import BtNav from './components/Nav.vue'
 import BtMainContent from './components/MainContent.vue'
-import BtFooter from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     BtNav,
     BtMainContent,
-    BtFooter,
   },
 }
 </script>
@@ -42,8 +39,8 @@ export default {
 
   header,
   footer {
-    width: 100vw;
-    height: 15vh;
+    // width: 100vw;
+    // height: 15vh;
     padding: 0;
 
     .navbar-nav {
