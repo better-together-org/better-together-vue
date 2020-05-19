@@ -8,14 +8,20 @@
         <div class="col-md">
           <h2>Better Together Community Engine</h2>
           <p>
-            The Better Together Community Engine is an open-source plugin
-            that allows developers to build community features into their
-            apps with ease. There is currently a Ruby on Rails gem and a
-            Django package version.
+            The Better Together Community Engine (BTCE) is an open-source
+            federated social platform. It allows people to create, join, and
+            invite others to groups. People can have discussions, chat live,
+            and share information.
           </p>
 
           <p>
-            The plugin specializes in providing an extensible interface for
+            The engine allows developers to integrate social features into
+            their own applications with ease. There is currently a Ruby on
+            Rails gem and a Django package versions.
+          </p>
+
+          <p>
+            The engine provides an extensible interface for
             modeling group dynamics. People and Groups are the primary object
             models, and are supported by other classes that allow for the
             representation of typical real-world scenarios. People can create
@@ -33,7 +39,7 @@
         <div class="col-md">
           <h3>
             <a
-              href="https://github.com/better-together-solutions/community-engine-rails"
+              href="https://github.com/better-together-org/community-engine-rails"
               target="bt-community-engine-rails"
               title="Better Together Community Engine Rails"
             >
@@ -42,8 +48,8 @@
           </h3>
           <p>
             The Better Together Community Engine Rails gem allows Ruby on
-            Rails application developers to quickly and easily add community
-            features to their apps.
+            Rails developers to quickly and easily add community features to
+            their apps.
           </p>
         </div>
       </div>
@@ -54,7 +60,7 @@
         <div class="col-md">
           <h3>
             <a
-              href="https://github.com/better-together-solutions/community-engine-django"
+              href="https://github.com/better-together-org/community-engine-django"
               target="bt-community-engine-django"
               title="Better Together Community Engine Django"
             >
@@ -63,8 +69,8 @@
           </h3>
           <p>
             The Better Together Community Engine Django package allows Django
-            application developers to quickly and easily add community
-            features to their apps.
+            developers to quickly and easily add community features to their
+            apps.
           </p>
         </div>
       </div>
