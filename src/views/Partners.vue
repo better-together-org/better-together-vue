@@ -28,6 +28,27 @@
           <div class="card text-center">
             <div class="card-header">
               <h5>
+                Colibri Software
+              </h5>
+            </div>
+            <div class="card-footer h-100">
+              <a
+                href="https://www.colibri-software.com/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+                target="draw"
+                title="Colibri Software"
+                class=""
+              >
+                <img
+                  src="assets/images/partners/colibri-software-logo-and-text-large.png"
+                  alt="Colibri Software"
+                  class="card-img-top"
+                >
+              </a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-header">
+              <h5>
                 Joatu
               </h5>
             </div>
@@ -60,27 +81,6 @@
                 <img
                   src="assets/images/partners/DRAW.png"
                   alt="DRAW: Data Rescue Archives and Weather"
-                  class="card-img-top"
-                >
-              </a>
-            </div>
-          </div>
-          <div class="card text-center">
-            <div class="card-header">
-              <h5>
-                Colibri Software
-              </h5>
-            </div>
-            <div class="card-footer h-100">
-              <a
-                href="https://www.colibri-software.com/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
-                target="draw"
-                title="Colibri Software"
-                class=""
-              >
-                <img
-                  src="assets/images/partners/colibri-software-logo-and-text-large.png"
-                  alt="Colibri Software"
                   class="card-img-top"
                 >
               </a>
