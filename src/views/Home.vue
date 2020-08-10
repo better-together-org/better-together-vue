@@ -27,6 +27,7 @@
       </div>
     </section>
 
+    <ContactNewsletter />
     <Projects />
     <Partners />
   </div>
@@ -34,12 +35,14 @@
 
 <script>
 // @ is an alias to /src
+import ContactNewsletter from '../components/ContactNewsletter.vue'
 import Projects from './Projects.vue'
 import Partners from './Partners.vue'
 
 export default {
   name: 'Home',
   components: {
+    ContactNewsletter,
     Projects,
     Partners,
   },

@@ -5,7 +5,7 @@
     <section>
       <div class="row heading">
         <div class="col-md">
-          <h1>Projects</h1>
+          <h2>Projects</h2>
         </div>
       </div>
       <div class="row">
