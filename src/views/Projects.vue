@@ -51,6 +51,14 @@
             appear in a platform-wide storefront along with those of other
             co-op members.
           </p>
+          <div class="text-center">
+            <a
+              href="https://commerce.bebettertogether.ca/?utm_source=better-together&utm_medium=better-together&utm_campaign=better-together"
+              target="community-commerce"
+              title="Better Together Community Commerce"
+              class="btn btn-primary card-action"
+            >Learn more</a>
+          </div>
         </div>
       </div>
     </section>
