@@ -13,8 +13,8 @@
     <meta name="msapplication-TileColor" content="#42b983">
     <meta name="theme-color" content="#42b983">
 
-
     <title>Be Better Together</title>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -23,16 +23,27 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WCDBXXT');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <!-- Calendly badge widget end -->
   </head>
   <body class="bg-dark">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCDBXXT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    
+    <!-- Calendly badge widget begin -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/better-together?background_color=343a40&text_color=ffffff&primary_color=399f71', text: 'Schedule time with me', color: '#42b983', textColor: '#ffffff', branding: true });</script>
+    <!-- Calendly badge widget end -->
   </body>
 </html>
