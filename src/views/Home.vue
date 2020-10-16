@@ -27,9 +27,9 @@
       </div>
     </section>
 
-    <ContactNewsletter />
     <Projects />
     <Partners />
+    <ContactNewsletter />
   </div>
 </template>
 

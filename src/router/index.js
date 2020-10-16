@@ -19,14 +19,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
-    path: '/projects',
-    name: 'Projects',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
-  },
-  {
     path: '/goals',
     name: 'Goals',
     // route level code-splitting
@@ -35,12 +27,28 @@ const routes = [
     component: () => import(/* webpackChunkName: "projects" */ '../views/Goals.vue'),
   },
   {
-    path: '/join',
+    path: '/membership',
     name: 'Membership',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "projects" */ '../views/Membership.vue'),
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
+  },
+  {
+    path: '/projects/community-commerce',
+    name: 'Community Commerce | Projects',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "projects" */ '../views/ProjectsCommunityCommerce.vue'),
   },
   {
     path: '/projects/community-engine',
@@ -49,6 +57,14 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "projects" */ '../views/ProjectsCommunityEngine.vue'),
+  },
+  {
+    path: '/projects/tech-for-good',
+    name: 'Tech For Good | Projects',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "contact" */ '../views/TechForGood.vue'),
   },
   {
     path: '/partners',
