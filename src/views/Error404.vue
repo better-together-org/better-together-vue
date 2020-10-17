@@ -2,7 +2,9 @@
   <section id="error-404">
     <div class="row heading mb-3">
       <div class="col-md">
-        <h2 class="mb-4">This is not the page you are looking for</h2>
+        <h2 class="mb-4">
+          This is not the page you are looking for
+        </h2>
         <p>
           Looks like the address that you entered does't match a page on our
           site. Perhaps the page has move to a new address. Please try again.

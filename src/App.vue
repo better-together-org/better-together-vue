@@ -43,6 +43,7 @@ export default {
     border-color: #42b983;
 
     &:hover, &:focus, &:active {
+      color: #ffffff;
       background-color: #399f71;
       border-color: #399f71;
     }
