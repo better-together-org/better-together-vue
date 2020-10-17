@@ -23,11 +23,11 @@
           <form
             class="form needs-validation"
             data-netlify-recaptcha="true"
+            data-netlify="true"
             name="contact"
-            netlify
             netlify-honeypot="bot-field"
           >
-            <p class="hidden">
+            <p class="d-none">
               <label>Don't fill this out if you're human: <input name="bot-field" /></label>
             </p>
             <div class="form-row mb-4">
