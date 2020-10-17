@@ -28,4 +28,4 @@ deploy:
     skip_cleanup: true
     script: echo "deploy script!"
     on:
-      branch: master
+      branch: production
