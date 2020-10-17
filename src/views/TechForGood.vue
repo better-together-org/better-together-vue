@@ -44,7 +44,7 @@
           </p>
 
           <div class="text-center">
-              <!-- eslint-disable max-len -->
+            <!-- eslint-disable max-len -->
             <a
               href="/contact?utm_source=better-together&utm_medium=better-together&utm_campaign=tech-for-good"
               class="btn btn-primary card-action"
