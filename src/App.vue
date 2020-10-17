@@ -68,7 +68,7 @@ export default {
 
       @include media-breakpoint-up(md) {
         li {
-          margin-right: 5vw;
+          margin-right: 1vw;
 
           &:last-child {
             margin-right: 0;

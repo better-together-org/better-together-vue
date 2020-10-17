@@ -1,15 +1,17 @@
 <template>
   <header
     id="nav"
-    class=""
+    class="container"
   >
     <b-navbar
       toggleable="md"
       type="dark"
       variant="dark"
     >
+      <BtBrandingLogo />
+      <b-navbar-toggle target="mobile-collapse" />
       <b-collapse
-        id="left-collapse"
+        id="right-collapse"
         is-nav
         invisible
       >
@@ -18,6 +20,11 @@
           pills
           align="center"
         >
+          <b-nav-item
+            to="/"
+          >
+            Home
+          </b-nav-item>
           <b-nav-item
             to="/about"
           >
@@ -28,23 +35,6 @@
           >
             Projects
           </b-nav-item>
-        </b-navbar-nav>
-      </b-collapse>
-
-      <BtBrandingLogo />
-
-      <b-navbar-toggle target="mobile-collapse" />
-
-      <b-collapse
-        id="right-collapse"
-        is-nav
-        invisible
-      >
-        <b-navbar-nav
-          class="mr-auto"
-          pills
-          align="center"
-        >
           <b-nav-item
             to="/partners"
           >
