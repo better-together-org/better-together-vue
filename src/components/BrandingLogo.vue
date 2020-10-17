@@ -2,7 +2,7 @@
   <b-navbar-brand href="/">
     <img
       class="logo"
-      src="../assets/better-together-logo-centered-1500x430px.png"
+      src="../assets/better-together-logo.png"
       alt="Better Together"
     >
   </b-navbar-brand>
@@ -24,7 +24,6 @@ export default {
 }
 .navbar-brand {
   margin-right: 5vw;
-  margin-left: 5vw;
 }
 
 @include media-breakpoint-down(lg) {
