@@ -25,7 +25,11 @@
             data-netlify-recaptcha="true"
             name="contact"
             netlify
+            netlify-honeypot="bot-field"
           >
+            <p class="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <div class="form-row mb-4">
               <div class="col">
                 <label for="contact-name">Name</label>
