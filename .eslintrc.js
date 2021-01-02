@@ -38,5 +38,14 @@ module.exports = {
       'error',
       'never',
     ],
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          'currentState',
+        ],
+      },
+    ],
   },
 }
