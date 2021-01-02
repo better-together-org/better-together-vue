@@ -23,12 +23,27 @@ const actions = {
         })
     })
   },
+  postCommunity({ commit }, params) {
+    console.log(params)
+    return new Promise((resolve, reject) => {
+      BtApiV1.create('community', params)
+        .then(({ data }) => {
+          commit('PREPEND_COMMUNITY', data)
+          resolve(data)
+        }).catch((response) => {
+          reject(response)
+        })
+    })
+  },
 }
 
 // mutations
 const mutations = {
   SET_COMMUNITIES(currentState, communities) {
     currentState.communities = communities
+  },
+  PREPEND_COMMUNITY(currentState, community) {
+    currentState.communities.unshift(community)
   },
 }
 
