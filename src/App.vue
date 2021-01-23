@@ -68,7 +68,7 @@ export default {
       }
 
       @include media-breakpoint-up(md) {
-        li {
+        li.nav-item {
           margin-right: 1vw;
 
           &:last-child {

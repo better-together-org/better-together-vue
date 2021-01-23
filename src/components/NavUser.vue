@@ -1,28 +1,28 @@
 <template>
   <b-nav-item-dropdown
-    v-if="isAuthenticated"
     id="user-dropdown"
-    :text="currentUser.email"
+    :text="dropdownText"
     right
   >
     <b-dropdown-item
+      v-if="isAuthenticated"
       @click="signOutAction"
     >
       Sign Out
     </b-dropdown-item>
-  </b-nav-item-dropdown>
-  <b-nav v-else>
-    <b-nav-item
+    <b-dropdown-item
+      v-if="!isAuthenticated"
       to="/users/sign-in"
     >
       Sign In
-    </b-nav-item>
-    <b-nav-item
+    </b-dropdown-item>
+    <b-dropdown-item
+      v-if="!isAuthenticated"
       to="/users/sign-up"
     >
       Sign Up
-    </b-nav-item>
-  </b-nav>
+    </b-dropdown-item>
+  </b-nav-item-dropdown>
 </template>
 
 <script>
@@ -35,6 +35,9 @@ export default {
   computed: {
     ...mapState('authentication', ['currentUser']),
     ...mapGetters('authentication', ['isAuthenticated']),
+    dropdownText() {
+      return this.isAuthenticated ? this.currentUser.email : 'Sign In'
+    },
   },
   methods: {
     ...mapActions('authentication', ['signOut']),
@@ -58,6 +61,26 @@ export default {
     ::v-deep a.dropdown-item {
       color: $default-text-color;
       text-align: right;
+    }
+  }
+
+  #mobile-collapse {
+    #user-dropdown {
+      ::v-deep .dropdown-menu {
+        background-color: initial;
+
+        a.dropdown-item {
+          color: $default-text-color-bg-dark;
+          text-align: center;
+
+          &:hover,
+          &.router-link-exact-active {
+            color: $accent-color;
+            background-color: initial
+          }
+        }
+      }
+
     }
   }
 </style>
