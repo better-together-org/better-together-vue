@@ -79,9 +79,13 @@ export default {
               )
             })
           }
-        }).catch(({ response }) => {
-          console.log(response.data.errors)
-          this.errors = response.data.errors
+        }).catch((err) => {
+          if (err.response) {
+            console.log(err.response.data.errors)
+            this.errors = err.response.data.errors
+          } else {
+            console.error(err)
+          }
         })
       }
     },
