@@ -20,10 +20,12 @@
     "mutationobserver-shim": "^0.3.3",
     "popper.js": "^1.16.0",
     "register-service-worker": "^1.7.2",
+    "secure-ls": "^1.2.6",
     "vue": "^2.6.11",
     "vue-form-generator": "^2.3.4",
     "vue-router": "^3.4.9",
-    "vuex": "^3.6.0"
+    "vuex": "^3.6.0",
+    "vuex-persistedstate": "^4.0.0-beta.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.9",

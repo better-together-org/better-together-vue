@@ -41,7 +41,7 @@ export default {
     onValidated(isValid) {
       if (isValid) {
         this.signIn(this.model).then(() => {
-          this.$router.push('/')
+          if (this.$route.path !== '/') this.$router.push('/')
         }).catch((response) => {
           console.log(response)
         })

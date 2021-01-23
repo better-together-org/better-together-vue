@@ -1,39 +1,47 @@
+/* eslint no-shadow: ["error", { "allow": ["state"] }] */
+
+import axios from 'axios'
 import BtApiAuth from '../../endpoints/BtApiAuth'
 
 // initial state
 const state = {
-  currentUser: localStorage.getItem('user') || {},
-  token: localStorage.getItem('user-token') || '',
+  currentUser: {},
+  token: '',
   status: '',
+}
+
+if (state.token) {
+  axios.defaults.headers.common.Authorization = state.token
 }
 
 // getters
 const getters = {
-  isAuthenticated() { return !!state.token },
-  authStatus() { return state.status },
+  // isAuthenticated() { return state.token !== '' },
+  isAuthenticated: (state) => !!state.token,
+  authStatus: (state) => state.status,
 }
 
 // actions
 const actions = {
   signIn({ commit }, params) {
-    console.log(params)
     return new Promise((resolve, reject) => {
       BtApiAuth.post(
         'login',
         params,
       )
         .then(({ data, headers }) => {
-          console.log(headers)
           const token = headers.authorization
-          localStorage.setItem('user', data) // store the token in localstorage
-          localStorage.setItem('user-token', token) // store the token in localstorage
           commit('AUTH_SUCCESS', token)
           commit('SET_USER', data)
+          axios.defaults.headers.common.Authorization = token
+          // localStorage.setItem('user', data) // store the token in localstorage
+          // localStorage.setItem('user-token', token) // store the token in localstorage
           resolve(data)
         }).catch((response) => {
           commit('AUTH_ERROR', response)
-          localStorage.removeItem('user') // if the request fails, remove any possible user
-          localStorage.removeItem('user-token') // if the request fails, remove any possible user token
+          delete axios.defaults.headers.common.Authorization
+          // localStorage.removeItem('user') // clear your user's token from localstorage
+          // localStorage.removeItem('user-token') // clear your user's token from localstorage
           reject(response)
         })
     })
@@ -41,8 +49,9 @@ const actions = {
   signOut({ commit }) {
     return new Promise((resolve) => {
       commit('AUTH_LOGOUT')
-      localStorage.removeItem('user') // clear your user's token from localstorage
-      localStorage.removeItem('user-token') // clear your user's token from localstorage
+      // localStorage.removeItem('user') // clear your user's token from localstorage
+      // localStorage.removeItem('user-token') // clear your user's token from localstorage
+      delete axios.defaults.headers.common.Authorization
       resolve()
     })
   },
@@ -73,16 +82,15 @@ const mutations = {
     currentState.status = 'loading'
   },
   AUTH_SUCCESS(currentState, token) {
-    console.log(token)
     currentState.status = 'success'
     currentState.token = token
   },
   AUTH_ERROR(currentState) {
     currentState.status = 'error'
     currentState.currentUser = {}
+    currentState.token = ''
   },
   SET_USER(currentState, user) {
-    console.log(user)
     currentState.currentUser = user
   },
 }
