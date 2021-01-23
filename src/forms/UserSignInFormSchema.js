@@ -21,8 +21,8 @@ export default {
     {
       type: 'submit',
       label: '',
-      buttonText: 'Log In',
-      fieldClasses: 'btn btn-primary',
+      buttonText: 'Sign In',
+      fieldClasses: 'btn btn-primary btn-block',
       validateBeforeSubmit: true,
     },
   ],

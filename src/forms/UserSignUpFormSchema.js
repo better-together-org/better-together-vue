@@ -14,7 +14,7 @@ export default {
         },
         {
           type: 'input',
-          inputType: 'text',
+          inputType: 'password',
           label: 'Password *',
           model: 'user.password',
           min: 12,
@@ -54,7 +54,7 @@ export default {
           type: 'submit',
           label: '',
           buttonText: 'Sign Up',
-          fieldClasses: 'btn btn-primary',
+          fieldClasses: 'btn btn-primary btn-block',
           validateBeforeSubmit: true,
         },
       ],
