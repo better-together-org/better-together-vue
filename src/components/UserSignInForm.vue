@@ -1,5 +1,6 @@
 <template>
   <vue-form-generator
+    id="sign-in-form"
     tag="div"
     :schema="schema"
     :model="localModel"
@@ -13,12 +14,14 @@
 import { mapActions } from 'vuex'
 import VueFormGenerator from 'vue-form-generator'
 import UserSignInFormSchema from '../forms/UserSignInFormSchema'
+import toaster from '../mixins/toaster'
 
 export default {
   name: 'UserSigninForm',
   components: {
     'vue-form-generator': VueFormGenerator.component,
   },
+  mixins: [toaster],
   props: {
     model: {
       type: Object,
@@ -41,7 +44,11 @@ export default {
     onValidated(isValid) {
       if (isValid) {
         this.signIn(this.model).then(() => {
-          if (this.$route.path !== '/') this.$router.push('/')
+          if (this.$route.path !== '/') {
+            this.$router.push('/').then(() => {
+              this.$toaster('You are now signed in!', 'success')
+            })
+          }
         }).catch((response) => {
           console.log(response)
         })
