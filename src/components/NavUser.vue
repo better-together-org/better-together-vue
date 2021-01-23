@@ -31,17 +31,20 @@ import toaster from '../mixins/toaster'
 
 export default {
   name: 'NavUser',
+  mixins: [toaster],
   computed: {
     ...mapState('authentication', ['currentUser']),
     ...mapGetters('authentication', ['isAuthenticated']),
   },
-  mixins: [toaster],
   methods: {
     ...mapActions('authentication', ['signOut']),
     signOutAction() {
       this.signOut().then(() => {
-        if (this.$route.path !== '/') this.$router.push('/')
-        this.$toaster('You are now signed out!', 'info')
+        if (this.$route.path !== '/') {
+          this.$router.push('/').then(() => {
+            this.$toaster('You are now signed out!', 'info')
+          })
+        }
       })
     },
   },

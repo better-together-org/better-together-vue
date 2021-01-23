@@ -70,6 +70,8 @@ export default {
       color: theme-color('danger')
     }
   }
+  .hint {
+    margin-top: 5px;
+  }
 }
-
 </style>

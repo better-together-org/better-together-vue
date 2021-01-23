@@ -55,14 +55,14 @@ export default {
   components: {
     CommunityForm,
   },
-  computed: {
-    ...mapState('communities', ['communities']),
-  },
   data() {
     return {
       newCommunity: {},
       formErrors: '',
     }
+  },
+  computed: {
+    ...mapState('communities', ['communities']),
   },
   mounted() {
     this.getCommunities()

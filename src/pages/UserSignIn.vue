@@ -32,6 +32,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  #sign-in {
+    width: 40vw;
+    margin: auto;
+
+    section {
+      padding: 10%;
+    }
+  }
   .login-form {
     padding: 2em;
     border: 1px solid #a8a8a8;
