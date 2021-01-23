@@ -1,5 +1,5 @@
 // import axios from 'axios'
-import BtApiV1 from '../../models/BtApi'
+import BtApiV1 from '../../endpoints/BtApiV1'
 
 // initial state
 const state = {

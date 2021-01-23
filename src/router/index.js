@@ -90,6 +90,22 @@ const routes = [
     component: () => import(/* webpackChunkName: "contact" */ '../pages/Contact.vue'),
   },
   {
+    path: '/users/sign-in',
+    name: 'Sign In',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserSignIn.vue'),
+  },
+  {
+    path: '/users/sign-up',
+    name: 'Sign Up',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserSignUp.vue'),
+  },
+  {
     path: '*',
     name: 'Error404',
     // route level code-splitting

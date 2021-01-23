@@ -50,6 +50,7 @@
           >
             Contact
           </b-nav-item>
+          <NavUser />
         </b-navbar-nav>
       </b-collapse>
 
@@ -82,6 +83,7 @@
           >
             Contact
           </b-nav-item>
+          <NavUser />
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -90,11 +92,13 @@
 
 <script>
 import BtBrandingLogo from './BrandingLogo.vue'
+import NavUser from './NavUser.vue'
 
 export default {
   name: 'BtNav',
   components: {
     BtBrandingLogo,
+    NavUser,
   },
 }
 </script>
