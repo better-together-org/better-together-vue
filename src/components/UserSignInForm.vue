@@ -52,5 +52,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+
+#sign-in-form {
+  ::v-deep .help-block {
+    margin-top: 5px;
+
+    &.errors {
+      color: theme-color('danger')
+    }
+  }
+}
 
 </style>
