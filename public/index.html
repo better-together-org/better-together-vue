@@ -14,6 +14,14 @@
     <meta name="theme-color" content="#42b983">
 
     <title>Be Better Together</title>
+  </head>
+  <body class="bg-dark">
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <!-- built files will be auto injected -->
+    <div id="app"></div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Google Tag Manager -->
@@ -23,18 +31,10 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WCDBXXT');</script>
     <!-- End Google Tag Manager -->
-  </head>
-  <body class="bg-dark">
+    
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCDBXXT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-
-    <!-- built files will be auto injected -->
-    <div id="app"></div>
   </body>
 </html>
