@@ -60,7 +60,10 @@ const actions = {
     return new Promise((resolve, reject) => {
       BtApiAuth.post(
         'signup',
-        params,
+        {
+          ...params,
+          redirect_url: window.location.origin,
+        },
       )
         .then(({ data }) => {
           resolve(data)
