@@ -40,8 +40,11 @@ export default {
     ...mapActions('authentication', ['signIn']),
     onValidated(isValid) {
       if (isValid) {
-        console.log('submit form', this.model)
-        this.signIn(this.model)
+        this.signIn(this.model).then(() => {
+          this.$router.push('/')
+        }).catch((response) => {
+          console.log(response)
+        })
       }
     },
   },
