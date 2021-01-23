@@ -50,6 +50,7 @@ export default {
           type: 'submit',
           label: '',
           buttonText: 'Sign Up',
+          fieldClasses: 'btn btn-primary',
           validateBeforeSubmit: true,
         },
       ],

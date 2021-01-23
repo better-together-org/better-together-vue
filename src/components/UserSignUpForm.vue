@@ -1,5 +1,6 @@
 <template>
   <vue-form-generator
+    id="sign-up-form"
     tag="div"
     :schema="schema"
     :model="localModel"
@@ -49,5 +50,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
 
+#sign-up-form {
+  ::v-deep .help-block {
+    margin-top: 5px;
+
+    &.errors {
+      color: theme-color('danger')
+    }
+  }
+  ::v-deep .hint {
+    margin-top: 5px;
+  }
+}
 </style>

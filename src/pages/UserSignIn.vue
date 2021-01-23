@@ -33,7 +33,7 @@ export default {
 
 <style scoped lang="scss">
   #sign-in {
-    width: 40vw;
+    width: 50vw;
     margin: auto;
 
     section {
