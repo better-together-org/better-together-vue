@@ -32,14 +32,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  #sign-up {
-    width: 50vw;
-    margin: auto;
+  @media (min-width: 992px) {
+    #sign-up {
+      width: 50vw;
+      margin: auto;
 
-    section {
-      padding: 10%;
+      section {
+        padding: 10%;
+      }
     }
   }
+
   .login-form {
     padding: 2em;
     border: 1px solid #a8a8a8;
