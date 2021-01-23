@@ -1,5 +1,6 @@
 <template>
   <b-nav-item-dropdown
+    id="user-dropdown"
     v-if="isAuthenticated"
     :text="currentUser.email"
     right
@@ -45,5 +46,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import '../stylesheets/theme.scss';
 
+  #user-dropdown {
+    ::v-deep a.dropdown-item {
+      color: $default-text-color;
+      text-align: right;
+    }
+  }
 </style>
