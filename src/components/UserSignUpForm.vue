@@ -1,5 +1,20 @@
 <template>
   <div id="sign-up-form">
+    <div
+      v-if="hasErrors"
+      id="sign-up-errors"
+      class="errors text-danger mb-4"
+    >
+      <h4>Errors</h4>
+      <ul
+        v-for="(value, name) in errors"
+        :key="name"
+      >
+        <li>
+          {{ name }}: {{ value.join(", ") }}
+        </li>
+      </ul>
+    </div>
     <p><strong>*</strong> indicates a required field</p>
     <vue-form-generator
       tag="div"
@@ -33,9 +48,11 @@ export default {
   data() {
     return {
       schema: UserSignUpFormSchema,
+      errors: {},
     }
   },
   computed: {
+    hasErrors() { return Object.keys(this.errors).length > 0 },
     localModel: {
       get() { return this.model },
       set(model) { this.$emit('input', model) },
@@ -45,6 +62,7 @@ export default {
     ...mapActions('authentication', ['signUp']),
     onValidated(isValid) {
       if (isValid) {
+        this.errors = {}
         console.log('submit form', this.model)
         this.signUp(this.model).then((data) => {
           console.log(data)
@@ -61,8 +79,9 @@ export default {
               )
             })
           }
-        }).catch((err) => {
-          console.log(err)
+        }).catch(({ response }) => {
+          console.log(response.data.errors)
+          this.errors = response.data.errors
         })
       }
     },
@@ -84,6 +103,11 @@ export default {
   }
   ::v-deep .hint {
     margin-top: 5px;
+  }
+}
+#sign-up-errors {
+  h4 {
+    text-align: left;
   }
 }
 </style>
