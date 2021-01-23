@@ -2,7 +2,7 @@
   <div id="sign-in">
     <section>
       <h2>Sign In</h2>
-      <UserSigninForm :model="user" />
+      <UserSignInForm :model="user" />
       <b-link to="/users/sign-up">
         Don't have an account? Sign up!
       </b-link>
@@ -11,12 +11,12 @@
 </template>
 
 <script>
-import UserSigninForm from '../components/UserSigninForm.vue'
+import UserSignInForm from '../components/UserSignInForm.vue'
 
 export default {
   name: 'UsersSignIn',
   components: {
-    UserSigninForm,
+    UserSignInForm,
   },
   data() {
     return {

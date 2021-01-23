@@ -12,7 +12,7 @@
 <script>
 import { mapActions } from 'vuex'
 import VueFormGenerator from 'vue-form-generator'
-import UserSigninFormSchema from '../forms/UserSigninFormSchema'
+import UserSignInFormSchema from '../forms/UserSignInFormSchema'
 
 export default {
   name: 'UserSigninForm',
@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      schema: UserSigninFormSchema,
+      schema: UserSignInFormSchema,
     }
   },
   computed: {
