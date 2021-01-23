@@ -1,9 +1,16 @@
 <template>
-  <b-nav-item
-    to="/users/sign-in"
-  >
-    Sign In
-  </b-nav-item>
+  <b-nav>
+    <b-nav-item
+      to="/users/sign-in"
+    >
+      Sign In
+    </b-nav-item>
+    <b-nav-item
+      to="/users/sign-up"
+    >
+      Sign Up
+    </b-nav-item>
+  </b-nav>
 </template>
 
 <script>
