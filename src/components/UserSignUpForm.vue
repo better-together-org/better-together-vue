@@ -1,13 +1,15 @@
 <template>
-  <vue-form-generator
-    id="sign-up-form"
-    tag="div"
-    :schema="schema"
-    :model="localModel"
-    rows="3"
-    max-rows="6"
-    @validated="onValidated"
-  />
+  <div id="sign-up-form">
+    <p><strong>*</strong> indicates a required field</p>
+    <vue-form-generator
+      tag="div"
+      :schema="schema"
+      :model="localModel"
+      rows="3"
+      max-rows="6"
+      @validated="onValidated"
+    />
+  </div>
 </template>
 
 <script>
@@ -42,7 +44,9 @@ export default {
     onValidated(isValid) {
       if (isValid) {
         console.log('submit form', this.model)
-        this.signUp(this.model)
+        this.signUp(this.model).catch((err) => {
+          console.log(err)
+        })
       }
     },
   },
