@@ -81,7 +81,6 @@ export default {
           }
         }).catch((err) => {
           if (err.response) {
-            console.log(err.response.data.errors)
             this.errors = err.response.data.errors
           } else {
             console.error(err)

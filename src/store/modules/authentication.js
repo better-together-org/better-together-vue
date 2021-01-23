@@ -62,7 +62,7 @@ const actions = {
         'signup',
         {
           ...params,
-          redirect_url: window.location.origin,
+          confirm_success_url: window.location.origin,
         },
       )
         .then(({ data }) => {
