@@ -1,7 +1,7 @@
 <template>
   <b-nav-item-dropdown
-    id="user-dropdown"
     v-if="isAuthenticated"
+    id="user-dropdown"
     :text="currentUser.email"
     right
   >
@@ -27,6 +27,7 @@
 
 <script>
 import { mapActions, mapGetters, mapState } from 'vuex'
+import toaster from '../mixins/toaster'
 
 export default {
   name: 'NavUser',
@@ -34,11 +35,13 @@ export default {
     ...mapState('authentication', ['currentUser']),
     ...mapGetters('authentication', ['isAuthenticated']),
   },
+  mixins: [toaster],
   methods: {
     ...mapActions('authentication', ['signOut']),
     signOutAction() {
       this.signOut().then(() => {
         if (this.$route.path !== '/') this.$router.push('/')
+        this.$toaster('You are now signed out!', 'info')
       })
     },
   },

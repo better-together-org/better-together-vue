@@ -86,4 +86,8 @@ export default {
     }
   }
 }
+
+.b-toaster.b-toaster-top-right .b-toaster-slot {
+  top: 10vh;
+}
 </style>
