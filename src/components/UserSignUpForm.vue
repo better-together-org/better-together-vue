@@ -16,12 +16,14 @@
 import { mapActions } from 'vuex'
 import VueFormGenerator from 'vue-form-generator'
 import UserSignUpFormSchema from '../forms/UserSignUpFormSchema'
+import toaster from '../mixins/toaster'
 
 export default {
   name: 'UserSignUpForm',
   components: {
     'vue-form-generator': VueFormGenerator.component,
   },
+  mixins: [toaster],
   props: {
     model: {
       type: Object,
@@ -44,7 +46,22 @@ export default {
     onValidated(isValid) {
       if (isValid) {
         console.log('submit form', this.model)
-        this.signUp(this.model).catch((err) => {
+        this.signUp(this.model).then((data) => {
+          console.log(data)
+          if (this.$route.path !== '/') {
+            this.$router.push('/').then(() => {
+              this.$toaster(
+                `Please click on the confirmation link emailed to ${data.email} to log in.`,
+                'info',
+                {
+                  title: 'Please confirm your email address',
+                  autoHideDelay: 6000,
+                  toaster: 'b-toaster-top-center',
+                },
+              )
+            })
+          }
+        }).catch((err) => {
           console.log(err)
         })
       }
