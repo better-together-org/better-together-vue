@@ -1,16 +1,16 @@
 <template>
-  <div id="sign-in">
+  <div id="reset-password">
     <section>
-      <h2>Sign In</h2>
-      <UserSignInForm :model="user" />
+      <h2>Reset Your Password</h2>
+      <UserResetPasswordForm :model="user" />
       <div>
-        <b-link to="/users/sign-up">
-          Don't have an account? Sign up!
+        <b-link to="/users/sign-in">
+          Remembered your password? Sign in!
         </b-link>
       </div>
       <div>
-        <b-link to="/users/reset-password">
-          Forgot your password? Reset it!
+        <b-link to="/users/sign-up">
+          Don't have an account? Sign up!
         </b-link>
       </div>
     </section>
@@ -18,12 +18,12 @@
 </template>
 
 <script>
-import UserSignInForm from '../components/UserSignInForm.vue'
+import UserResetPasswordForm from '../components/UserResetPasswordForm.vue'
 
 export default {
-  name: 'UsersSignIn',
+  name: 'UsersResetPassword',
   components: {
-    UserSignInForm,
+    UserResetPasswordForm,
   },
   data() {
     return {
@@ -40,7 +40,7 @@ export default {
 
 <style scoped lang="scss">
   @media (min-width: 992px) {
-    #sign-in {
+    #reset-password {
       width: 50vw;
       margin: auto;
 

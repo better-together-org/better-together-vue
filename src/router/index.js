@@ -104,6 +104,14 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "contact" */ '../pages/UserSignUp.vue'),
+  {
+    path: '/users/reset-password',
+    name: 'Reset Password',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserResetPassword.vue'),
+    // beforeEnter: ifNotAuthenticated,
   },
   {
     path: '*',

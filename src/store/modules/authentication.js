@@ -60,6 +60,11 @@ const actions = {
     return new Promise((resolve, reject) => {
       BtApiAuth.post(
         'signup',
+  resetPassword(_ctx, params) {
+    console.log(params)
+    return new Promise((resolve, reject) => {
+      BtApiAuth.post(
+        'password',
         {
           ...params,
           confirm_success_url: `${window.location.origin}/users/sign-in`,
