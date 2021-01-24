@@ -30,11 +30,11 @@
           >
             About
           </b-nav-item>
-          <b-nav-item
+       <!--    <b-nav-item
             to="/communities"
           >
             Communities
-          </b-nav-item>
+          </b-nav-item> -->
           <b-nav-item
             to="/projects"
           >
