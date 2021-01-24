@@ -1,29 +1,25 @@
 <template>
-  <div id="reset-password">
+  <div id="new-password">
     <section>
-      <h2>Reset Your Password</h2>
-      <UserResetPasswordForm :model="user" />
-      <div>
-        <b-link to="/users/sign-in">
-          Remembered your password? Sign in!
-        </b-link>
-      </div>
-      <div>
-        <b-link to="/users/sign-up">
-          Don't have an account? Sign up!
-        </b-link>
-      </div>
+      <h2>Create a New Password</h2>
+      <UserNewPasswordForm :model="model" />
     </section>
   </div>
 </template>
 
 <script>
-import UserResetPasswordForm from '../components/UserResetPasswordForm.vue'
+import UserNewPasswordForm from '../components/UserNewPasswordForm.vue'
 
 export default {
-  name: 'UsersResetPassword',
+  name: 'UsersNewPassword',
   components: {
-    UserResetPasswordForm,
+    UserNewPasswordForm,
+  },
+  props: {
+    reset_password_token: {
+      type: String,
+      required: true,
+    },
   },
   data() {
     return {
@@ -31,8 +27,12 @@ export default {
     }
   },
   computed: {
-    user() {
-      return {}
+    model() {
+      return {
+        user: {
+          reset_password_token: this.reset_password_token,
+        },
+      }
     },
   },
 }
@@ -40,7 +40,7 @@ export default {
 
 <style scoped lang="scss">
   @media (min-width: 992px) {
-    #reset-password {
+    #new-password {
       width: 50vw;
       margin: auto;
 

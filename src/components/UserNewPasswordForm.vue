@@ -45,10 +45,13 @@ export default {
       if (isValid) {
         this.newPassword(this.model).then(() => {
           if (this.$route.path !== '/') {
-            this.$router.push('/').then(() => {
+            this.$router.push('/users/sign-in').then(() => {
               this.$toaster(
-                `You password has been changed`,
+                'You can now log in with your new password',
                 'success',
+                {
+                  title: 'Your password has been changed',
+                },
               )
             })
           }
@@ -73,7 +76,7 @@ export default {
       color: theme-color('danger')
     }
   }
-  .hint {
+  ::v-deep .hint {
     margin-top: 5px;
   }
 }

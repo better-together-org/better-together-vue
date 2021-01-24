@@ -86,7 +86,7 @@ const actions = {
   newPassword(_ctx, params) {
     console.log(params)
     return new Promise((resolve, reject) => {
-      BtApiAuth.patch(
+      BtApiAuth.put(
         'password',
         params,
       )
