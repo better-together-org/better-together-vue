@@ -26,7 +26,7 @@ const actions = {
   signIn({ commit }, params) {
     return new Promise((resolve, reject) => {
       BtApiAuth.post(
-        'login',
+        'sign-in',
         params,
       )
         .then(({ data, headers }) => {
@@ -34,14 +34,10 @@ const actions = {
           commit('AUTH_SUCCESS', token)
           commit('SET_USER', data)
           axios.defaults.headers.common.Authorization = token
-          // localStorage.setItem('user', data) // store the token in localstorage
-          // localStorage.setItem('user-token', token) // store the token in localstorage
           resolve(data)
         }).catch((response) => {
           commit('AUTH_ERROR', response)
           delete axios.defaults.headers.common.Authorization
-          // localStorage.removeItem('user') // clear your user's token from localstorage
-          // localStorage.removeItem('user-token') // clear your user's token from localstorage
           reject(response)
         })
     })
@@ -49,8 +45,6 @@ const actions = {
   signOut({ commit }) {
     return new Promise((resolve) => {
       commit('AUTH_LOGOUT')
-      // localStorage.removeItem('user') // clear your user's token from localstorage
-      // localStorage.removeItem('user-token') // clear your user's token from localstorage
       delete axios.defaults.headers.common.Authorization
       resolve()
     })
@@ -59,7 +53,19 @@ const actions = {
     console.log(params)
     return new Promise((resolve, reject) => {
       BtApiAuth.post(
-        'signup',
+        'sign-up',
+        {
+          ...params,
+          confirm_success_url: `${window.location.origin}/users/sign-in`,
+        },
+      )
+        .then(({ data }) => {
+          resolve(data)
+        }).catch((response) => {
+          reject(response)
+        })
+    })
+  },
   resetPassword(_ctx, params) {
     console.log(params)
     return new Promise((resolve, reject) => {
