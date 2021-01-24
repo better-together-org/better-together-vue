@@ -73,8 +73,22 @@ const actions = {
         'password',
         {
           ...params,
-          confirm_success_url: `${window.location.origin}/users/sign-in`,
+          new_password_url: `${window.location.origin}/users/password/new`,
         },
+      )
+        .then(({ data }) => {
+          resolve(data)
+        }).catch((response) => {
+          reject(response)
+        })
+    })
+  },
+  newPassword(_ctx, params) {
+    console.log(params)
+    return new Promise((resolve, reject) => {
+      BtApiAuth.patch(
+        'password',
+        params,
       )
         .then(({ data }) => {
           resolve(data)
