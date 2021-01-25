@@ -1,7 +1,7 @@
 <template>
   <vue-form-generator
     id="sign-in-form"
-    tag="div"
+    tag="form"
     :schema="schema"
     :model="localModel"
     rows="3"
