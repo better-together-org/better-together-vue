@@ -9,7 +9,7 @@ const state = {
 
 // getters
 const getters = {
-  hasCurrentPerson: (state) => !!state.currentPerson,
+  hasCurrentPerson: (state) => Object.keys(state.currentPerson).length > 0,
   currentPerson: (state) => state.currentPerson,
 }
 
