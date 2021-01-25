@@ -35,8 +35,15 @@ export default {
   computed: {
     ...mapState('authentication', ['currentUser']),
     ...mapGetters('authentication', ['isAuthenticated']),
+    ...mapState('people', ['currentPerson']),
+    ...mapGetters('people', ['hasCurrentPerson']),
     dropdownText() {
-      return this.isAuthenticated ? this.currentUser.email : 'Sign In'
+      if (this.isAuthenticated) {
+        if (this.hasCurrentPerson) return this.currentPerson.name
+        return this.currentUser.email
+      }
+
+      return 'Sign In'
     },
   },
   methods: {
