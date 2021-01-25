@@ -16,7 +16,7 @@ export default {
     UserNewPasswordForm,
   },
   props: {
-    reset_password_token: {
+    resetPasswordToken: {
       type: String,
       required: true,
     },
@@ -30,7 +30,7 @@ export default {
     model() {
       return {
         user: {
-          reset_password_token: this.reset_password_token,
+          reset_password_token: this.resetPasswordToken,
         },
       }
     },

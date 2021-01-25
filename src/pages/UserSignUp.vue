@@ -3,9 +3,16 @@
     <section>
       <h2>Sign Up</h2>
       <UserSignUpForm :model="user" />
-      <b-link to="/users/sign-in">
-        Already have an account? Sign in!
-      </b-link>
+      <div>
+        <b-link to="/users/sign-in">
+          Already have an account? Sign in!
+        </b-link>
+      </div>
+      <div>
+        <b-link to="/users/confirmation/resend">
+          Didn't receive your account confirmation email? Resend it!
+        </b-link>
+      </div>
     </section>
   </div>
 </template>

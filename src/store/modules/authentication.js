@@ -50,13 +50,12 @@ const actions = {
     })
   },
   signUp(_ctx, params) {
-    console.log(params)
     return new Promise((resolve, reject) => {
       BtApiAuth.post(
         'sign-up',
         {
           ...params,
-          confirm_success_url: `${window.location.origin}/users/sign-in`,
+          confirmation_url: `${window.location.origin}/users/confirmation`,
         },
       )
         .then(({ data }) => {
@@ -66,8 +65,37 @@ const actions = {
         })
     })
   },
+  resendConfirmation(_ctx, params) {
+    return new Promise((resolve, reject) => {
+      BtApiAuth.post(
+        'confirmation',
+        {
+          ...params,
+          confirmation_url: `${window.location.origin}/users/confirmation`,
+        },
+      )
+        .then(({ data }) => {
+          resolve(data)
+        }).catch((response) => {
+          reject(response)
+        })
+    })
+  },
+  sendConfirmation(_ctx, params) {
+    return new Promise((resolve, reject) => {
+      console.log(params)
+      BtApiAuth.get(
+        'confirmation',
+        { params },
+      )
+        .then(({ data }) => {
+          resolve(data)
+        }).catch((response) => {
+          reject(response)
+        })
+    })
+  },
   resetPassword(_ctx, params) {
-    console.log(params)
     return new Promise((resolve, reject) => {
       BtApiAuth.post(
         'password',
@@ -84,7 +112,6 @@ const actions = {
     })
   },
   newPassword(_ctx, params) {
-    console.log(params)
     return new Promise((resolve, reject) => {
       BtApiAuth.put(
         'password',

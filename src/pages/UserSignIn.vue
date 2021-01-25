@@ -13,6 +13,11 @@
           Forgot your password? Reset it!
         </b-link>
       </div>
+      <div>
+        <b-link to="/users/confirmation/resend">
+          Didn't receive your account confirmation email? Resend it!
+        </b-link>
+      </div>
     </section>
   </div>
 </template>

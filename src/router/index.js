@@ -121,7 +121,26 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "contact" */ '../pages/UserPasswordNew.vue'),
-    props: (route) => ({ reset_password_token: route.query.reset_password_token }),
+    props: (route) => ({ resetPasswordToken: route.query.reset_password_token }),
+    // beforeEnter: ifNotAuthenticated,
+  },
+  {
+    path: '/users/confirmation/resend',
+    name: 'Resend Account Confirmation',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserResendConfirmation.vue'),
+    // beforeEnter: ifNotAuthenticated,
+  },
+  {
+    path: '/users/confirmation',
+    name: 'Account Confirmation',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserResendConfirmation.vue'),
+    props: (route) => ({ confirmationToken: route.query.confirmation_token }),
     // beforeEnter: ifNotAuthenticated,
   },
   {

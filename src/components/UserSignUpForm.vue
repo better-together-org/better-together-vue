@@ -63,9 +63,7 @@ export default {
     onValidated(isValid) {
       if (isValid) {
         this.errors = {}
-        console.log('submit form', this.model)
         this.signUp(this.model).then((data) => {
-          console.log(data)
           if (this.$route.path !== '/') {
             this.$router.push('/').then(() => {
               this.$toaster(
@@ -74,7 +72,6 @@ export default {
                 {
                   title: 'Please confirm your email address',
                   autoHideDelay: 6000,
-                  toaster: 'b-toaster-top-center',
                 },
               )
             })

@@ -24,7 +24,6 @@ const actions = {
     })
   },
   postCommunity({ commit }, params) {
-    console.log(params)
     return new Promise((resolve, reject) => {
       BtApiV1.create('community', params)
         .then(({ data }) => {
