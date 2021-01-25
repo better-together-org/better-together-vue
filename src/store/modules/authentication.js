@@ -46,6 +46,7 @@ const actions = {
     return new Promise((resolve) => {
       commit('AUTH_LOGOUT')
       delete axios.defaults.headers.common.Authorization
+      commit('people/CLEAR_CURRENT_PERSON', null, { root: true })
       resolve()
     })
   },

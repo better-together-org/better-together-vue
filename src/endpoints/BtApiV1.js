@@ -5,7 +5,16 @@ const BtApiV1 = new JsonApi({
 })
 
 // Define Model
+
+// Define Community model
 BtApiV1.define('community', {
+  bt_id: '',
+  description: '',
+  name: '',
+})
+
+// Define Person model
+BtApiV1.define('person', {
   bt_id: '',
   description: '',
   name: '',

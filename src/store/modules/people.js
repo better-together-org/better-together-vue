@@ -1,5 +1,5 @@
-// import axios from 'axios'
-import { BtApiV1Axios } from '../../endpoints/BtApiV1'
+/* eslint no-shadow: ["error", { "allow": ["state"] }] */
+import axios from 'axios'
 
 // initial state
 const state = {
@@ -9,6 +9,8 @@ const state = {
 
 // getters
 const getters = {
+  hasCurrentPerson: (state) => !!state.currentPerson,
+  currentPerson: (state) => state.currentPerson,
 }
 
 // actions
@@ -36,12 +38,12 @@ const actions = {
   //   })
   // },
   getMe({ commit }) {
-    console.log(BtApiV1Axios)
+    console.log(axios)
     return new Promise((resolve, reject) => {
-      BtApiV1Axios.get('people/me')
+      axios.get(`${process.env.VUE_APP_BETTER_TOGETHER_API_URI}/bt/api/v1/people/me`)
         .then((response) => {
           console.log(response)
-          commit('SET_CURRENT_PERSON', response)
+          commit('SET_CURRENT_PERSON', response.data)
           resolve(response)
         }).catch((response) => {
           reject(response)
@@ -54,6 +56,9 @@ const actions = {
 const mutations = {
   SET_CURRENT_PERSON(currentState, person) {
     currentState.currentPerson = person
+  },
+  CLEAR_CURRENT_PERSON(currentState) {
+    currentState.currentPerson = {}
   },
   // SET_PEOPLE(currentState, people) {
   //   currentState.people = people
