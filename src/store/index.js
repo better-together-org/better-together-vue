@@ -4,6 +4,7 @@ import createPersistedState from 'vuex-persistedstate'
 import SecureLS from 'secure-ls'
 import authentication from './modules/authentication'
 import communities from './modules/communities'
+import people from './modules/people'
 
 const ls = new SecureLS({ isCompression: false })
 
@@ -15,6 +16,7 @@ export default new Vuex.Store({
   modules: {
     authentication,
     communities,
+    people,
   },
   plugins: [
     createPersistedState({
