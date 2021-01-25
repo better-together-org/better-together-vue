@@ -41,12 +41,18 @@ export default {
   },
   methods: {
     ...mapActions('authentication', ['signIn']),
+    ...mapActions('people', ['getMe']),
     onValidated(isValid) {
       if (isValid) {
         this.signIn(this.model).then(() => {
           if (this.$route.path !== '/') {
             this.$router.push('/').then(() => {
               this.$toaster('You are now signed in!', 'success')
+              this.getMe().then((response) => {
+                console.log(response)
+              }).catch((err) => {
+                console.log(err)
+              })
             })
           }
         }).catch((response) => {
