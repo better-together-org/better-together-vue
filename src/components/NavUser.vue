@@ -47,6 +47,8 @@ export default {
           this.$router.push('/').then(() => {
             this.$toaster('You are now signed out!', 'info')
           })
+        } else {
+          this.$toaster('You are now signed out!', 'info')
         }
       })
     },
