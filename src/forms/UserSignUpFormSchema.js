@@ -25,28 +25,28 @@ export default {
         },
       ],
     },
-    // {
-    //   legend: 'Personal Info',
-    //   fields: [
-    //     {
-    //       type: 'input',
-    //       inputType: 'text',
-    //       label: 'Name *',
-    //       model: 'person_attributes.name',
-    //       placeholder: 'Your name..',
-    //       required: true,
-    //       validator: ['string', 'required'],
-    //     },
-    //     {
-    //       type: 'textArea',
-    //       label: 'Description *',
-    //       model: 'person_attributes.description',
-    //       placeholder: 'Your description..',
-    //       validator: ['string', 'required'],
-    //       required: true,
-    //     },
-    //   ],
-    // },
+    {
+      legend: 'Personal Info',
+      fields: [
+        {
+          type: 'input',
+          inputType: 'text',
+          label: 'Name *',
+          model: 'user.person_attributes.name',
+          placeholder: 'Your name..',
+          required: true,
+          validator: ['string', 'required'],
+        },
+        {
+          type: 'textArea',
+          label: 'Description *',
+          model: 'user.person_attributes.description',
+          placeholder: 'Your description..',
+          validator: ['string', 'required'],
+          required: true,
+        },
+      ],
+    },
     {
       legend: '',
       fields: [
