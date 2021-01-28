@@ -873,6 +873,28 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@bettertogether/community-engine-vue@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@bettertogether/community-engine-vue/-/community-engine-vue-0.1.1.tgz#157cc9a7ff52df3f49204f7fc7f9a81fba54f13f"
+  integrity sha512-iXcpqAtbfkOJ7oTkjMvYi2sY/mDkIM/b9F+u8O3LruZkAY+eOEkZEOslKSXzRjkf3jxtVE2FHvnMdUwRYoCfZw==
+  dependencies:
+    "@babel/polyfill" "^7.7.0"
+    axios "^0.21.1"
+    bootstrap "^4.3.1"
+    bootstrap-vue "^2.21.2"
+    core-js "^3.8.1"
+    crip-vue-loading "^1.2.5"
+    devour-client "^2.1.1"
+    mutationobserver-shim "^0.3.3"
+    popper.js "^1.16.0"
+    register-service-worker "^1.7.2"
+    secure-ls "^1.2.6"
+    vue "^2.6.11"
+    vue-form-generator "^2.3.4"
+    vue-router "^3.4.9"
+    vuex "^3.6.0"
+    vuex-persistedstate "^4.0.0-beta.3"
+
 "@cypress/listr-verbose-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@cypress/listr-verbose-renderer/-/listr-verbose-renderer-0.4.1.tgz#a77492f4b11dcc7c446a34b3e28721afd33c642a"

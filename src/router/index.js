@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import { BtRoutes } from '@bettertogether/community-engine-vue'
 
 Vue.use(VueRouter)
 
@@ -7,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "about" */ '../pages/Home.vue'),
+    component: () => import(/* webpackChunkName: "home" */ '../pages/Home.vue'),
   },
   {
     path: '/about',
@@ -23,7 +24,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects" */ '../pages/Communities.vue'),
+    component: () => import(/* webpackChunkName: "communities" */ '../pages/Communities.vue'),
   },
   {
     path: '/goals',
@@ -31,7 +32,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects" */ '../pages/Goals.vue'),
+    component: () => import(/* webpackChunkName: "goals" */ '../pages/Goals.vue'),
   },
   {
     path: '/membership',
@@ -39,7 +40,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects" */ '../pages/Membership.vue'),
+    component: () => import(/* webpackChunkName: "membership" */ '../pages/Membership.vue'),
   },
   {
     path: '/projects',
@@ -55,7 +56,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects" */ '../pages/ProjectsCommunityCommerce.vue'),
+    component: () => import(/* webpackChunkName: "projects/community-commerce" */ '../pages/ProjectsCommunityCommerce.vue'),
   },
   {
     path: '/projects/community-engine',
@@ -63,7 +64,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "projects" */ '../pages/ProjectsCommunityEngine.vue'),
+    component: () => import(/* webpackChunkName: "projects/community-engine" */ '../pages/ProjectsCommunityEngine.vue'),
   },
   {
     path: '/projects/tech-for-good',
@@ -71,7 +72,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/TechForGood.vue'),
+    component: () => import(/* webpackChunkName: "projects/tech-for-good" */ '../pages/TechForGood.vue'),
   },
   {
     path: '/partners',
@@ -90,67 +91,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "contact" */ '../pages/Contact.vue'),
   },
   {
-    path: '/users/sign-in',
-    name: 'Sign In',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserSignIn.vue'),
-  },
-  {
-    path: '/users/sign-up',
-    name: 'Sign Up',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserSignUp.vue'),
-  },
-  {
-    path: '/users/password/reset',
-    name: 'Reset Password',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserPasswordReset.vue'),
-    // beforeEnter: ifNotAuthenticated,
-  },
-  {
-    path: '/users/password/new',
-    name: 'New Password',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserPasswordNew.vue'),
-    props: (route) => ({ resetPasswordToken: route.query.reset_password_token }),
-    // beforeEnter: ifNotAuthenticated,
-  },
-  {
-    path: '/users/confirmation/resend',
-    name: 'Resend Account Confirmation',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserResendConfirmation.vue'),
-    // beforeEnter: ifNotAuthenticated,
-  },
-  {
-    path: '/users/confirmation',
-    name: 'Account Confirmation',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/UserResendConfirmation.vue'),
-    props: (route) => ({ confirmationToken: route.query.confirmation_token }),
-    // beforeEnter: ifNotAuthenticated,
-  },
-  {
     path: '*',
     name: 'Error404',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contact" */ '../pages/Error404.vue'),
+    component: () => import(/* webpackChunkName: "error-404" */ '../pages/Error404.vue'),
   },
+  ...BtRoutes,
 ]
 
 const router = new VueRouter({
