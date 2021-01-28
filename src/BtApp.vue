@@ -10,7 +10,7 @@ import BtNav from './components/Nav.vue'
 import BtMainContent from './components/MainContent.vue'
 
 export default {
-  name: 'App',
+  name: 'BtApp',
   components: {
     BtNav,
     BtMainContent,
