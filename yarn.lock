@@ -874,9 +874,9 @@
     to-fast-properties "^2.0.0"
 
 "@bettertogether/community-engine-vue@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@bettertogether/community-engine-vue/-/community-engine-vue-0.1.1.tgz#157cc9a7ff52df3f49204f7fc7f9a81fba54f13f"
-  integrity sha512-iXcpqAtbfkOJ7oTkjMvYi2sY/mDkIM/b9F+u8O3LruZkAY+eOEkZEOslKSXzRjkf3jxtVE2FHvnMdUwRYoCfZw==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@bettertogether/community-engine-vue/-/community-engine-vue-0.1.4.tgz#a0766dbd36379e92536688f36795872c5b9a0f71"
+  integrity sha512-oCXnhfk/d/mLqSYJTbAnfjA9ViV0A/bAr51wwvEoMOEvBeaYJfrb0eQCY7CWjM4R2X6yoHuBK+qmQV3ma2Qo2Q==
   dependencies:
     "@babel/polyfill" "^7.7.0"
     axios "^0.21.1"
