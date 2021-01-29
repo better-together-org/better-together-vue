@@ -4,7 +4,7 @@ import VueLoading from 'crip-vue-loading'
 
 Vue.use(VueLoading, {
   axios,
-  applyOnRouter: true,
+  applyOnRouter: false,
   color: '#42b983',
   height: '3px',
 })
