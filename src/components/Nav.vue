@@ -50,7 +50,7 @@
           >
             Contact
           </b-nav-item>
-          <BtNavUser />
+          <!-- <BtNavUser /> -->
         </b-navbar-nav>
       </b-collapse>
 
@@ -83,7 +83,7 @@
           >
             Contact
           </b-nav-item>
-          <BtNavUser />
+          <!-- <BtNavUser /> -->
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
