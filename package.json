@@ -1,9 +1,17 @@
 {
   "private": false,
   "version": "0.1.2",
-  "name": "@bettertogether/community-engine",
-  "description": "The Better Together Community Engine is a universal community platform",
+  "name": "@bettertogether/website",
+  "description": "The website for Better Together and it's universal community platform, the Community Engine",
   "author": "Better Together Community Co-op",
+  "contributors": [
+    {
+      "name": "Rob",
+      "url": "https://github.com/rsmithlal"
+    }
+  ],
+  "repository": "better-together-org/better-together-website",
+  "homepage": "https://bebettertogether.ca",
   "license": "LGPL-3.0-or-later",
   "main": "./dist/index.js",
   "scripts": {
