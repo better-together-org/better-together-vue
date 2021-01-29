@@ -1,10 +1,9 @@
 import '@babel/polyfill'
 import 'mutationobserver-shim'
-import Vue from 'vue'
-import './plugins/bootstrap-vue'
-import './plugins/community-engine-vue'
-import App from './App.vue'
+import './plugins'
 import './registerServiceWorker'
+import Vue from 'vue'
+import App from './App.vue'
 import router from './router'
 import store from './store'
 
