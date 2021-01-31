@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { BtRoutes } from '@bettertogether/community-engine-vue'
+import Home from '../pages/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../pages/Home.vue'),
+    component: Home,
   },
   {
     path: '/about',
