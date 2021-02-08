@@ -46,6 +46,12 @@
             Partners
           </b-nav-item>
           <b-nav-item
+            href="https://marketplace.bebettertogether.ca/"
+            title="Better Together Marketplace"
+          >
+            Marketplace
+          </b-nav-item>
+          <b-nav-item
             to="/contact"
           >
             Contact
