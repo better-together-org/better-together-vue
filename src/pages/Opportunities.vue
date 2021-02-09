@@ -29,6 +29,7 @@
 
 <script>
 import OpportunityCard from '../components/OpportunityCard.vue'
+import OpportunityImgDRAW from '../assets/opportunities/DRAW-promo.jpg'
 import OpportunityImgSoftware from '../assets/opportunities/halgatewood-com-tZc3vjPCk-Q-unsplash.jpg'
 import OpportunityImgFilmMaking from '../assets/opportunities/rene-ranisch-o5ULV1tP1B4-unsplash.jpg'
 import OpportunityImgPhotography from '../assets/opportunities/alif-ngoylung-jg-6ARMiaPM-unsplash.jpg'
@@ -68,6 +69,17 @@ export default {
           tags: ['Mentorship'],
 
           location: 'Online or in Person<br />(Labrador Straits)',
+        },
+        {
+          id: 7,
+          community: 'DRAW: Data Rescue Archives and Weather',
+          name: 'Historical Weather and Archives',
+          description: 'Learn about weather in the 1800s through a crowdsourced effort to transcribe historical weather logs from McGill University\'s archives.',
+          url: 'https://citsci.geog.mcgill.ca/?referrer=bettertogether',
+          imageUrl: OpportunityImgDRAW,
+          publishedAt: 'February 9th, 2021',
+          tags: ['Volunteering', 'Project', 'Education'],
+          location: 'Online',
         },
         {
           id: 2,
