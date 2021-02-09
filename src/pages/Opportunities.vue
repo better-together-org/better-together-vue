@@ -54,7 +54,7 @@ export default {
           imageUrl: OpportunityImgSoftware,
           attribution: '<span>Photo by <a href="https://unsplash.com/@halacious?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">HalGatewood.com</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Mentorship', 'Services'],
+          tags: ['Mentorship', 'Service'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
         {
@@ -90,7 +90,7 @@ export default {
           imageUrl: OpportunityImgPhotography,
           attribution: '<span>Photo by <a href="https://unsplash.com/@shbabalif?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alif Ngoylung</a> on <a href="https://unsplash.com/s/photos/photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Mentorship', 'Services'],
+          tags: ['Mentorship', 'Service'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
         {
@@ -102,7 +102,7 @@ export default {
           imageUrl: OpportunityImgFilmMaking,
           attribution: '<span>Photo by <a href="https://unsplash.com/@frame_media?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">René Ranisch</a> on <a href="https://unsplash.com/s/photos/film-making?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Mentorship', 'Services'],
+          tags: ['Mentorship', 'Service'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
         {
@@ -115,7 +115,7 @@ export default {
           imageUrl: OpportunityImgECommerce,
           attribution: '<span>Photo by <a href="https://unsplash.com/@mikepetrucci?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mike Petrucci</a> on <a href="https://unsplash.com/s/photos/e-commerce?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Services'],
+          tags: ['Service'],
 
           location: 'Online or in Person<br />(Labrador Straits)',
         },
@@ -128,7 +128,7 @@ export default {
           imageUrl: OpportunityImgMarketing,
           attribution: '<span>Photo by <a href="https://unsplash.com/@campaign_creators?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Campaign Creators</a> on <a href="https://unsplash.com/s/photos/marketing?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Mentorship', 'Services'],
+          tags: ['Mentorship', 'Service'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
       ],
