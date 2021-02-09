@@ -6,7 +6,7 @@
     >
       <div class="row heading">
         <div class="col-md">
-          <h2>Contact us</h2>
+          <h2>Contact Us</h2>
         </div>
       </div>
       <div class="row">

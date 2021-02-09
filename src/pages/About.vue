@@ -3,7 +3,7 @@
     <section>
       <div class="row heading">
         <div class="col-md">
-          <h2>About</h2>
+          <h2>About Us</h2>
         </div>
       </div>
       <div class="row">
