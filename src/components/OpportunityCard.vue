@@ -36,20 +36,19 @@
         class="my-2"
       >
         <span
-          v-html="location"
           title="Location"
+          v-html="location"
         />
       </b-card-sub-title>
     </template>
     <b-card-text>
       {{ description }}
-
     </b-card-text>
     <b-card-text
       v-if="attribution"
-      v-html="attribution"
       class="text-muted"
       text-tag="small"
+      v-html="attribution"
     />
 
     <template
@@ -96,18 +95,22 @@ export default {
     url: {
       type: String,
       required: false,
+      default: () => '',
     },
     urlTarget: {
       type: String,
       required: false,
+      default: () => '',
     },
     imageUrl: {
       type: String,
       required: false,
+      default: () => '',
     },
     attribution: {
       type: String,
       required: false,
+      default: () => '',
     },
     publishedAt: {
       type: String,
