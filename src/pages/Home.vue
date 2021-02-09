@@ -11,13 +11,10 @@
         <p>
           Better Together is a community innovation accelerator. We build
           public community infrastructure to help make the world a
-          better place for everyone.
-        </p>
-        <p>
-          We envision a
-          world where communities care for and support one another and share
-          their knowledge, skills, and resources to promote local resilience
-          and empower communities.
+          better place and help communities care for and support
+          one
+          another and share their knowledge, skills, and resources to promote
+          local resilience and community empowerment.
         </p>
       </div>
     </section>
