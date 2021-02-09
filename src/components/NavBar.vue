@@ -32,13 +32,13 @@
     >
       Partners
     </b-nav-item>
-<!--     <b-nav-item
+    <b-nav-item
       :class="navitemClass"
       to="/opportunities"
       title="Community Opportunities"
     >
       Opportunities
-    </b-nav-item> -->
+    </b-nav-item>
     <b-nav-item
       :class="navitemClass"
       href="https://marketplace.bebettertogether.ca/"
@@ -49,6 +49,7 @@
     <b-nav-item
       :class="navitemClass"
       to="/contact"
+      title="Contact our Community"
     >
       Contact
     </b-nav-item>
