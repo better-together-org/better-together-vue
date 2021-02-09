@@ -53,7 +53,7 @@ export default {
           imageUrl: OpportunityImgSoftware,
           attribution: '<span>Photo by <a href="https://unsplash.com/@halacious?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">HalGatewood.com</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Training', 'Services'],
+          tags: ['Mentorship', 'Services'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
         {
@@ -65,7 +65,7 @@ export default {
           imageUrl: OpportunityImgOnlineSecurity,
           attribution: '<span>Photo by <a href="https://unsplash.com/@danny144?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Dan Nelson</a> on <a href="https://unsplash.com/s/photos/online-security?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Training'],
+          tags: ['Mentorship'],
 
           location: 'Online or in Person<br />(Labrador Straits)',
         },
@@ -78,7 +78,7 @@ export default {
           imageUrl: OpportunityImgPhotography,
           attribution: '<span>Photo by <a href="https://unsplash.com/@shbabalif?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alif Ngoylung</a> on <a href="https://unsplash.com/s/photos/photography?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Training', 'Services'],
+          tags: ['Mentorship', 'Services'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
         {
@@ -90,7 +90,7 @@ export default {
           imageUrl: OpportunityImgFilmMaking,
           attribution: '<span>Photo by <a href="https://unsplash.com/@frame_media?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">René Ranisch</a> on <a href="https://unsplash.com/s/photos/film-making?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Training', 'Services'],
+          tags: ['Mentorship', 'Services'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
         {
@@ -116,7 +116,7 @@ export default {
           imageUrl: OpportunityImgMarketing,
           attribution: '<span>Photo by <a href="https://unsplash.com/@campaign_creators?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Campaign Creators</a> on <a href="https://unsplash.com/s/photos/marketing?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
           publishedAt: 'February 8th, 2021',
-          tags: ['Training', 'Services'],
+          tags: ['Mentorship', 'Services'],
           location: 'Online or in Person<br />(Labrador Straits)',
         },
       ],
