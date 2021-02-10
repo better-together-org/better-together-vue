@@ -9,15 +9,12 @@
       <div class="row">
         <div class="col-md">
           <p>
-            Better Together is a cooperative organization. It represents an
-            alliance of progressive people and teams who work together and
-            support one another in the pursuit of shared goals that help make
-            the world a better place for everyone.
-          </p>
-          <p>
-            In line with the values proposed in The Leap's Green New Deal,
-            Better Together works towards causes including climate justice and
-            reconciliation.
+            Better Together is a cooperative organization based in
+            L'anse au Loup, NL and Montréal, QC. We are an
+            alliance of people, communities, and community organizations
+            working together and
+            supporting one another in the pursuit of shared goals that help
+            make the world a better place.
           </p>
           <p>
             We promote local resilience by encouraging
