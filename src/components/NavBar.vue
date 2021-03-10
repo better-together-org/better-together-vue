@@ -53,11 +53,13 @@
     >
       Contact
     </b-nav-item>
-    <!-- <BtNavUser /> -->
+    <BtNavUser v-if="isAuthenticated" />
   </b-navbar-nav>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'NavBar',
   props: {
@@ -69,6 +71,9 @@ export default {
       type: String,
       default: '',
     },
+  },
+  computed: {
+    ...mapGetters('CommunityEngine/Authentication', ['isAuthenticated']),
   },
 }
 </script>
