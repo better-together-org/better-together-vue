@@ -1,19 +1,75 @@
 <template>
   <div id="app">
-    <BtNav />
+    <BtHeader />
     <BtMainContent />
   </div>
 </template>
 
 <script>
-import BtNav from './components/Nav.vue'
-import BtMainContent from './components/MainContent.vue'
+import { mapActions } from 'vuex'
+import { BtHeader, BtMainContent } from '@bettertogether/community-engine-vue'
 
 export default {
   name: 'BtApp',
   components: {
-    BtNav,
+    BtHeader,
     BtMainContent,
+  },
+  mounted() {
+    this.setHeaderMenuItems([
+      {
+        id: 0,
+        external: false,
+        label: 'About',
+        path: '/about',
+        title: 'About our Community',
+        sortOrder: 0,
+      },
+      {
+        id: 1,
+        external: false,
+        label: 'Projects',
+        path: '/projects',
+        title: 'Our Community Projects',
+        sortOrder: 1,
+      },
+      {
+        id: 2,
+        external: false,
+        label: 'Partners',
+        path: '/partners',
+        title: 'Our Community Partners',
+        sortOrder: 2,
+      },
+      {
+        id: 3,
+        external: false,
+        label: 'Opportunities',
+        path: '/opportunities',
+        title: 'Our Community Opportunities',
+        sortOrder: 3,
+      },
+      {
+        id: 4,
+        external: true,
+        label: 'Marketplace',
+        target: 'bt-marketplace',
+        title: 'Our Community Marketplace',
+        sortOrder: 4,
+        url: 'https://marketplace.bebettertogether.ca/',
+      },
+      {
+        id: 5,
+        external: false,
+        label: 'Contact',
+        path: '/contact',
+        title: 'Contact Our Community',
+        sortOrder: 5,
+      },
+    ])
+  },
+  methods: {
+    ...mapActions('CommunityEngine/Menus', ['setHeaderMenuItems']),
   },
 }
 </script>
