@@ -25,13 +25,13 @@
     >
       Projects
     </b-nav-item>
-    <!--  <b-nav-item
+    <b-nav-item
       :class="navitemClass"
       to="/partners"
       title="Community Partners"
     >
       Partners
-    </b-nav-item> -->
+    </b-nav-item>
     <b-nav-item
       :class="navitemClass"
       to="/opportunities"
