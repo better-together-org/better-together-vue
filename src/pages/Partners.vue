@@ -86,6 +86,26 @@
               </a>
             </div>
           </div>
+          <div class="card text-center">
+            <div class="card-header">
+              <h5>
+                The Fish Market App
+              </h5>
+            </div>
+            <div class="card-footer h-100">
+              <a
+                href="https://www.thefishmarketapp.com?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+                target="fishmarketapp"
+                title="The Fish Market App"
+              >
+                <img
+                  src="assets/images/partners/The-Fish-Market-logo-teal.png"
+                  alt="The Fish Market App"
+                  class="card-img-top"
+                >
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
