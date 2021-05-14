@@ -8,6 +8,8 @@
 <script>
 import { mapActions } from 'vuex'
 import { BtHeader, BtMainContent } from '@bettertogether/community-engine-vue'
+// import BtCoverImg from './assets/sunset-cover-1300x480px.jpg'
+import BtProfileImg from './assets/better-together-logo-bulb-only-300x300px.png'
 
 export default {
   name: 'BtApp',
@@ -16,6 +18,11 @@ export default {
     BtMainContent,
   },
   mounted() {
+    this.setCustomizationOptions({
+      backgroundColor: '#343a40',
+      // coverImageUrl: BtCoverImg,
+      profileImageUrl: BtProfileImg,
+    })
     this.setHeaderMenuItems([
       {
         id: 0,
@@ -69,6 +76,7 @@ export default {
     ])
   },
   methods: {
+    ...mapActions('CommunityEngine/Communities', ['setCustomizationOptions']),
     ...mapActions('CommunityEngine/Menus', ['setHeaderMenuItems']),
   },
 }
@@ -86,14 +94,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: $default-text-color;
 
-  a {
-    color: $accent-color;
-
-    &:hover {
-      color: $accent-color;
-    }
-  }
-
   .btn-primary {
     color: $default-text-color-bg-dark;
     background-color: $accent-color;
@@ -108,22 +108,10 @@ export default {
 
   header,
   footer {
-    // width: 100vw;
-    // height: 15vh;
     padding: 0;
 
     .navbar-nav {
-      a {
-        font-weight: bold;
-        color: $default-text-color-bg-dark;
-
-        &.router-link-exact-active,
-        &:hover {
-          color: $accent-color;
-        }
-      }
-
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         li.nav-item {
           margin-right: 1vw;
 
@@ -132,13 +120,6 @@ export default {
           }
         }
       }
-    }
-  }
-
-  @include media-breakpoint-down(lg) {
-    header,
-    footer {
-      height: 10vh;
     }
   }
 }
