@@ -8,7 +8,7 @@ sections:
   path: src/pages
   label: Pages
   create: documents
-  match: "**/*.vue"
+  match: "*.vue"
   new_doc_ext: vue
 upload_dir: uploads
 public_path: "/uploads"
