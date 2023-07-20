@@ -1,4 +1,3 @@
-import '@babel/polyfill'
 import 'mutationobserver-shim'
 import './plugins'
 import './registerServiceWorker'
