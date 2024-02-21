@@ -30,7 +30,7 @@
 
 <script>
 // @ is an alias to /src
-import BtBannerImg from '../assets/bt-sunset-banner-1300x480px.jpg'
+import BtBannerImg from '../assets/betterTogetherBanner.png'
 import ContactNewsletter from '../components/ContactNewsletter.vue'
 import Partners from './Partners.vue'
 
