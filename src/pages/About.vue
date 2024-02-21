@@ -9,7 +9,8 @@
       <div class="row">
         <div class="col-md">
           <p>
-            Better Together is a decentralized collaborative community. We are a solidarity and mutual-aid
+            Better Together is a decentralized collaborative
+            community. We are a solidarity and mutual-aid
             alliance of people & communities
             working together and
             supporting one another as we do what we can to
