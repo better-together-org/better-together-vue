@@ -9,8 +9,8 @@
       <div class="col">
         <h2>We are Better Together</h2>
         <p>
-          Better Together is a community innovation accelerator. We build
-          public community infrastructure to help make the world a
+          Better Together is a community empowerment network. We build
+          open digital community infrastructure to help make the world a
           better place and help communities care for and support
           one
           another and share their knowledge, skills, and resources to promote

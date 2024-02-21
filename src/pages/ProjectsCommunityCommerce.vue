@@ -32,7 +32,7 @@
         </p>
         <div class="text-center">
           <a
-            href="https://commerce.bebettertogether.ca/?utm_source=better-together&utm_medium=better-together&utm_campaign=better-together"
+            href="/contact?utm_source=better-together&utm_medium=better-together&utm_campaign=community-commerce"
             target="community-commerce"
             title="Better Together Community Commerce"
             class="btn btn-primary card-action"

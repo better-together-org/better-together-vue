@@ -9,11 +9,10 @@
       <div class="row">
         <div class="col-md">
           <p>
-            Better Together is a cooperative organization based in
-            L'anse au Loup, NL and Montréal, QC. We are an
-            alliance of people, communities, and community organizations
+            Better Together is a decentralized collaborative community. We are a solidarity and mutual-aid
+            alliance of people & communities
             working together and
-            supporting one another in the pursuit of shared goals that help
+            supporting one another as we do what we can to
             make the world a better place.
           </p>
           <p>
@@ -25,18 +24,18 @@
       </div>
     </section>
 
-    <Membership />
+    <!-- <Membership /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Membership from './Membership.vue'
+// import Membership from './Membership.vue'
 
 export default {
   name: 'About',
-  components: {
-    Membership,
-  },
+  // components: {
+  //   Membership,
+  // },
 }
 </script>

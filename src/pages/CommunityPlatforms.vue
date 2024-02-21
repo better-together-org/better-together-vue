@@ -49,7 +49,7 @@
             <div class="card-header">
               <h5>
                 <b-link
-                  href="https://hub.bebettertogether.ca/"
+                  href="#"
                   title="Better Together Community Hub"
                   target="bt-community-hub"
                   class="card-title"
@@ -68,7 +68,7 @@
             </div>
             <div class="cta card-footer text-center">
               <b-link
-                href="https://hub.bebettertogether.ca/"
+                href="#"
                 title="Better Together Community Hub"
                 class="btn btn-primary card-action"
               >
@@ -82,7 +82,7 @@
               <h5>
                 <a
                   class="card-title"
-                  href="https://cloud.bebettertogether.ca/"
+                  href="#"
                   title="Better Together Community Cloud"
                   target="bt-community-cloud"
                 >
@@ -102,7 +102,7 @@
             </div>
             <div class="cta card-footer text-center">
               <a
-                href="https://cloud.bebettertogether.ca/"
+                href="#"
                 title="Better Together Community Cloud"
                 target="bt-community-cloud"
                 class="btn btn-primary card-action"
@@ -115,7 +115,7 @@
               <h5>
                 <a
                   class="card-title"
-                  href="https://marketplace.bebettertogether.ca/"
+                  href="#"
                   title="Better Together Community Marketplace"
                   target="bt-community-marketplace"
                 >
@@ -133,7 +133,7 @@
             </div>
             <div class="cta card-footer text-center">
               <a
-                href="https://marketplace.bebettertogether.ca/"
+                href="#"
                 title="Better Together Community Marketplace"
                 target="bt-community-marketplace"
                 class="btn btn-primary card-action"

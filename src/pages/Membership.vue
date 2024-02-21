@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col-md">
         <p>
-          Better Together is looking for members who want to make a difference.
+          Better Together is looking to connect with those who want to make a difference.
           Join us as we work together to make the world a better place!
         </p>
         <h5 class="text-left">
