@@ -14,9 +14,9 @@
     <section class="foundational-principles">
       <h2>Our Foundational Principles</h2>
       <div v-for="(principle, index) in principles" :key="index" class="principle">
-        <button @click="toggleCollapse(index)">
+        <h3 @click="toggleCollapse(index)">
           {{ principle.name }}
-        </button>
+        </h3>
         <div v-if="!collapsed.includes(index)" class="content">
           <p>{{ principle.description }}</p>
         </div>
@@ -26,9 +26,9 @@
     <section class="core-values">
       <h2>Our Core Values</h2>
       <div v-for="(value, index) in values" :key="`value-${index}`" class="value">
-        <button @click="toggleCollapse(index + principles.length)">
+        <h3 @click="toggleCollapse(index + principles.length)">
           {{ value.name }}
-        </button>
+        </h3>
         <div v-if="!collapsed.includes(index + principles.length)" class="content">
           <p>{{ value.description }}</p>
         </div>
