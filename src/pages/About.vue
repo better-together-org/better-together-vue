@@ -13,6 +13,11 @@
 
     <section class="foundational-principles">
       <h2>Our Foundational Principles</h2>
+      <p>
+        At the heart of Better Together lies a vision of a world transformed by compassion,
+        strength, and unity. Our mission is grounded in five foundational principles that guide our
+        actions and aspirations. Together, these principles form a robust framework for change.
+      </p>
       <div v-for="(principle, index) in principles" :key="index" class="principle">
         <h4 @click="toggleCollapse(index)">
           {{ principle.name }}
@@ -26,10 +31,10 @@
     <section class="core-values">
       <h2>Our Core Values</h2>
       <p>
-        At the heart of Better Together lies a vision of a world transformed by compassion,
-        strength, and unity. Our mission is grounded in five foundational principles that guide our
-        actions and aspirations. Together, these principles form a robust framework for change,
-        drawing on the power of Love, Inclusivity, Care, Resilience, and Hope.
+        Our eight core values are the heartbeat of Better Together, guiding us towards a
+        compassionate, thriving world. More than principles, they're our action compass.
+        Each step we take is guided by these values, as we commit to crafting a brighter future
+        together.
       </p>
       <div v-for="(value, index) in values" :key="`value-${index}`" class="value">
         <h4 @click="toggleCollapse(index + principles.length)">
