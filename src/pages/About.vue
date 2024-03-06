@@ -14,9 +14,9 @@
     <section class="foundational-principles">
       <h2>Our Foundational Principles</h2>
       <div v-for="(principle, index) in principles" :key="index" class="principle">
-        <h3 @click="toggleCollapse(index)">
+        <h4 @click="toggleCollapse(index)">
           {{ principle.name }}
-        </h3>
+        </h4>
         <div v-if="!collapsed.includes(index)" class="content">
           <p>{{ principle.description }}</p>
         </div>
@@ -25,10 +25,16 @@
 
     <section class="core-values">
       <h2>Our Core Values</h2>
+      <p>
+        At the heart of Better Together lies a vision of a world transformed by compassion,
+        strength, and unity. Our mission is grounded in five foundational principles that guide our
+        actions and aspirations. Together, these principles form a robust framework for change,
+        drawing on the power of Love, Inclusivity, Care, Resilience, and Hope.
+      </p>
       <div v-for="(value, index) in values" :key="`value-${index}`" class="value">
-        <h3 @click="toggleCollapse(index + principles.length)">
+        <h4 @click="toggleCollapse(index + principles.length)">
           {{ value.name }}
-        </h3>
+        </h4>
         <div v-if="!collapsed.includes(index + principles.length)" class="content">
           <p>{{ value.description }}</p>
         </div>
@@ -37,8 +43,15 @@
 
     <section class="transformative-pathways">
       <h2>Our Transformative Pathways</h2>
+      <p>
+        At Better Together, our journey towards creating a more inclusive, resilient world is
+        propelled by three key
+        mechanisms: Discovery, Connection, and Empowerment. These mechanisms are the steps we take
+        to turn our foundational principles into action, fostering a community that's vibrant,
+        united, and impactful.
+      </p>
       <div v-for="(pathway, index) in pathways" :key="`pathway-${index}`" class="pathway">
-        <h3>{{ pathway.name }}</h3>
+        <h4>{{ pathway.name }}</h4>
         <p>{{ pathway.description }}</p>
       </div>
     </section>
@@ -63,11 +76,26 @@ export default {
     return {
       collapsed: [],
       principles: [
-        { name: 'Love', description: 'Love is at the heart of everything we do, driving us to foster connections and support one another.' },
-        { name: 'Inclusivity', description: 'We embrace diversity, ensuring everyone has a voice and can contribute to the community.' },
-        { name: 'Care', description: 'Care for each other and our planet guides our actions and decisions.' },
-        { name: 'Resilience', description: 'We are committed to overcoming challenges together, building a stronger, more adaptable community.' },
-        { name: 'Hope', description: 'Hope inspires us to envision a better world and work tirelessly to make it a reality.' },
+        {
+          name: 'Love',
+          description: 'Everything begins with Love. It\'s the spark that ignites our passion for making a difference and the bond that unites us as a community. Love is the unconditional acceptance and profound empathy we share, inspiring us to act with kindness and generosity.',
+        },
+        {
+          name: 'Inclusivity',
+          description: 'Building on the foundation of Love, we embrace Inclusivity. Our movement is a mosaic of diverse voices, experiences, and perspectives. By valuing and integrating this diversity, we ensure that every member feels seen, heard, and valued. Inclusivity strengthens our unity and enriches our collective creativity and problem-solving abilities.',
+        },
+        {
+          name: 'Care',
+          description: 'With a commitment to Love and a framework of Inclusivity, we practice Care in every interaction and decision. Care is our proactive approach to nurturing the well-being of our community and our environment. It reflects our dedication to supporting each other\'s growth and addressing the needs of our planet with diligence and respect.',
+        },
+        {
+          name: 'Resilience',
+          description: 'The strength of our movement is amplified by Resilience. In the face of challenges and setbacks, Resilience empowers us to persevere, adapt, and thrive. It is the grit that sustains our journey, ensuring that we can overcome obstacles together and emerge stronger and more united.',
+        },
+        {
+          name: 'Hope',
+          description: 'Our journey culminates in Hope. It is the horizon we strive towards—a world of possibility, justice, and peace. Hope is our unwavering belief in our collective power to enact change and create a brighter future for all.',
+        },
       ],
       values: [
         { name: 'Curiosity', description: 'It all starts with curiosity, an openness to learn about others, understand their needs, and explore how to address challenges collectively. This value lays the foundation for meaningful engagement and innovation within the community.' },
@@ -78,11 +106,21 @@ export default {
         { name: 'Solidarity', description: 'Cooperation deepens into solidarity, a commitment to standing together in support of shared causes and challenges. Solidarity emphasizes unity and collective action, particularly in addressing social inequality and promoting justice.' },
         { name: 'Accountability', description: 'Solidarity requires accountability, ensuring that individuals and the community as a whole are responsible for their actions and commitments. Accountability builds trust, ensuring everyone upholds the community’s values and works towards its vision.' },
         { name: 'Stewardship', description: 'Finally, stewardship encapsulates the responsibility to manage and care for community resources and the environment sustainably. It’s a commitment to the long-term well-being of the community, ensuring that the collective efforts today will benefit future generations.' },
+        { name: 'Stewardship', description: 'Finally, stewardship encapsulates the responsibility to manage and care for community resources and the environment sustainably. It’s a commitment to the long-term well-being of the community, ensuring that the collective efforts today will benefit future generations.' },
       ],
       pathways: [
-        { name: 'Discovery', description: 'Through Discovery, we seek to understand the world and our place within it.' },
-        { name: 'Connection', description: 'Connection brings us together, forging strong bonds and shared purpose.' },
-        { name: 'Empowerment', description: 'Empowerment enables us to take meaningful action, turning our vision into reality.' },
+        {
+          name: 'Discovery',
+          description: 'Our journey begins with Discovery—a quest for knowledge, understanding, and innovation. Discovery is the spark of curiosity that drives us to explore new ideas, learn from diverse perspectives, and uncover the needs and strengths of our community. It challenges us to think differently, to question the status quo, and to seek solutions that are both creative and effective. In the spirit of Discovery, we encourage continuous learning and growth, ensuring that our movement is always evolving, always forward-looking.',
+        },
+        {
+          name: 'Connection',
+          description: 'With the insights and understanding gained from Discovery, we forge Connections. These are the bonds that unite us, the relationships that strengthen our community, and the networks that amplify our impact. Connection is about more than just working together; it\'s about building a sense of belonging, understanding, and mutual support. It\'s through these connections that we share our hopes, our dreams, and our challenges, creating a fabric of solidarity that is both resilient and expansive.',
+        },
+        {
+          name: 'Empowerment',
+          description: 'Empowerment is the culmination of our efforts, where Discovery and Connection translate into action and impact. It\'s about equipping each member of our community with the tools, resources, and confidence to make a difference. Empowerment means providing opportunities for leadership, fostering a culture of innovation, and enabling every voice to be heard. It\'s through Empowerment that we turn our collective vision into reality, driving positive change in our communities and beyond.',
+        },
       ],
     }
   },
@@ -100,5 +138,9 @@ export default {
 /* Adjusted for readability and design */
 .principle > .content, .value > .content {
   margin: 10px 0;
+}
+
+h4 {
+  text-align: left !important;
 }
 </style>

@@ -44,7 +44,6 @@
     <div class="row">
       <div class="col-md">
         <div class="card-deck">
-
           <div class="card">
             <div class="card-header">
               <h5>
@@ -140,7 +139,6 @@
               >Learn more</a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
