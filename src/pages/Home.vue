@@ -9,12 +9,16 @@
       <div class="col">
         <h2>We are Better Together</h2>
         <p>
-          Better Together is a community empowerment network. We build
-          open digital community infrastructure to help make the world a
-          better place and help communities care for and support
-          one
-          another and share their knowledge, skills, and resources to promote
-          local resilience and community empowerment.
+          The Better Together movement is a vibrant community dedicated to fostering
+          interconnectedness, growth, and positive change. Grounded in the belief that unity,
+          compassion, and collective action can transform our world, we draw strength from our
+          diverse perspectives and shared commitment to making a difference.
+        </p>
+        <p>
+          Better Together is more than just a movement; it's a promise—a promise to build a future
+          where compassion, diversity, and action converge to create lasting change. We invite you
+          to join us on this journey, to bring your unique voice and vision to our collective
+          efforts.
         </p>
       </div>
     </section>
@@ -23,7 +27,7 @@
       :src="BtBannerImg"
       alt="Better Together"
     >
-    <Partners />
+    <!-- <Partners /> -->
     <ContactNewsletter />
   </div>
 </template>
@@ -32,13 +36,13 @@
 // @ is an alias to /src
 import BtBannerImg from '../assets/betterTogetherBanner.png'
 import ContactNewsletter from '../components/ContactNewsletter.vue'
-import Partners from './Partners.vue'
+// import Partners from './Partners.vue'
 
 export default {
   name: 'Home',
   components: {
     ContactNewsletter,
-    Partners,
+    // Partners,
   },
   data() {
     return {
