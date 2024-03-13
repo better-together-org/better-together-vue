@@ -11,36 +11,52 @@
       <div class="row">
         <div class="col-md">
           <p>
-            Tech for good is an initiative that pairs non-profits with
-            software developers to build software and operations solutions
-            to strengthen and support our communities.
+            Tech for Good embodies a transformative approach where technology serves as a bridge
+            between non-profits and vibrant communities, fostering development and resilience
+            through innovative software and operational solutions. Our mission is not just about
+            creating technology; it's about leveraging these tools to empower communities and make
+            a tangible impact on the lives within them.
           </p>
+
           <p>
-            If you would like to learn more about the tech industry or become
-            involved, please reach out to us. No previous experience or
-            technical skills required. We would like to create new
-            community opportunities and we are looking for help.
+            We invite you to explore the realm of technology with us, regardless of your prior
+            experience or technical expertise. Our initiative is built on the principle of
+            inclusivity, aiming to cultivate new opportunities for community engagement. We are on
+            the lookout for individuals passionate about making a difference—no previous tech
+            background required.
           </p>
+
           <p>
-            Do you or someone you know enjoy connecting with others? They
-            might be good at communcation and outreach. We believe that people
-            should be able to get paid to do what they love. Everyone needs
-            good communicators on their teams!
+            Do you have a knack for connecting with people, or know someone who does? Exceptional
+            communication skills are at the heart of our mission, as they lay the foundation for
+            outreach and collaboration. We champion the idea that one should be able to earn a
+            livelihood through their passions. Effective communicators are invaluable, as they help
+            weave the fabric of our community-focused teams.
           </p>
+
           <p>
-            We will try to help direct anyone who is interested in learning a
-            new skill and helping out to online resources and mentorship
-            sessions to help acquire the skills needed to get the work done.
+            For those eager to contribute but uncertain where to start, we offer access to online
+            resources and mentorship programs. These are designed to equip you with the skills
+            necessary to contribute meaningfully to our projects and the community at large.
           </p>
+
           <p>
-            We are looking to engage with communities to see what problems
-            that people face in their lives, and be able to guide people to
-            solve those problems and add value to their communities.
+            Our engagement goes beyond technological solutions; we seek to understand the
+            challenges faced by communities firsthand. By identifying these issues, we aim to guide
+            individuals towards solving them, thereby enhancing the value they bring to their
+            communities.
           </p>
+
           <p>
-            If would like to learn how to start a career in the tech industry,
-            help people solve their problems, or know of any community groups
-            that could use a hand, please get in touch.
+            Whether you're interested in kickstarting a career in technology, eager to solve
+            real-world problems, or aware of community groups in need of support, we encourage you
+            to connect with us. Together, we can explore how technology can serve as a force for
+            good, transforming challenges into opportunities for growth and positive change.
+          </p>
+
+          <p>
+            For more information or to get involved, please don't hesitate to reach out. Let's
+            harness the power of technology for the betterment of our communities together.
           </p>
 
           <div class="text-center">

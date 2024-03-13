@@ -4,40 +4,33 @@
       <div class="col-md">
         <h2>Community Platforms</h2>
         <p>
-          Better Together is building and maintaintaining open source
-          public community infrastructure. Not just physical infrastructure as
-          we're used to such as highways and bridges, but digital
-          infrastructure, things like social networks, applications, tools for
-          people to connect and share. We're working to build up a shared
-          public community infrastructure, such as a version of Facebook that
-          is community owned, for example, or a version of Amazon that's
-          community owned.
+          Better Together is building and maintaining open source public community
+          infrastructure. Not just physical infrastructure as we're used to, such as
+          highways and bridges, but digital infrastructure—things like social networks,
+          applications, tools for people to connect and share. We're working to build up
+          a shared public community infrastructure, such as a version of Facebook that is
+          community owned, for example, or a version of Amazon that's community owned.
         </p>
         <p>
-          We are bringing people together and empowering people to participate
-          in these processes that are normally held at a distance or behind
-          closed doors. We want to allow people to have more control over and
-          more understanding of what's going on in their communities and on
-          the platforms they use, to educate people and empower people to
-          participate, not just be consumers but be producers as well.
+          We are bringing people together and empowering them to participate in
+          processes that are normally held at a distance or behind closed doors. We want
+          to allow people to have more control over and more understanding of what's
+          happening in their communities and on the platforms they use, to educate and
+          empower them to participate, not just as consumers but as producers as well.
         </p>
         <p>
-          The projects that we're working on currently include a local
-          community platform called the Community Hub, which is available
-          right now in the Labrador Straits, the Lower North Shore of Quebéc
-          and other areas as we attract new members and new participants. Our
-          Community Commerce project is a community-owned e-commerce platform
-          that empowers people to find the the products and services that are
-          around them in their communities. For example, if you want to buy a
-          book or a tool around you but you don't know which stores carry it.
-          People and organizations will be able to have their own online
-          stores within a larger network of our community marketplace, and
-          make it accessible. This is just the first step, because we're also
-          transitioning into an offering a Community Item Library, to be able
-          to list the things that you have access to and you want to share,
-          because we want to encourage caring and sharing. We know that it's
-          through actually helping each other out, that we can make a big
-          difference.
+          The projects we're currently working on include a local community platform
+          called the Community Hub, built using the open-source Discourse platform. Our
+          Community Commerce project is a community-owned e-commerce platform powered by
+          the open-source Solidus e-commerce platform that empowers people to find the
+          products and services around them in their communities. For example, if you
+          want to buy a book or a tool around you but don't know which stores carry it.
+          People and organizations will be able to have their own online stores within a
+          larger network of our community marketplace, and make it accessible. This is
+          just the first step, because we're also transitioning into offering a Community
+          Item Library, to be able to list the things that you have access to and want to
+          share, because we want to encourage caring and sharing. We know that it's
+          through actually helping each other out, that we can make a big difference.
         </p>
       </div>
     </div>
