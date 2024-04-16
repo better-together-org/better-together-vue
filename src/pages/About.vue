@@ -111,7 +111,6 @@ export default {
         { name: 'Solidarity', description: 'Cooperation deepens into solidarity, a commitment to standing together in support of shared causes and challenges. Solidarity emphasizes unity and collective action, particularly in addressing social inequality and promoting justice.' },
         { name: 'Accountability', description: 'Solidarity requires accountability, ensuring that individuals and the community as a whole are responsible for their actions and commitments. Accountability builds trust, ensuring everyone upholds the community’s values and works towards its vision.' },
         { name: 'Stewardship', description: 'Finally, stewardship encapsulates the responsibility to manage and care for community resources and the environment sustainably. It’s a commitment to the long-term well-being of the community, ensuring that the collective efforts today will benefit future generations.' },
-        { name: 'Stewardship', description: 'Finally, stewardship encapsulates the responsibility to manage and care for community resources and the environment sustainably. It’s a commitment to the long-term well-being of the community, ensuring that the collective efforts today will benefit future generations.' },
       ],
       pathways: [
         {
