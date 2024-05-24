@@ -18,11 +18,18 @@
         strength, and unity. Our mission is grounded in five foundational principles that guide our
         actions and aspirations. Together, these principles form a robust framework for change.
       </p>
-      <div v-for="(principle, index) in principles" :key="index" class="principle">
+      <div
+        v-for="(principle, index) in principles"
+        :key="index"
+        class="principle"
+      >
         <h4 @click="toggleCollapse(index)">
           {{ principle.name }}
         </h4>
-        <div v-if="!collapsed.includes(index)" class="content">
+        <div
+          v-if="!collapsed.includes(index)"
+          class="content"
+        >
           <p>{{ principle.description }}</p>
         </div>
       </div>
@@ -36,11 +43,18 @@
         Each step we take is guided by these values, as we commit to crafting a brighter future
         together.
       </p>
-      <div v-for="(value, index) in values" :key="`value-${index}`" class="value">
+      <div
+        v-for="(value, index) in values"
+        :key="`value-${index}`"
+        class="value"
+      >
         <h4 @click="toggleCollapse(index + principles.length)">
           {{ value.name }}
         </h4>
-        <div v-if="!collapsed.includes(index + principles.length)" class="content">
+        <div
+          v-if="!collapsed.includes(index + principles.length)"
+          class="content"
+        >
           <p>{{ value.description }}</p>
         </div>
       </div>
@@ -55,7 +69,11 @@
         to turn our foundational principles into action, fostering a community that's vibrant,
         united, and impactful.
       </p>
-      <div v-for="(pathway, index) in pathways" :key="`pathway-${index}`" class="pathway">
+      <div
+        v-for="(pathway, index) in pathways"
+        :key="`pathway-${index}`"
+        class="pathway"
+      >
         <h4>{{ pathway.name }}</h4>
         <p>{{ pathway.description }}</p>
       </div>
