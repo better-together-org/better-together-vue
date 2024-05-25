@@ -100,7 +100,7 @@ Create a `.env` file in the root directory to configure environment variables. F
 
 ```env
 VUE_APP_API_URL=https://api.bebettertogether.ca
-\```
+```
 
 ## Contributing
 
@@ -115,13 +115,13 @@ We welcome contributions to the Better Together Website! If you would like to co
    ```sh
    git clone https://github.com/your-username/better-together-website.git
    cd better-together-website
-   \```
+   ```
 
 3. **Create a new branch:**
 
    ```sh
    git checkout -b feature-branch-name
-   \```
+   ```
 
 4. **Make your changes:**
 
@@ -131,7 +131,7 @@ We welcome contributions to the Better Together Website! If you would like to co
 
    ```sh
    git push origin feature-branch-name
-   \```
+   ```
 
 6. **Create a pull request:**
 
