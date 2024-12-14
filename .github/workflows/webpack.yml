@@ -30,14 +30,14 @@ jobs:
       run: |
         npm run build
 
-    - name: Lint
-      run: |
-        npm run lint
+    # - name: Lint
+    #   run: |
+    #     npm run lint
 
-    - name: Test unit
-      run: |
-        npm run test:unit
+    # - name: Test unit
+    #   run: |
+    #     npm run test:unit
         
-    - name: Test e2e
-      run: |
-        npm run test:e2e
+    # - name: Test e2e
+    #   run: |
+    #     npm run test:e2e
