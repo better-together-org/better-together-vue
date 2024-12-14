@@ -24,8 +24,8 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@bettertogether/community-engine-vue": "^0.1.1",
-    "axios": "^1.6.1",
-    "bootstrap": "^4.3.1",
+    "axios": "^1.7.4",
+    "bootstrap": "^5.0.1",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.39.0",
     "crip-vue-loading": "^1.2.5",
@@ -34,7 +34,7 @@
     "popper.js": "^1.16.0",
     "register-service-worker": "^1.7.2",
     "secure-ls": "^1.2.6",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vue-form-generator": "^2.3.4",
     "vue-router": "^3.4.9",
     "vuex": "^3.6.0",
@@ -62,6 +62,6 @@
     "sass": "^1.32.0",
     "sass-loader": "^10.1.0",
     "vue-cli-plugin-bootstrap-vue": "~0.8.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.7.16"
   }
 }
