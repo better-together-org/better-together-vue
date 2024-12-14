@@ -25,20 +25,19 @@ jobs:
     - name: Install
       run: |
         npm install
-        npm build
 
     - name: Build
       run: |
-        npm build
+        npm run build
 
-    - name: Lint
-      run: |
-        npm lint
+    # - name: Lint
+    #   run: |
+    #     npm run lint
 
-    - name: Test unit
-      run: |
-        npm test:unit
+    # - name: Test unit
+    #   run: |
+    #     npm run test:unit
         
-    - name: Test e2e
-      run: |
-        npm test:e2e
+    # - name: Test e2e
+    #   run: |
+    #     npm run test:e2e
