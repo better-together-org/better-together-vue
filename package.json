@@ -25,7 +25,7 @@
     "@babel/polyfill": "^7.12.1",
     "@bettertogether/community-engine-vue": "^0.1.1",
     "axios": "^1.6.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^5.0.1",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.31.1",
     "crip-vue-loading": "^1.2.5",
