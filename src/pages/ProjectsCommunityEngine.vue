@@ -110,13 +110,18 @@
           </p>
         </div>
       </div>
-    </section>
+  </section>
+
+  <FeaturedProjects />
   </div>
 </template>
 
 <script>
 export default {
   name: 'ProjectCommunityEngine',
+  components: {
+    FeaturedProjects: () => import('../components/FeaturedProjects.vue'),
+  },
 }
 </script>
 

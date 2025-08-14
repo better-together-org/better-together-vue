@@ -20,6 +20,8 @@
       </div>
     </section>
 
+    <FeaturedProjects />
+
     <TechForGood />
     <CommunityCommerce />
   </div>
@@ -29,12 +31,14 @@
 // @ is an alias to /src
 import CommunityCommerce from './ProjectsCommunityCommerce.vue'
 import TechForGood from './TechForGood.vue'
+import FeaturedProjects from '../components/FeaturedProjects.vue'
 
 export default {
   name: 'Projects',
   components: {
     CommunityCommerce,
     TechForGood,
+    FeaturedProjects,
   },
 }
 </script>

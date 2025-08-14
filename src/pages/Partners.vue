@@ -39,7 +39,7 @@
                 class=""
               >
                 <img
-                  src="assets/images/partners/colibri-software-logo-and-text-large.png"
+                  src="/assets/images/partners/colibri-software-logo-and-text-large.png"
                   alt="Colibri Software"
                   class="card-img-top"
                 >
@@ -49,18 +49,18 @@
           <div class="card text-center">
             <div class="card-header">
               <h5>
-                Joatu
+                Collective Interchange Cooperative
               </h5>
             </div>
             <div class="card-footer h-100">
               <a
-                href="http://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
-                target="joatu"
-                title="Joatu"
+                href="https://collectiveinterchange.com"
+                target="collectiveinterchange"
+                title="Collective Interchange Cooperative"
               >
                 <img
-                  src="assets/images/partners/joatu.png"
-                  alt="Joatu"
+                  src="/assets/images/partners/collective-interchange-logo.png"
+                  alt="Collective Interchange Cooperative"
                   class="card-img-top"
                 >
               </a>
@@ -79,7 +79,7 @@
                 title="DRAW: Data Rescue Archives and Weather"
               >
                 <img
-                  src="assets/images/partners/DRAW.png"
+                  src="/assets/images/partners/DRAW.png"
                   alt="DRAW: Data Rescue Archives and Weather"
                   class="card-img-top"
                 >
@@ -89,18 +89,18 @@
           <div class="card text-center">
             <div class="card-header">
               <h5>
-                The Fish Market App
+                Laughing Heart Music
               </h5>
             </div>
             <div class="card-footer h-100">
               <a
-                href="https://www.thefishmarketapp.com?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
-                target="fishmarketapp"
-                title="The Fish Market App"
+                href="https://laughingheartmusic.com/"
+                target="laughingheartmusic"
+                title="Laughing Heart Music"
               >
                 <img
-                  src="assets/images/partners/The-Fish-Market-logo-teal.png"
-                  alt="The Fish Market App"
+                  src="/assets/images/partners/laughing-heart-music-logo.png"
+                  alt="Laughing Heart Music"
                   class="card-img-top"
                 >
               </a>
