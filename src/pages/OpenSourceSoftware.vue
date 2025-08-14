@@ -55,36 +55,6 @@
               <h5>
                 <a
                   class="card-title"
-                  href="https://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
-                  target="joatu"
-                  title="Joatu"
-                >
-                  Joatu Community Exchange
-                </a>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Joatu is an application that allows people and organizations to
-                come together to exchange goods, services, and volunteering.
-                Joatu aims to work with community organizations to reduce waste
-                and excess consumption.
-              </p>
-            </div>
-            <div class="cta card-footer text-center">
-              <a
-                href="https://alpha.joatu.org/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
-                target="joatu"
-                title="Joatu"
-                class="btn btn-primary card-action"
-              >Learn more</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <h5>
-                <a
-                  class="card-title"
                   href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
                   target="draw"
                   title="DRAW: Data Rescue Archives and Weather"
