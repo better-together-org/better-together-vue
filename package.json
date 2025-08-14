@@ -14,6 +14,9 @@
   "homepage": "https://bebettertogether.ca",
   "license": "LGPL-3.0-or-later",
   "main": "./dist/index.js",
+  "engines": {
+    "node": ">=20 <25"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -22,23 +25,23 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
     "@bettertogether/community-engine-vue": "^0.1.1",
     "axios": "^1.9.0",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.6.2",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.39.0",
     "crip-vue-loading": "^1.2.5",
     "devour-client": "^3.1.5",
     "mutationobserver-shim": "^0.3.3",
-    "popper.js": "^1.16.0",
+    "popper.js": "^1.16.1",
     "register-service-worker": "^1.7.2",
     "secure-ls": "^1.2.6",
-    "vue": "^2.6.11",
+    "vue": "^2.7.14",
     "vue-form-generator": "^2.3.4",
-    "vue-router": "^3.4.9",
-    "vuex": "^3.6.0",
-    "vuex-persistedstate": "^4.0.0-beta.3"
+    "vue-router": "^3.6.5",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.0.0-beta.3",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.8",
@@ -65,6 +68,6 @@
     "sass": "^1.32.0",
     "sass-loader": "^16.0.5",
     "vue-cli-plugin-bootstrap-vue": "~0.8.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.7.14"
   }
 }
