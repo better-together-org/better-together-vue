@@ -2262,11 +2262,11 @@
     jest-watch-typeahead "^1.0.0"
 
 "@vue/cli-plugin-unit-mocha@~5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-mocha/-/cli-plugin-unit-mocha-5.0.8.tgz#cad35462c5aa525131c8660a4e155d51f15ed9ca"
-  integrity sha512-t8eN1ttbSkHg+U7AjCKwpuhpV2OBsP35RjBkdSrcAPjoX3MxVwoWyqGPeYI+jWbPGX3tFxM/uMQwN0U3lmzH7A==
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-unit-mocha/-/cli-plugin-unit-mocha-5.0.9.tgz#cde1af946b04715749ec9fab147c13ed48135c37"
+  integrity sha512-zZm0z0al05ekbR5KmrcRuaSrNnDNWJSlOTvpN8OZdblRhPNkMqUm7JnTACEKp/nLDRVb+tIkTkGM4B+dE3celQ==
   dependencies:
-    "@vue/cli-shared-utils" "^5.0.8"
+    "@vue/cli-shared-utils" "^5.0.9"
     jsdom "^18.0.1"
     jsdom-global "^3.0.2"
     mocha "^8.3.0"
@@ -2338,10 +2338,10 @@
     webpack-virtual-modules "^0.4.2"
     whatwg-fetch "^3.6.2"
 
-"@vue/cli-shared-utils@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-5.0.8.tgz#75fc96528eba2b1c7e33cb7e989a984ddef99c8a"
-  integrity sha512-uK2YB7bBVuQhjOJF+O52P9yFMXeJVj7ozqJkwYE9PlMHL1LMHjtCYm4cSdOebuPzyP+/9p0BimM/OqxsevIopQ==
+"@vue/cli-shared-utils@^5.0.8", "@vue/cli-shared-utils@^5.0.9":
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-5.0.9.tgz#dbb62953e953757773e89e69f369559fced135cf"
+  integrity sha512-lf4KykiG8j9KwvNVi7fKtASmHuLsxCcCsflVU2b2CHMRuR4weOIV3zuuCrjWKjk0APn/MHJhgCjJGzHMbTtd5w==
   dependencies:
     "@achrinza/node-ipc" "^9.2.5"
     chalk "^4.1.2"
