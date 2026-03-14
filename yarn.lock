@@ -811,7 +811,7 @@
 
 "@bettertogether/community-engine-vue@0.2.2":
   version "0.2.2"
-  resolved "https://git.btsdev.ca/api/packages/better-together-org/npm/%40bettertogether%2Fcommunity-engine-vue/-/0.2.2/community-engine-vue-0.2.2.tgz#501307e23434ab2eab8c71b6952fd760d11000b6"
+  resolved "https://registry.yarnpkg.com/@bettertogether/community-engine-vue/-/community-engine-vue-0.2.2.tgz#501307e23434ab2eab8c71b6952fd760d11000b6"
   integrity sha512-ry77DSimJYOtL1SEwnGVljrSXCLUYkgmxQFa4FxF4LqDBsG184NA+RtjnBYGA+u46JG1GbN1ias/QTzkxx8X8Q==
   dependencies:
     "@electric-sql/pglite" "^0.3.16"
