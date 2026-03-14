@@ -1,5 +1,12 @@
 name: CI
 
+# Requires secret: FORGEJO_NPM_TOKEN
+#   Set at org or repo level in GitHub Actions secrets.
+#   Value: a Forgejo personal access token with write:package + read:package scopes.
+#   Registry: https://git.btsdev.ca/api/packages/better-together-org/npm/
+#   @bettertogether/community-engine-vue is now resolved from the Forgejo registry
+#   rather than a sibling file:../community-engine-vue checkout.
+
 on:
   push:
     branches: [production, vue3-migration, 'feat/**', 'fix/**', 'chore/**']
@@ -13,35 +20,19 @@ jobs:
       matrix:
         node-version: [20.x, 22.x]
     steps:
-      - name: Checkout better-together-vue
-        uses: actions/checkout@v4
-        with:
-          path: better-together-vue
-
-      # BTV depends on file:../community-engine-vue — check it out as a sibling
-      - name: Checkout community-engine-vue
-        uses: actions/checkout@v4
-        with:
-          repository: better-together-org/community-engine-vue
-          ref: vue3-migration
-          path: community-engine-vue
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: yarn
-          cache-dependency-path: better-together-vue/yarn.lock
 
-      - name: Install CEV dependencies
-        working-directory: community-engine-vue
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Install BTV dependencies
-        working-directory: better-together-vue
-        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
 
       - name: Lint
-        working-directory: better-together-vue
         run: yarn lint --no-fix
 
   test:
@@ -51,35 +42,22 @@ jobs:
       matrix:
         node-version: [20.x, 22.x]
     steps:
-      - name: Checkout better-together-vue
-        uses: actions/checkout@v4
-        with:
-          path: better-together-vue
-
-      - name: Checkout community-engine-vue
-        uses: actions/checkout@v4
-        with:
-          repository: better-together-org/community-engine-vue
-          ref: vue3-migration
-          path: community-engine-vue
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: yarn
-          cache-dependency-path: better-together-vue/yarn.lock
 
-      - name: Install CEV dependencies
-        working-directory: community-engine-vue
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Install BTV dependencies
-        working-directory: better-together-vue
-        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
 
       - name: Run unit tests
-        working-directory: better-together-vue
         run: yarn test:run
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
 
   build:
     name: Build (Node ${{ matrix.node-version }})
@@ -89,38 +67,24 @@ jobs:
       matrix:
         node-version: [20.x, 22.x]
     steps:
-      - name: Checkout better-together-vue
-        uses: actions/checkout@v4
-        with:
-          path: better-together-vue
-
-      - name: Checkout community-engine-vue
-        uses: actions/checkout@v4
-        with:
-          repository: better-together-org/community-engine-vue
-          ref: vue3-migration
-          path: community-engine-vue
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: yarn
-          cache-dependency-path: better-together-vue/yarn.lock
 
-      - name: Install CEV dependencies
-        working-directory: community-engine-vue
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Install BTV dependencies
-        working-directory: better-together-vue
-        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
 
       - name: Build
-        working-directory: better-together-vue
         run: yarn build
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
 
       - name: Verify PWA service worker in build
-        working-directory: better-together-vue
         run: |
           test -f dist/sw.js && echo "✅ sw.js present" || (echo "❌ sw.js missing" && exit 1)
 
@@ -129,32 +93,18 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: false
     steps:
-      - name: Checkout better-together-vue
-        uses: actions/checkout@v4
-        with:
-          path: better-together-vue
-
-      - name: Checkout community-engine-vue
-        uses: actions/checkout@v4
-        with:
-          repository: better-together-org/community-engine-vue
-          ref: vue3-migration
-          path: community-engine-vue
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 22.x
           cache: yarn
-          cache-dependency-path: better-together-vue/yarn.lock
 
-      - name: Install CEV dependencies
-        working-directory: community-engine-vue
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Install BTV dependencies
-        working-directory: better-together-vue
-        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
 
       - name: Check i18n keys
-        working-directory: better-together-vue
         run: yarn i18n:check
+

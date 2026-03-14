@@ -9,7 +9,9 @@
     "lint": "eslint src --ext .vue,.js --fix",
     "test": "vitest",
     "test:run": "vitest run",
-    "i18n:check": "node scripts/i18n-check.mjs"
+    "i18n:check": "node scripts/i18n-check.mjs",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest"
   },
   "dependencies": {
     "@bettertogether/community-engine-vue": "^0.2.0",
