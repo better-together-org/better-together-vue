@@ -27,10 +27,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: Configure Forgejo npm auth
+        run: yarn config set "//git.btsdev.ca/api/packages/better-together-org/npm/:_authToken" "$FORGEJO_NPM_TOKEN"
         env:
           FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Lint
         run: yarn lint --no-fix
@@ -49,10 +52,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: Configure Forgejo npm auth
+        run: yarn config set "//git.btsdev.ca/api/packages/better-together-org/npm/:_authToken" "$FORGEJO_NPM_TOKEN"
         env:
           FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Run unit tests
         run: yarn test:run
@@ -74,10 +80,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: Configure Forgejo npm auth
+        run: yarn config set "//git.btsdev.ca/api/packages/better-together-org/npm/:_authToken" "$FORGEJO_NPM_TOKEN"
         env:
           FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Build
         run: yarn build
@@ -100,10 +109,13 @@ jobs:
           node-version: 22.x
           cache: yarn
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
+      - name: Configure Forgejo npm auth
+        run: yarn config set "//git.btsdev.ca/api/packages/better-together-org/npm/:_authToken" "$FORGEJO_NPM_TOKEN"
         env:
           FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Check i18n keys
         run: yarn i18n:check
