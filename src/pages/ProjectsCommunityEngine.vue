@@ -110,9 +110,9 @@
           </p>
         </div>
       </div>
-  </section>
+    </section>
 
-  <FeaturedProjects />
+    <FeaturedProjects />
   </div>
 </template>
 

@@ -35,21 +35,27 @@
       <b-card-sub-title
         class="my-2"
       >
+        <!-- eslint-disable vue/no-v-html -->
+        <!-- location is server-provided structured text (e.g. "City, Province<br>Country") -->
         <span
           title="Location"
           v-html="location"
         />
+        <!-- eslint-enable vue/no-v-html -->
       </b-card-sub-title>
     </template>
     <b-card-text>
       {{ description }}
     </b-card-text>
+    <!-- eslint-disable vue/no-v-html -->
+    <!-- attribution is server-provided HTML (e.g. links to photo credits) -->
     <b-card-text
       v-if="attribution"
       class="text-muted"
       text-tag="small"
       v-html="attribution"
     />
+    <!-- eslint-enable vue/no-v-html -->
 
     <template
       #footer

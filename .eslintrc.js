@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'eslint:recommended',
@@ -48,4 +49,13 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      // Jest resolves @/ via moduleNameMapper; ESLint import resolver doesn't know about it
+      files: ['tests/**/*.js', 'tests/**/*.ts'],
+      rules: {
+        'import/no-unresolved': 'off',
+      },
+    },
+  ],
 }
