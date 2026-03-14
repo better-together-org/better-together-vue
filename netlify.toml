@@ -1,5 +1,5 @@
 [build]
-  command = "printf '//git.btsdev.ca/api/packages/better-together-org/npm/:_authToken=%s\n' \"$FORGEJO_NPM_TOKEN\" >> .npmrc && yarn install --frozen-lockfile && yarn build"
+  command = "yarn install --frozen-lockfile && yarn build"
   publish = "dist"
 
 [build.environment]
