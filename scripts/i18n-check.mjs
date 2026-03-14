@@ -4,6 +4,7 @@
  *
  * Checks translation health for better-together-vue (btv.* namespace only):
  *   FAIL  (exit 1): btv.* key used in code but missing from en.json
+ *   FAIL  (exit 1): btv.* key in en.json missing from fr/es/uk locale files
  *   WARN  (exit 0): btv.* key in en.json not referenced in any source file
  *   --strict: also exit 1 on unused keys
  *
@@ -82,6 +83,26 @@ const usedBtvKeys = [...usedKeys].filter((k) => k.startsWith('btv.'))
 const missing = usedBtvKeys.filter((k) => !definedKeys.has(k))
 const unused = [...definedKeys].filter((k) => !usedKeys.has(k))
 
+// ── 4b. Cross-locale coverage check ──────────────────────────────────────────
+
+const EXTRA_LOCALES = ['fr', 'es', 'uk']
+const localeCoverage = {}
+
+for (const lang of EXTRA_LOCALES) {
+  const langFile = join(SRC, 'i18n', 'locales', `${lang}.json`)
+  let langKeys
+  try {
+    langKeys = new Set(flattenKeys(JSON.parse(readFileSync(langFile, 'utf8'))))
+  } catch {
+    langKeys = null
+  }
+  const missingInLang = langKeys === null
+    ? [...definedKeys]
+    : [...definedKeys].filter((k) => !langKeys.has(k))
+  const extraInLang = langKeys === null ? [] : [...langKeys].filter((k) => !definedKeys.has(k))
+  localeCoverage[lang] = { langKeys, missingInLang, extraInLang }
+}
+
 // ── 5. Report ─────────────────────────────────────────────────────────────────
 
 const red = (s) => `\x1b[31m${s}\x1b[0m`
@@ -112,6 +133,27 @@ if (unused.length > 0) {
   console.warn()
   if (strict) exitCode = 1
 }
+
+// Cross-locale coverage
+console.log(bold('── Locale Coverage (fr / es / uk) ──────────────────────────'))
+for (const [lang, { langKeys, missingInLang, extraInLang }] of Object.entries(localeCoverage)) {
+  if (langKeys === null) {
+    console.error(`  ${red('✖')} ${bold(lang)}: locale file not found`)
+    exitCode = 1
+    continue
+  }
+  if (missingInLang.length > 0) {
+    console.error(`  ${red('✖')} ${bold(lang)}: ${missingInLang.length} key(s) missing from ${lang}.json:`)
+    for (const k of missingInLang) console.error(`     ${red('✖')} ${k}`)
+    exitCode = 1
+  } else {
+    console.log(`  ${green('✔')} ${bold(lang)}: all ${langKeys.size} keys present`)
+  }
+  if (extraInLang.length > 0) {
+    console.warn(`  ${yellow('⚠')} ${bold(lang)}: ${extraInLang.length} extra key(s) not in en.json (may be intentional)`)
+  }
+}
+console.log()
 
 if (exitCode === 0) {
   console.log(green('✔  All btv.* i18n keys are healthy.\n'))

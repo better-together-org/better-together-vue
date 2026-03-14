@@ -1,0 +1,344 @@
+{
+  "btv": {
+    "app": {
+      "title": "Better Together",
+      "tagline": "Juntos somos mejores"
+    },
+    "nav": {
+      "about": "Acerca de",
+      "about_title": "Acerca de la comunidad Better Together",
+      "projects": "Proyectos",
+      "projects_title": "Proyectos de la comunidad Better Together",
+      "partners": "Socios",
+      "partners_title": "Socios de la comunidad Better Together",
+      "opportunities": "Oportunidades",
+      "opportunities_title": "Oportunidades de la comunidad Better Together",
+      "community_platforms": "Plataformas comunitarias",
+      "community_platforms_title": "Plataformas comunitarias Better Together",
+      "community_hub": "Community Hub",
+      "community_hub_title": "Better Together Community Hub",
+      "community_marketplace": "Community Marketplace",
+      "community_marketplace_title": "Better Together Community Marketplace",
+      "community_cloud": "Community Cloud",
+      "community_cloud_title": "Better Together Community Cloud",
+      "contact": "Contacto",
+      "contact_title": "Contactar a la comunidad Better Together"
+    },
+    "newsletter": {
+      "heading": "Suscríbete a nuestra lista de correo",
+      "indicates_required": "indica campo obligatorio",
+      "email_address": "Correo electrónico",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "subscribe": "Suscribirse"
+    },
+    "featured_projects": {
+      "heading": "Proyectos destacados",
+      "newcomer_navigator": {
+        "name": "Newcomer Navigator NL",
+        "description": "Una plataforma basada en Community Engine que ayuda a los recién llegados a encontrar recursos, servicios y conexiones comunitarias en toda Terranova y Labrador."
+      },
+      "nl_venues": {
+        "name": "NL Venues",
+        "description": "Un directorio impulsado por Community Engine para lugares y eventos, conectando artistas, organizadores y espacios en Terranova y Labrador."
+      }
+    },
+    "opportunity_card": {
+      "publication_date": "Fecha de publicación",
+      "location": "Ubicación"
+    },
+    "pages": {
+      "home": {
+        "heading": "Somos mejores juntos",
+        "intro_p1": "El movimiento Better Together es una comunidad vibrante dedicada a fomentar la interconexión, el crecimiento y el cambio positivo. Fundamentado en la creencia de que la unidad, la compasión y la acción colectiva pueden transformar nuestro mundo, sacamos fuerza de nuestras diversas perspectivas y nuestro compromiso compartido de hacer una diferencia.",
+        "intro_p2": "Better Together es más que un movimiento; es una promesa — una promesa de construir un futuro donde la compasión, la diversidad y la acción convergen para crear un cambio duradero. Te invitamos a unirte a nosotros en este camino, a traer tu voz y visión únicas a nuestros esfuerzos colectivos."
+      },
+      "about": {
+        "movement": {
+          "heading": "El movimiento Better Together",
+          "body": "El movimiento Better Together es una comunidad vibrante dedicada a fomentar la interconexión, el crecimiento y el cambio positivo. Fundamentado en la creencia de que la unidad, la compasión y la acción colectiva pueden transformar nuestro mundo, sacamos fuerza de nuestras diversas perspectivas y nuestro compromiso compartido de hacer una diferencia."
+        },
+        "principles": {
+          "heading": "Nuestros principios fundamentales",
+          "intro": "En el corazón de Better Together reside una visión de un mundo transformado por la compasión, la fuerza y la unidad. Nuestra misión se basa en cinco principios fundamentales que guían nuestras acciones y aspiraciones. Juntos, estos principios forman un sólido marco para el cambio.",
+          "love": {
+            "name": "Amor",
+            "description": "Todo comienza con el Amor. Es la chispa que enciende nuestra pasión por hacer una diferencia y el vínculo que nos une como comunidad. El Amor es la aceptación incondicional y la profunda empatía que compartimos, inspirándonos a actuar con bondad y generosidad."
+          },
+          "inclusivity": {
+            "name": "Inclusión",
+            "description": "Construyendo sobre la base del Amor, abrazamos la Inclusión. Nuestro movimiento es un mosaico de voces, experiencias y perspectivas diversas. Al valorar e integrar esta diversidad, nos aseguramos de que cada miembro se sienta visto, escuchado y valorado. La Inclusión fortalece nuestra unidad y enriquece nuestra creatividad colectiva y nuestras capacidades de resolución de problemas."
+          },
+          "care": {
+            "name": "Cuidado",
+            "description": "Con un compromiso con el Amor y un marco de Inclusión, practicamos el Cuidado en cada interacción y decisión. El Cuidado es nuestro enfoque proactivo para nutrir el bienestar de nuestra comunidad y nuestro entorno. Refleja nuestra dedicación a apoyar el crecimiento mutuo y abordar las necesidades de nuestro planeta con diligencia y respeto."
+          },
+          "resilience": {
+            "name": "Resiliencia",
+            "description": "La fuerza de nuestro movimiento se amplifica con la Resiliencia. Frente a los desafíos y contratiempos, la Resiliencia nos da el poder de perseverar, adaptarnos y prosperar. Es la determinación que sostiene nuestro camino, asegurando que podamos superar obstáculos juntos y emerger más fuertes y unidos."
+          },
+          "hope": {
+            "name": "Esperanza",
+            "description": "Nuestro camino culmina en la Esperanza. Es el horizonte hacia el que nos esforzamos — un mundo de posibilidades, justicia y paz. La Esperanza es nuestra inquebrantable fe en nuestro poder colectivo para impulsar el cambio y crear un futuro más brillante para todos."
+          }
+        },
+        "values": {
+          "heading": "Nuestros valores fundamentales",
+          "intro": "Nuestros ocho valores fundamentales son el latido de Better Together, guiándonos hacia un mundo compasivo y próspero. Más que principios, son nuestra brújula de acción. Cada paso que damos está guiado por estos valores, mientras nos comprometemos a construir juntos un futuro más brillante.",
+          "curiosity": {
+            "name": "Curiosidad",
+            "description": "Todo comienza con la curiosidad, una apertura para aprender de los demás, comprender sus necesidades y explorar cómo abordar los desafíos colectivamente. Este valor sienta las bases para un compromiso significativo y la innovación dentro de la comunidad."
+          },
+          "kindness": {
+            "name": "Amabilidad",
+            "description": "Con la curiosidad despertada, la amabilidad se convierte en el siguiente paso natural, donde la empatía y la compasión guían las interacciones. La amabilidad crea un ambiente acogedor que fomenta la participación y apoya el bienestar emocional."
+          },
+          "generosity": {
+            "name": "Generosidad",
+            "description": "La amabilidad en acción lleva a la generosidad, donde los miembros están motivados a compartir su tiempo, recursos y experiencia. La generosidad refuerza la fortaleza de la comunidad, asegurando que los recursos estén disponibles para apoyar los objetivos colectivos."
+          },
+          "reciprocity": {
+            "name": "Reciprocidad",
+            "description": "La generosidad fomenta una cultura de reciprocidad, donde los intercambios son mutuos y beneficiosos. Este valor garantiza que dar y recibir estén equilibrados, promoviendo la sostenibilidad y la equidad dentro de la comunidad."
+          },
+          "cooperation": {
+            "name": "Cooperación",
+            "description": "La reciprocidad prepara el escenario para la cooperación, donde los miembros colaboran hacia objetivos comunes. La cooperación aprovecha las diversas habilidades y perspectivas dentro de la comunidad, impulsando la resolución eficaz de problemas y la innovación."
+          },
+          "solidarity": {
+            "name": "Solidaridad",
+            "description": "La cooperación se profundiza en solidaridad, un compromiso de mantenerse unidos en apoyo de causas y desafíos compartidos. La solidaridad enfatiza la unidad y la acción colectiva, particularmente para abordar la desigualdad social y promover la justicia."
+          },
+          "accountability": {
+            "name": "Responsabilidad",
+            "description": "La solidaridad requiere responsabilidad, asegurando que los individuos y la comunidad en su conjunto sean responsables de sus acciones y compromisos. La responsabilidad genera confianza, asegurando que todos respeten los valores de la comunidad y trabajen hacia su visión."
+          },
+          "stewardship": {
+            "name": "Administración responsable",
+            "description": "Finalmente, la administración responsable engloba la obligación de gestionar y cuidar los recursos comunitarios y el entorno de manera sostenible. Es un compromiso con el bienestar a largo plazo de la comunidad, asegurando que los esfuerzos colectivos de hoy beneficien a las generaciones futuras."
+          }
+        },
+        "pathways": {
+          "heading": "Nuestros caminos transformadores",
+          "intro": "En Better Together, nuestro camino hacia la creación de un mundo más inclusivo y resiliente es impulsado por tres mecanismos clave: Descubrimiento, Conexión y Empoderamiento. Estos mecanismos son los pasos que damos para convertir nuestros principios fundamentales en acción, fomentando una comunidad vibrante, unida e impactante.",
+          "discovery": {
+            "name": "Descubrimiento",
+            "description": "Nuestro camino comienza con el Descubrimiento — una búsqueda de conocimiento, comprensión e innovación. El Descubrimiento es la chispa de curiosidad que nos impulsa a explorar nuevas ideas, aprender de perspectivas diversas y descubrir las necesidades y fortalezas de nuestra comunidad. Nos desafía a pensar diferente, a cuestionar el statu quo y a buscar soluciones que sean tanto creativas como efectivas. En el espíritu del Descubrimiento, fomentamos el aprendizaje y el crecimiento continuos, asegurándonos de que nuestro movimiento siempre evolucione, siempre orientado hacia el futuro."
+          },
+          "connection": {
+            "name": "Conexión",
+            "description": "Con los conocimientos y la comprensión obtenidos del Descubrimiento, forjamos Conexiones. Estos son los vínculos que nos unen, las relaciones que fortalecen nuestra comunidad y las redes que amplían nuestro impacto. La Conexión es más que solo trabajar juntos; se trata de construir un sentido de pertenencia, comprensión y apoyo mutuo. Es a través de estas conexiones que compartimos nuestras esperanzas, nuestros sueños y nuestros desafíos, creando un tejido de solidaridad que es tanto resiliente como expansivo."
+          },
+          "empowerment": {
+            "name": "Empoderamiento",
+            "description": "El Empoderamiento es la culminación de nuestros esfuerzos, donde el Descubrimiento y la Conexión se traducen en acción e impacto. Se trata de equipar a cada miembro de nuestra comunidad con las herramientas, recursos y confianza para hacer una diferencia. El Empoderamiento significa brindar oportunidades de liderazgo, fomentar una cultura de innovación y permitir que cada voz sea escuchada. Es a través del Empoderamiento que convertimos nuestra visión colectiva en realidad, impulsando un cambio positivo en nuestras comunidades y más allá."
+          }
+        },
+        "cta": {
+          "heading": "Únete a nosotros",
+          "body": "Better Together es más que un movimiento; es una promesa — una promesa de construir un futuro donde la compasión, la diversidad y la acción convergen para crear un cambio duradero. Te invitamos a unirte a nosotros en este camino, a traer tu voz y visión únicas a nuestros esfuerzos colectivos. Juntos, podemos construir un mundo que refleje nuestros valores más profundos y nuestras más altas aspiraciones."
+        }
+      },
+      "not_found": {
+        "heading": "Esta no es la página que buscas",
+        "body": "Parece que la dirección que ingresaste no coincide con ninguna página de nuestro sitio. Es posible que la página se haya trasladado a una nueva dirección. Por favor, inténtalo de nuevo.",
+        "visit_landing": "Visitar la página principal",
+        "landing_title": "Página principal de Better Together"
+      },
+      "goals": {
+        "heading": "Objetivos",
+        "community": {
+          "name": "Comunidad",
+          "body": "Construcción comunitaria"
+        },
+        "clean_energy": {
+          "name": "Energía limpia",
+          "body": "Energía limpia"
+        },
+        "social_justice": {
+          "name": "Justicia social",
+          "body": "Construcción de justicia social"
+        },
+        "sustainability": {
+          "name": "Sostenibilidad",
+          "body": "Sostenibilidad"
+        },
+        "climate_change": {
+          "name": "Cambio climático",
+          "body": "Cambio climático"
+        },
+        "cooperatives": {
+          "name": "Cooperativas",
+          "body": "Cooperativas"
+        }
+      },
+      "membership": {
+        "heading": "Únete a Better Together",
+        "body": "Better Together busca conectar con quienes quieren hacer una diferencia. ¡Únete a nosotros mientras trabajamos juntos para hacer del mundo un lugar mejor!",
+        "types_heading": "Tipos de membresía",
+        "types": {
+          "individual": "Individual",
+          "organization": "Organización"
+        },
+        "skills_heading": "Habilidades",
+        "skills_intro": "Necesitamos personas con las siguientes habilidades:",
+        "skills": {
+          "software_developers": "desarrolladores de software",
+          "strategists": "estrategas",
+          "fund_raisers": "recaudadores de fondos",
+          "project_managers": "gestores de proyectos",
+          "communications_specialists": "especialistas en comunicaciones",
+          "and_more": "¡y mucho más!"
+        },
+        "cta": "¡Únete a nosotros!"
+      },
+      "contact": {
+        "heading": "Contáctanos",
+        "body": "Si te interesa saber más o quieres contribuir, envíanos un correo electrónico a"
+      },
+      "partners": {
+        "heading": "Socios",
+        "intro_p1": "Better Together construye puentes entre nuestros socios y sus comunidades. ¡Cuando trabajamos juntos, podemos lograr más que cuando trabajamos solos! Cada persona y organización tiene sus propias fortalezas y debilidades, pero somos más fuertes juntos.",
+        "intro_p2": "Better Together se enorgullece de asociarse con organizaciones que apoyan nuestros objetivos. Si deseas convertirte en socio, por favor",
+        "get_in_touch": "contáctanos",
+        "colibri_software": "Colibri Software",
+        "collective_interchange": "Collective Interchange Cooperative",
+        "draw": "DRAW",
+        "draw_full": "DRAW: Data Rescue Archives and Weather",
+        "laughing_heart": "Laughing Heart Music"
+      },
+      "opportunities": {
+        "heading": "Oportunidades",
+        "intro": "Tu centro de oportunidades comunitarias. Para enviar tus oportunidades a nuestra lista comunitaria, por favor",
+        "contact_us": "contáctanos.",
+        "software_dev": {
+          "name": "Desarrollo de software",
+          "description": "Aprende a construir sitios web y aplicaciones web o contrata a un desarrollador de software.",
+          "community": "Better Together"
+        },
+        "online_security": {
+          "name": "Seguridad en línea",
+          "description": "Aprende a mantenerte seguro en línea y a evitar estafas y el robo de identidad.",
+          "community": "Better Together"
+        },
+        "historical_weather": {
+          "name": "Clima histórico y archivos",
+          "description": "Aprende sobre el clima de los años 1800 a través de un esfuerzo colaborativo para transcribir registros meteorológicos históricos de los archivos de la Universidad McGill.",
+          "community": "DRAW: Data Rescue Archives and Weather"
+        },
+        "photography": {
+          "name": "Fotografía",
+          "description": "Aprende a convertirte en un mejor fotógrafo o contrata a un fotógrafo.",
+          "community": "Better Together"
+        },
+        "film_making": {
+          "name": "Cine",
+          "description": "Aprende a crear películas o contrata a un cineasta.",
+          "community": "Better Together"
+        },
+        "ecommerce": {
+          "name": "Comercio electrónico",
+          "description": "Lanza tu propia tienda en línea y vende tus productos y servicios en internet.",
+          "community": "Better Together"
+        },
+        "marketing": {
+          "name": "Marketing",
+          "description": "Aprende a conectarte con los clientes o contrata a un especialista en marketing.",
+          "community": "Better Together"
+        }
+      },
+      "community_platforms": {
+        "heading": "Plataformas comunitarias",
+        "intro_p1": "Better Together está construyendo y manteniendo infraestructura comunitaria pública de código abierto. No solo infraestructura física como estamos acostumbrados, como autopistas y puentes, sino infraestructura digital — cosas como redes sociales, aplicaciones, herramientas para que las personas se conecten y compartan. Estamos trabajando para construir una infraestructura comunitaria pública compartida, como una versión de Facebook que sea de propiedad comunitaria, por ejemplo, o una versión de Amazon que sea de propiedad comunitaria.",
+        "intro_p2": "Estamos reuniendo a las personas y empoderándolas para participar en procesos que normalmente se mantienen a distancia o a puertas cerradas. Queremos permitir que las personas tengan más control y una mejor comprensión de lo que sucede en sus comunidades y en las plataformas que usan, educarlas y empoderarlas para participar, no solo como consumidoras sino también como productoras.",
+        "intro_p3": "Los proyectos en los que estamos trabajando actualmente incluyen una plataforma comunitaria local llamada Community Hub, construida con la plataforma de código abierto Discourse. Nuestro proyecto Community Commerce es una plataforma de comercio electrónico de propiedad comunitaria impulsada por la plataforma de código abierto Solidus, que permite a las personas encontrar los productos y servicios a su alrededor en sus comunidades. Por ejemplo, si quieres comprar un libro o una herramienta cerca de ti pero no sabes qué tiendas lo tienen. Las personas y organizaciones podrán tener sus propias tiendas en línea dentro de una red más amplia de nuestro mercado comunitario y hacerla accesible. Este es solo el primer paso, porque también estamos haciendo la transición hacia ofrecer una Biblioteca de Artículos Comunitarios, para poder listar las cosas a las que tienes acceso y quieres compartir, porque queremos fomentar el cuidado y el compartir. Sabemos que es ayudándonos realmente los unos a los otros que podemos marcar una gran diferencia.",
+        "hub": {
+          "title": "Community Hub",
+          "title_full": "Better Together Community Hub",
+          "description": "El Better Together Community Hub es nuestra plataforma de discusión comunitaria. Está impulsado por la plataforma de código abierto Discourse. El Community Hub incluye un calendario comunitario para que puedas estar al tanto de todos los eventos que suceden en tus comunidades."
+        },
+        "cloud": {
+          "title": "Community Cloud",
+          "title_full": "Better Together Community Cloud",
+          "description": "El Better Together Community Cloud es nuestra plataforma de almacenamiento en la nube comunitaria. Está impulsado por la plataforma de código abierto Nextcloud. Los miembros tienen acceso a su propia plataforma de almacenamiento y uso compartido de archivos en línea y pueden colaborar con otros miembros con calendarios compartidos, listas de tareas, finanzas, tableros kanban, gestión de contraseñas y más."
+        },
+        "marketplace": {
+          "title": "Community Marketplace",
+          "title_full": "Better Together Community Marketplace",
+          "description": "El Better Together Community Marketplace es nuestra plataforma de comercio electrónico comunitaria. Está impulsado por la plataforma de código abierto Solidus. Los miembros pueden listar sus productos en nuestra tienda general comunitaria en línea."
+        }
+      },
+      "tech_for_good": {
+        "heading": "Tech For Good",
+        "p1": "Tech for Good encarna un enfoque transformador donde la tecnología sirve como puente entre las organizaciones sin fines de lucro y las comunidades vibrantes, fomentando el desarrollo y la resiliencia a través de soluciones de software innovadoras. Nuestra misión no se trata solo de crear tecnología; se trata de aprovechar estas herramientas para empoderar a las comunidades y generar un impacto tangible en las vidas dentro de ellas.",
+        "p2": "Te invitamos a explorar el mundo de la tecnología con nosotros, independientemente de tu experiencia previa o conocimientos técnicos. Nuestra iniciativa se basa en el principio de inclusión, con el objetivo de cultivar nuevas oportunidades de participación comunitaria. Estamos buscando personas apasionadas por hacer una diferencia — no se requiere experiencia técnica previa.",
+        "p3": "¿Tienes habilidad para conectar con las personas, o conoces a alguien que la tenga? Las habilidades de comunicación excepcionales son el corazón de nuestra misión, ya que sientan las bases para el alcance y la colaboración. Defendemos la idea de que uno debería poder ganarse la vida a través de sus pasiones. Los comunicadores efectivos son invaluables, ya que ayudan a tejer el tejido de nuestros equipos enfocados en la comunidad.",
+        "p4": "Para quienes estén ansiosos por contribuir pero no sepan por dónde empezar, ofrecemos acceso a recursos en línea y programas de mentoría. Estos están diseñados para dotarte de las habilidades necesarias para contribuir de manera significativa a nuestros proyectos y a la comunidad en general.",
+        "p5": "Nuestro compromiso va más allá de las soluciones tecnológicas; buscamos entender de primera mano los desafíos que enfrentan las comunidades. Al identificar estos problemas, buscamos guiar a las personas hacia su solución, mejorando así el valor que aportan a sus comunidades.",
+        "p6": "Ya sea que estés interesado en iniciar una carrera en tecnología, ansioso por resolver problemas del mundo real, o consciente de grupos comunitarios que necesitan apoyo, te animamos a conectarte con nosotros. Juntos, podemos explorar cómo la tecnología puede servir como una fuerza para el bien, transformando los desafíos en oportunidades de crecimiento y cambio positivo.",
+        "p7": "Para más información o para involucrarte, no dudes en comunicarte con nosotros. Aprovechemos juntos el poder de la tecnología para el bienestar de nuestras comunidades."
+      },
+      "open_source_software": {
+        "heading": "Software de código abierto",
+        "intro_p1": "El software de código abierto es software diseñado de manera colaborativa y publicado al público para devolver y asegurar que todos tengan acceso y comprendan la tecnología.",
+        "intro_p2": "Estamos buscando activamente apoyo del público para construir y mantener los proyectos de código abierto listados a continuación. ¡Buscamos más que solo desarrolladores de software! Cualquier persona con habilidades de escritura, investigación, marketing o comunicaciones sería de gran ayuda.",
+        "community_engine": {
+          "name": "Better Together Community Engine",
+          "description": "El Better Together Community Engine es un plugin de código abierto que permite a los desarrolladores integrar fácilmente funciones comunitarias en sus aplicaciones. Actualmente existe una versión como gem de Ruby on Rails y una versión de paquete para Django."
+        },
+        "draw": {
+          "name": "DRAW: Data Rescue Archives and Weather",
+          "description": "DRAW es un proyecto de ciencia ciudadana que tiene como objetivo involucrar a los ciudadanos para recuperar observaciones meteorológicas históricas de los archivos y hacer que los datos estén disponibles para su uso en la investigación climática."
+        }
+      },
+      "camp_better_together": {
+        "heading": "Camp Better Together",
+        "description": "Camp Better Together es una comunidad de campamento en la naturaleza única en su tipo, que combina el trabajo remoto (Really Remote Work — RRW), la covivienda y la vida al aire libre. ¡Si trabajas de forma remota y disfrutas el senderismo, el campamento y la aventura, esto es para ti!"
+      },
+      "projects": {
+        "heading": "Proyectos",
+        "intro": "¡Better Together tiene como objetivo reunir a las personas para construir cosas increíbles! Estos son algunos de los proyectos en los que Better Together y nuestros socios han estado trabajando."
+      },
+      "community_engine": {
+        "heading": "Better Together Community Engine",
+        "intro_p1": "El Better Together Community Engine (BTCE) es una plataforma de participación comunitaria de código abierto diseñada para fomentar la colaboración, la comunicación y la conexión dentro y entre comunidades. Permite a los usuarios crear, unirse e invitar a otros a comunidades públicas y privadas, facilitando discusiones, chats en vivo e intercambio de información.",
+        "intro_p2": "Los desarrolladores pueden integrar fácilmente el BTCE en sus aplicaciones, enriqueciéndolas con sólidas funcionalidades comunitarias. La plataforma ofrece una interfaz extensible para modelar la dinámica comunitaria, permitiendo la representación de diversos escenarios del mundo real.",
+        "intro_p3": "En el núcleo del BTCE se encuentran los modelos de objetos Personas y Comunidades, respaldados por clases adicionales que gestionan membresías, roles e interacciones comunitarias. Los usuarios pueden crear comunidades, invitar miembros y rastrear los detalles de membresía, incluidos roles y duraciones, asegurando una experiencia comunitaria completa y dinámica.",
+        "features": {
+          "heading": "Características",
+          "seamless_integration": "Integración fluida con aplicaciones Ruby on Rails a través del gem Community Engine Rails.",
+          "community_creation": "Creación de comunidades públicas y privadas con gestión flexible de membresías.",
+          "live_chat": "Chat en vivo y foros de discusión para facilitar la comunicación en tiempo real y asíncrona.",
+          "extensible": "Interfaz extensible y personalizable para representar la dinámica e interacciones comunitarias.",
+          "role_based": "Control de acceso basado en roles y seguimiento detallado de membresías.",
+          "responsive": "Diseño responsivo y adaptado a dispositivos móviles usando Bootstrap.",
+          "turbo": "Integración con Turbo y Stimulus para experiencias de usuario dinámicas e interactivas.",
+          "localization": "Soporte de localización utilizando las herramientas I18n de Rails para aplicaciones en múltiples idiomas."
+        },
+        "purpose": {
+          "heading": "Propósito y visión",
+          "p1": "El propósito del Better Together Community Engine es empoderar a las comunidades proporcionándoles las herramientas necesarias para participar, colaborar y crecer. Nuestra visión es crear una plataforma que apoye el desarrollo de comunidades inclusivas, amables y accesibles, permitiendo a las personas conectarse y trabajar juntas para resolver desafíos sociales y ambientales urgentes.",
+          "p2": "Al fomentar un modelo de desarrollo cooperativo y de código abierto, buscamos construir un ecosistema sostenible donde los desarrolladores y los miembros de la comunidad puedan contribuir, compartir conocimientos y beneficiarse de los esfuerzos colectivos. El Better Together Community Engine aspira a ser una piedra angular para las iniciativas impulsadas por la comunidad, mejorando la capacidad de las comunidades para alcanzar sus objetivos y crear un impacto significativo."
+        },
+        "rails": {
+          "heading": "Ruby on Rails",
+          "title": "Better Together Community Engine Rails",
+          "description": "El gem Better Together Community Engine Rails permite a los desarrolladores de Ruby on Rails agregar de forma rápida y sencilla funcionalidades comunitarias completas a sus aplicaciones. Aprovecha todo el poder de Rails, proporcionando una solución robusta y flexible para construir plataformas comunitarias atractivas y dinámicas."
+        }
+      },
+      "community_commerce": {
+        "heading": "Community Commerce",
+        "p1": "¡La plataforma cooperativa Better Together Community Commerce permite a los miembros aprovechar la economía comunitaria llevando las compras locales en línea!",
+        "p2": "¡Ser parte de la red permite a las personas y organizaciones la comodidad de comprar en línea mientras siguen apoyando a los negocios locales en su vecindario, ciudad, región o más allá!",
+        "p3": "Los compradores descubrirán el inventario de las tiendas a su alrededor y realizarán un pedido para recoger o recibir entrega. Los negocios locales tendrían el beneficio de gestionar su inventario y presentarlo a la comunidad local, así como ofrecer oportunidades de expansión al acceder al mercado global de comercio electrónico.",
+        "p4": "Crea tu tienda en línea y obtendrás tu propia vitrina para comercializar con tus clientes, además de que tus productos aparecerán en una vitrina de toda la plataforma junto con los de otros miembros de la cooperativa."
+      }
+    },
+    "pwa": {
+      "update_available": "Hay una nueva versión disponible.",
+      "reload": "Recargar",
+      "install": "Instalar la aplicación",
+      "install_dismiss": "Ahora no"
+    }
+  }
+}

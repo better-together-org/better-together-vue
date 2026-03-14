@@ -13,7 +13,14 @@
       </BButton>
     </BAlert>
 
-    <BtHeader />
+    <BtHeader>
+      <template #branding-logo>
+        <div class="d-flex align-items-center gap-2">
+          <BtBrandingLogo />
+          <LocaleSwitcher />
+        </div>
+      </template>
+    </BtHeader>
 
     <div v-if="canInstall" class="pwa-install-bar text-center py-2 bg-light border-bottom">
       <BButton size="sm" variant="outline-success" @click="install">
@@ -34,6 +41,8 @@ import { useI18n } from 'vue-i18n'
 import { BAlert, BButton } from 'bootstrap-vue-next'
 import { BtHeader, BtMainContent, useMenuStore } from '@bettertogether/community-engine-vue'
 import { useSwUpdate, useInstallPrompt } from './pwa/index.js'
+import BtBrandingLogo from './components/BrandingLogo.vue'
+import LocaleSwitcher from './components/LocaleSwitcher.vue'
 
 const { t } = useI18n()
 const menuStore = useMenuStore()
