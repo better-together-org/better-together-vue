@@ -1,10 +1,14 @@
-import axios from 'axios'
-import Vue from 'vue'
-import VueLoading from 'crip-vue-loading'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
-Vue.use(VueLoading, {
-  axios,
-  applyOnRouter: false,
-  color: '#42b983',
-  height: '3px',
-})
+export function setupProgress(router, axiosInstance) {
+  router.beforeEach(() => NProgress.start())
+  router.afterEach(() => NProgress.done())
+  if (axiosInstance) {
+    axiosInstance.interceptors.request.use((config) => { NProgress.start(); return config })
+    axiosInstance.interceptors.response.use(
+      (res) => { NProgress.done(); return res },
+      (err) => { NProgress.done(); return Promise.reject(err) },
+    )
+  }
+}

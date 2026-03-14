@@ -32,8 +32,7 @@
         </p>
         <div class="text-center">
           <a
-            href="/contact?utm_source=better-together&utm_medium=
-            better-together&utm_campaign=community-commerce"
+            href="/contact?utm_source=better-together&utm_medium=better-together&utm_campaign=community-commerce"
             target="community-commerce"
             title="Better Together Community Commerce"
             class="btn btn-primary card-action"
@@ -44,12 +43,8 @@
   </section>
 </template>
 
-<script>
-// @ is an alias to /src
-
-export default {
-  name: 'CommunityCommerce',
-}
+<script setup>
+// Static content — no reactive state needed
 </script>
 
 <style lang="scss">

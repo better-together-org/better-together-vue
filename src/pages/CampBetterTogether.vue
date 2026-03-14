@@ -1,14 +1,11 @@
 <template>
-  <div
-    id="camp-better-together"
-  >
-    <section id="camp-better-together">
+  <div id="camp-better-together">
+    <section id="camp-better-together-section">
       <div class="row heading">
         <div class="col-md">
           <h2>Camp Better Together</h2>
         </div>
       </div>
-
       <div class="row">
         <div class="col-md">
           <p class="card-text">
@@ -17,12 +14,12 @@
             remotely and enjoy hiking, camping, and adventure, this is for you!
           </p>
           <div class="cta text-center">
-            <router-link
+            <RouterLink
               to="/contact"
               class="btn btn-primary card-action"
             >
               Learn more
-            </router-link>
+            </RouterLink>
           </div>
         </div>
       </div>
@@ -30,11 +27,8 @@
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-export default {
-  name: 'CampBetterTogether',
-}
+<script setup>
+import { RouterLink } from 'vue-router'
 </script>
 
 <style lang="scss">

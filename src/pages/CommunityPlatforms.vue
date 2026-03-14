@@ -36,100 +36,98 @@
     </div>
     <div class="row">
       <div class="col-md">
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-header">
-              <h5>
-                <b-link
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5>
+                  <a
+                    href="#"
+                    title="Better Together Community Hub"
+                    target="bt-community-hub"
+                    class="card-title"
+                  >Community Hub</a>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  The Better Together Community Hub is our community discussion
+                  platform. It is powered by the open source Discourse platform.
+                  The Community Hub includes a community calendar so you can keep
+                  updated with all of the events happening in your communities.
+                </p>
+              </div>
+              <div class="cta card-footer text-center">
+                <a
                   href="#"
                   title="Better Together Community Hub"
-                  target="bt-community-hub"
-                  class="card-title"
-                >
-                  Community Hub
-                </b-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                The Better Together Community Hub is our community discussion
-                platform. It is powered by the open source Discourse platform.
-                The Community Hub includes a community calendar so you can keep
-                updated with all of the events happening in your communities.
-              </p>
-            </div>
-            <div class="cta card-footer text-center">
-              <b-link
-                href="#"
-                title="Better Together Community Hub"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </b-link>
+                  class="btn btn-primary card-action"
+                >Learn more</a>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="card-header">
-              <h5>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5>
+                  <a
+                    class="card-title"
+                    href="#"
+                    title="Better Together Community Cloud"
+                    target="bt-community-cloud"
+                  >Community Cloud</a>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  The Better Together Community Cloud is our community cloud
+                  storage platform. It is powered by the open source Nextcloud
+                  platform. Members have access to their own online storage &amp;
+                  file sharing platform and can collaborate with other members
+                  with shared calendars, task lists, finances, kanban boards,
+                  password management, and more.
+                </p>
+              </div>
+              <div class="cta card-footer text-center">
                 <a
-                  class="card-title"
                   href="#"
                   title="Better Together Community Cloud"
                   target="bt-community-cloud"
-                >
-                  Community Cloud
-                </a>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                The Better Together Community Cloud is our community cloud
-                storage platform. It is powered by the open source Nextcloud
-                platform. Members have access to their own online storage &
-                file sharing platform and can collaborate with other members
-                with shared calendars, task lists, finances, kanban boards,
-                password management, and more.
-              </p>
-            </div>
-            <div class="cta card-footer text-center">
-              <a
-                href="#"
-                title="Better Together Community Cloud"
-                target="bt-community-cloud"
-                class="btn btn-primary card-action"
-              >Learn more</a>
+                  class="btn btn-primary card-action"
+                >Learn more</a>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="card-header">
-              <h5>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5>
+                  <a
+                    class="card-title"
+                    href="#"
+                    title="Better Together Community Marketplace"
+                    target="bt-community-marketplace"
+                  >Community Marketplace</a>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  The Better Together Community Marketplace is our community
+                  e-commerce platform. It is powered by the open source Solidus
+                  platform. Members can list their products on our online
+                  community general store.
+                </p>
+              </div>
+              <div class="cta card-footer text-center">
                 <a
-                  class="card-title"
                   href="#"
                   title="Better Together Community Marketplace"
                   target="bt-community-marketplace"
-                >
-                  Community Marketplace
-                </a>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                The Better Together Community Marketplace is our community
-                e-commerce platform. It is powered by the open source Solidus
-                platform. Members can list their products on our online
-                community general store.
-              </p>
-            </div>
-            <div class="cta card-footer text-center">
-              <a
-                href="#"
-                title="Better Together Community Marketplace"
-                target="bt-community-marketplace"
-                class="btn btn-primary card-action"
-              >Learn more</a>
+                  class="btn btn-primary card-action"
+                >Learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -138,12 +136,8 @@
   </section>
 </template>
 
-<script>
-// @ is an alias to /src
-
-export default {
-  name: 'OpenSourceSoftware',
-}
+<script setup>
+// Static content — no reactive state needed
 </script>
 
 <style lang="scss">

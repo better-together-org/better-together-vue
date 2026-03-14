@@ -1,7 +1,5 @@
 <template>
-  <div
-    id="projects"
-  >
+  <div id="projects">
     <section>
       <div class="row heading">
         <div class="col-md">
@@ -21,26 +19,15 @@
     </section>
 
     <FeaturedProjects />
-
     <TechForGood />
     <CommunityCommerce />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
 import CommunityCommerce from './ProjectsCommunityCommerce.vue'
 import TechForGood from './TechForGood.vue'
 import FeaturedProjects from '../components/FeaturedProjects.vue'
-
-export default {
-  name: 'Projects',
-  components: {
-    CommunityCommerce,
-    TechForGood,
-    FeaturedProjects,
-  },
-}
 </script>
 
 <style lang="scss">

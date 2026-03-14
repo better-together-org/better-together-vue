@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="membership"
-    class=""
-  >
+  <section id="membership">
     <div class="row heading">
       <div class="col-md">
         <h2>Join Better Together</h2>
@@ -14,14 +11,14 @@
           Better Together is looking to connect with those who want to make a difference.
           Join us as we work together to make the world a better place!
         </p>
-        <h5 class="text-left">
+        <h5 class="text-start">
           Membership Types
         </h5>
         <ul>
           <li>Individual</li>
           <li>Organization</li>
         </ul>
-        <h5 class="text-left">
+        <h5 class="text-start">
           Skill Sets
         </h5>
         <p>
@@ -37,23 +34,18 @@
         </ul>
       </div>
     </div>
-
     <div class="cta">
-      <router-link
+      <RouterLink
         to="/contact"
         title="Join us!"
         class="btn btn-primary"
       >
         Join us!
-      </router-link>
+      </RouterLink>
     </div>
   </section>
 </template>
 
-<script>
-// @ is an alias to /src
-
-export default {
-  name: 'Membership',
-}
+<script setup>
+import { RouterLink } from 'vue-router'
 </script>

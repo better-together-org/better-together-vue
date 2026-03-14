@@ -25,26 +25,12 @@
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
 import ContactNewsletter from '../components/ContactNewsletter.vue'
-
-export default {
-  name: 'Contact',
-  components: {
-    ContactNewsletter,
-  },
-}
 </script>
 
-<!-- <link
-  href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-  rel="stylesheet"
-  type="text/css"
-> -->
-
 <style scoped lang="scss">
-  label {
-    font-weight: bold;
-  }
+label {
+  font-weight: bold;
+}
 </style>

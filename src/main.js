@@ -1,15 +1,22 @@
-import 'mutationobserver-shim'
-import './plugins'
-import './registerServiceWorker'
-import Vue from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import CommunityEngineVue from '@bettertogether/community-engine-vue'
 import router from './router'
-import store from './store'
+import App from './App.vue'
 
-Vue.config.productionTip = false
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount('#app')
+// TODO: Re-enable PWA with vite-plugin-pwa in Phase 7
+
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
+
+const app = createApp(App)
+
+app.use(pinia)
+app.use(router)
+app.use(CommunityEngineVue)
+
+app.mount('#app')

@@ -1,11 +1,6 @@
 <template>
-  <div
-    id="home"
-    class=""
-  >
-    <section
-      id="introduction"
-    >
+  <div id="home">
+    <section id="introduction">
       <div class="col">
         <h2>We are Better Together</h2>
         <p>
@@ -27,38 +22,22 @@
       :src="BtBannerImg"
       alt="Better Together"
     >
-    <!-- <Partners /> -->
     <ContactNewsletter />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
 import BtBannerImg from '../assets/betterTogetherBanner.png'
 import ContactNewsletter from '../components/ContactNewsletter.vue'
-// import Partners from './Partners.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    ContactNewsletter,
-    // Partners,
-  },
-  data() {
-    return {
-      BtBannerImg,
-    }
-  },
-}
 </script>
 
 <style scoped lang="scss">
-  h2 {
-    margin-bottom: 1.5rem;
-  }
+h2 {
+  margin-bottom: 1.5rem;
+}
 
-  .bt-banner {
-    margin-bottom: 15px;
-    border-radius: 10px;
-  }
+.bt-banner {
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
 </style>

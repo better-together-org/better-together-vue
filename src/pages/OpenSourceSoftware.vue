@@ -8,7 +8,6 @@
           and released to the public to give back and ensure that everyone
           has access to and understands the technology.
         </p>
-
         <p>
           We are actively looking for support from the public in building and
           maintaining the open source projects listed below. We are looking
@@ -19,64 +18,68 @@
     </div>
     <div class="row">
       <div class="col-md">
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-header">
-              <h5>
-                <router-link
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5>
+                  <RouterLink
+                    to="/projects/community-engine"
+                    title="Better Together Community Engine"
+                    class="card-title"
+                  >
+                    Better Together Community Engine
+                  </RouterLink>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  The Better Together Community Engine is an open-source plugin
+                  that allows developers to build community features into their
+                  apps with ease. There is currently a Ruby on Rails gem and a
+                  Django package version.
+                </p>
+              </div>
+              <div class="cta card-footer text-center">
+                <RouterLink
                   to="/projects/community-engine"
                   title="Better Together Community Engine"
-                  class="card-title"
+                  class="btn btn-primary card-action"
                 >
-                  Better Together Community Engine
-                </router-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                The Better Together Community Engine is an open-source plugin
-                that allows developers to build community features into their
-                apps with ease. There is currently a Ruby on Rails gem and a
-                Django package version.
-              </p>
-            </div>
-            <div class="cta card-footer text-center">
-              <router-link
-                to="/projects/community-engine"
-                title="Better Together Community Engine"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </router-link>
+                  Learn more
+                </RouterLink>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header">
-              <h5>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5>
+                  <a
+                    class="card-title"
+                    href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
+                    target="draw"
+                    title="DRAW: Data Rescue Archives and Weather"
+                  >
+                    DRAW: Data Rescue Archives and Weather
+                  </a>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  DRAW is a citizen science project that aims to engage citizens
+                  to recover historic weather observations from the archives and
+                  make the data available for use in climate research.
+                </p>
+              </div>
+              <div class="cta card-footer text-center">
                 <a
-                  class="card-title"
                   href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
                   target="draw"
                   title="DRAW: Data Rescue Archives and Weather"
-                >
-                  DRAW: Data Rescue Archives and Weather
-                </a>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                DRAW is a citizen science project that aims to engage citizens
-                to recover historic weather observations from the archives and
-                make the data available for use in climate research.
-              </p>
-            </div>
-            <div class="cta card-footer text-center">
-              <a
-                href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
-                target="draw"
-                title="DRAW: Data Rescue Archives and Weather"
-                class="btn btn-primary card-action"
-              >Learn more</a>
+                  class="btn btn-primary card-action"
+                >Learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -85,12 +88,8 @@
   </section>
 </template>
 
-<script>
-// @ is an alias to /src
-
-export default {
-  name: 'OpenSourceSoftware',
-}
+<script setup>
+import { RouterLink } from 'vue-router'
 </script>
 
 <style lang="scss">

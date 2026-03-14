@@ -10,25 +10,21 @@
           site. Perhaps the page has move to a new address. Please try again.
         </p>
         <div class="text-center mt-4">
-          <router-link
+          <RouterLink
             to="/"
             title="Better Together landing page"
             class="btn btn-primary card-action"
           >
             Visit Landing Page
-          </router-link>
+          </RouterLink>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-// @ is an alias to /src
-
-export default {
-  name: 'Error404',
-}
+<script setup>
+import { RouterLink } from 'vue-router'
 </script>
 
 <style lang="scss">
