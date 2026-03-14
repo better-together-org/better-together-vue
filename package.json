@@ -43,5 +43,13 @@
     "vite-plugin-pwa": "^1.2.0",
     "vitest": "^3.0.8",
     "workbox-window": "^7.4.0"
+  },
+  "resolutions": {
+    "serialize-javascript": "^6.0.2",
+    "minimatch": "^9.0.5",
+    "glob": "^10.4.5",
+    "lodash": "^4.17.21",
+    "qs": "^6.14.0",
+    "cross-spawn": "^7.0.6"
   }
 }
