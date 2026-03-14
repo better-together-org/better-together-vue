@@ -2,30 +2,29 @@
   <section>
     <div class="row heading">
       <div class="col-md">
-        <h2>Featured Projects</h2>
+        <h2>{{ t('btv.featured_projects.heading') }}</h2>
       </div>
     </div>
     <div class="row g-4">
       <div class="col-md-6">
         <div class="card text-center h-100">
           <div class="card-header">
-            <h5>Newcomer Navigator NL</h5>
+            <h5>{{ t('btv.featured_projects.newcomer_navigator.name') }}</h5>
           </div>
           <div class="card-body text-center">
             <a
               href="https://newcomernavigatornl.ca?utm_source=bettertogether.ca&utm_medium=website&utm_campaign=projects&utm_content=logo"
               target="newcomernavigatornl"
-              title="Newcomer Navigator NL"
+              :title="t('btv.featured_projects.newcomer_navigator.name')"
             >
               <img
                 src="/assets/images/projects/newcomer-navigator-logo.png"
-                alt="Newcomer Navigator NL"
+                :alt="t('btv.featured_projects.newcomer_navigator.name')"
                 class="project-logo"
               >
             </a>
             <p class="card-text mt-3">
-              A Community Engine–based platform helping newcomers find resources,
-              services, and community connections across Newfoundland and Labrador.
+              {{ t('btv.featured_projects.newcomer_navigator.description') }}
             </p>
           </div>
           <div class="cta card-footer text-center">
@@ -33,30 +32,29 @@
               href="https://newcomernavigatornl.ca?utm_source=bettertogether.ca&utm_medium=website&utm_campaign=projects&utm_content=button"
               target="newcomernavigatornl"
               class="btn btn-primary card-action"
-            >Learn more</a>
+            >{{ t('bt.actions.learn_more') }}</a>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card text-center h-100">
           <div class="card-header">
-            <h5>NL Venues</h5>
+            <h5>{{ t('btv.featured_projects.nl_venues.name') }}</h5>
           </div>
           <div class="card-body text-center">
             <a
               href="https://nlvenues.com?utm_source=bettertogether.ca&utm_medium=website&utm_campaign=projects&utm_content=logo"
               target="nlvenues"
-              title="NL Venues"
+              :title="t('btv.featured_projects.nl_venues.name')"
             >
               <img
                 src="/assets/images/projects/nl-venues-logo.png"
-                alt="NL Venues"
+                :alt="t('btv.featured_projects.nl_venues.name')"
                 class="project-logo"
               >
             </a>
             <p class="card-text mt-3">
-              A Community Engine–powered directory for venues and events,
-              connecting artists, organizers, and spaces in Newfoundland and Labrador.
+              {{ t('btv.featured_projects.nl_venues.description') }}
             </p>
           </div>
           <div class="cta card-footer text-center">
@@ -64,7 +62,7 @@
               href="https://nlvenues.com?utm_source=bettertogether.ca&utm_medium=website&utm_campaign=projects&utm_content=button"
               target="nlvenues"
               class="btn btn-primary card-action"
-            >Learn more</a>
+            >{{ t('bt.actions.learn_more') }}</a>
           </div>
         </div>
       </div>
@@ -73,7 +71,9 @@
 </template>
 
 <script setup>
-// Static content — no reactive state needed
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

@@ -3,22 +3,20 @@
     <section id="camp-better-together-section">
       <div class="row heading">
         <div class="col-md">
-          <h2>Camp Better Together</h2>
+          <h2>{{ t('btv.pages.camp_better_together.heading') }}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md">
           <p class="card-text">
-            Camp Better Together is a one-of-a-kind Really Remote Work (RRW)
-            co-working and co-living wilderness camping community. If you work
-            remotely and enjoy hiking, camping, and adventure, this is for you!
+            {{ t('btv.pages.camp_better_together.description') }}
           </p>
           <div class="cta text-center">
             <RouterLink
               to="/contact"
               class="btn btn-primary card-action"
             >
-              Learn more
+              {{ t('bt.actions.learn_more') }}
             </RouterLink>
           </div>
         </div>
@@ -28,7 +26,10 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
+
+const { t } = useI18n()
 </script>
 
 <style lang="scss">

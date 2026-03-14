@@ -5,7 +5,7 @@
   >
     <div class="row heading">
       <div class="col-md">
-        <h2>Subscribe to Our Mailing List</h2>
+        <h2>{{ t('btv.newsletter.heading') }}</h2>
       </div>
     </div>
     <div class="row mt-4 mb-4">
@@ -24,10 +24,10 @@
             >
               <div id="mc_embed_signup_scroll">
                 <div class="indicates-required mb-2">
-                  <span class="asterisk">*</span> indicates required
+                  <span class="asterisk">*</span> {{ t('btv.newsletter.indicates_required') }}
                 </div>
                 <div class="mc-field-group">
-                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                  <label for="mce-EMAIL">{{ t('btv.newsletter.email_address') }} <span class="asterisk">*</span></label>
                   <input
                     id="mce-EMAIL"
                     type="email"
@@ -38,7 +38,7 @@
                   >
                 </div>
                 <div class="mc-field-group">
-                  <label for="mce-FNAME">First Name</label>
+                  <label for="mce-FNAME">{{ t('btv.newsletter.first_name') }}</label>
                   <input
                     id="mce-FNAME"
                     type="text"
@@ -48,7 +48,7 @@
                   >
                 </div>
                 <div class="mc-field-group">
-                  <label for="mce-LNAME">Last Name</label>
+                  <label for="mce-LNAME">{{ t('btv.newsletter.last_name') }}</label>
                   <input
                     id="mce-LNAME"
                     type="text"
@@ -88,7 +88,7 @@
                   <input
                     id="mc-embedded-subscribe"
                     type="submit"
-                    value="Subscribe"
+                    :value="t('btv.newsletter.subscribe')"
                     name="subscribe"
                     class="button btn btn-primary"
                   >
@@ -104,7 +104,9 @@
 </template>
 
 <script setup>
-// No component logic needed — this is a static Mailchimp form
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

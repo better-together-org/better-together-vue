@@ -2,50 +2,48 @@
   <section id="membership">
     <div class="row heading">
       <div class="col-md">
-        <h2>Join Better Together</h2>
+        <h2>{{ t('btv.pages.membership.heading') }}</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-md">
-        <p>
-          Better Together is looking to connect with those who want to make a difference.
-          Join us as we work together to make the world a better place!
-        </p>
+        <p>{{ t('btv.pages.membership.body') }}</p>
         <h5 class="text-start">
-          Membership Types
+          {{ t('btv.pages.membership.types_heading') }}
         </h5>
         <ul>
-          <li>Individual</li>
-          <li>Organization</li>
+          <li>{{ t('btv.pages.membership.types.individual') }}</li>
+          <li>{{ t('btv.pages.membership.types.organization') }}</li>
         </ul>
         <h5 class="text-start">
-          Skill Sets
+          {{ t('btv.pages.membership.skills_heading') }}
         </h5>
-        <p>
-          We need people with the following skills:
-        </p>
+        <p>{{ t('btv.pages.membership.skills_intro') }}</p>
         <ul>
-          <li>software developers</li>
-          <li>strategists</li>
-          <li>fund raisers</li>
-          <li>project managers</li>
-          <li>communications specialists</li>
-          <li>and more!</li>
+          <li>{{ t('btv.pages.membership.skills.software_developers') }}</li>
+          <li>{{ t('btv.pages.membership.skills.strategists') }}</li>
+          <li>{{ t('btv.pages.membership.skills.fund_raisers') }}</li>
+          <li>{{ t('btv.pages.membership.skills.project_managers') }}</li>
+          <li>{{ t('btv.pages.membership.skills.communications_specialists') }}</li>
+          <li>{{ t('btv.pages.membership.skills.and_more') }}</li>
         </ul>
       </div>
     </div>
     <div class="cta">
       <RouterLink
         to="/contact"
-        title="Join us!"
+        :title="t('btv.pages.membership.cta')"
         class="btn btn-primary"
       >
-        Join us!
+        {{ t('btv.pages.membership.cta') }}
       </RouterLink>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
+
+const { t } = useI18n()
 </script>

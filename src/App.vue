@@ -7,8 +7,10 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { BtHeader, BtMainContent, useMenuStore } from '@bettertogether/community-engine-vue'
 
+const { t } = useI18n()
 const menuStore = useMenuStore()
 
 onMounted(() => {
@@ -16,63 +18,63 @@ onMounted(() => {
     {
       id: 0,
       external: false,
-      label: 'About',
+      label: t('btv.nav.about'),
       path: '/about',
-      title: 'About the Better Together Community',
+      title: t('btv.nav.about_title'),
       sortOrder: 0,
     },
     {
       id: 1,
       external: false,
-      label: 'Projects',
+      label: t('btv.nav.projects'),
       path: '/projects',
-      title: 'Better Together Community Projects',
+      title: t('btv.nav.projects_title'),
       sortOrder: 1,
     },
     {
       id: 2,
       external: false,
-      label: 'Partners',
+      label: t('btv.nav.partners'),
       path: '/partners',
-      title: 'Better Together Community Partners',
+      title: t('btv.nav.partners_title'),
       sortOrder: 2,
     },
     {
       id: 3,
       external: false,
-      label: 'Opportunities',
+      label: t('btv.nav.opportunities'),
       path: '/opportunities',
-      title: 'Better Together Community Opportunities',
+      title: t('btv.nav.opportunities_title'),
       sortOrder: 3,
     },
     {
       id: 8,
-      label: 'Community Platforms',
+      label: t('btv.nav.community_platforms'),
       path: '/community-platforms',
-      title: 'Better Together Community Platforms',
+      title: t('btv.nav.community_platforms_title'),
       sortOrder: 4,
       children: [
         {
           id: 6,
           external: true,
-          label: 'Community Hub',
-          title: 'Better Together Community Hub',
+          label: t('btv.nav.community_hub'),
+          title: t('btv.nav.community_hub_title'),
           sortOrder: 1,
           url: 'https://hub.bebettertogether.ca/',
         },
         {
           id: 4,
           external: true,
-          label: 'Community Marketplace',
-          title: 'Better Together Community Marketplace',
+          label: t('btv.nav.community_marketplace'),
+          title: t('btv.nav.community_marketplace_title'),
           sortOrder: 2,
           url: 'https://marketplace.bebettertogether.ca/',
         },
         {
           id: 7,
           external: true,
-          label: 'Community Cloud',
-          title: 'Better Together Community Cloud',
+          label: t('btv.nav.community_cloud'),
+          title: t('btv.nav.community_cloud_title'),
           sortOrder: 3,
           url: 'https://cloud.bebettertogether.ca/',
         },
@@ -81,9 +83,9 @@ onMounted(() => {
     {
       id: 5,
       external: false,
-      label: 'Contact',
+      label: t('btv.nav.contact'),
       path: '/contact',
-      title: 'Contact the Better Together Community',
+      title: t('btv.nav.contact_title'),
       sortOrder: 5,
     },
   ])

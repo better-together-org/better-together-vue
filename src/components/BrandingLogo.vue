@@ -3,13 +3,16 @@
     <img
       class="logo"
       src="../assets/better-together-logo.png"
-      alt="Better Together"
+      :alt="t('btv.app.title')"
     >
   </BNavbarBrand>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { BNavbarBrand } from 'bootstrap-vue-next'
+
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

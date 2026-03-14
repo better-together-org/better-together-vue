@@ -2,18 +2,9 @@
   <section id="open-source-software">
     <div class="row heading mb-3">
       <div class="col-md">
-        <h2>Open Source Software</h2>
-        <p>
-          Open source software is software that is collaboratively designed
-          and released to the public to give back and ensure that everyone
-          has access to and understands the technology.
-        </p>
-        <p>
-          We are actively looking for support from the public in building and
-          maintaining the open source projects listed below. We are looking
-          for more then just software developers! Anyone with writing skills,
-          research, marketing, or communications would be really helpful.
-        </p>
+        <h2>{{ t('btv.pages.open_source_software.heading') }}</h2>
+        <p>{{ t('btv.pages.open_source_software.intro_p1') }}</p>
+        <p>{{ t('btv.pages.open_source_software.intro_p2') }}</p>
       </div>
     </div>
     <div class="row">
@@ -25,28 +16,25 @@
                 <h5>
                   <RouterLink
                     to="/projects/community-engine"
-                    title="Better Together Community Engine"
+                    :title="t('btv.pages.open_source_software.community_engine.name')"
                     class="card-title"
                   >
-                    Better Together Community Engine
+                    {{ t('btv.pages.open_source_software.community_engine.name') }}
                   </RouterLink>
                 </h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
-                  The Better Together Community Engine is an open-source plugin
-                  that allows developers to build community features into their
-                  apps with ease. There is currently a Ruby on Rails gem and a
-                  Django package version.
+                  {{ t('btv.pages.open_source_software.community_engine.description') }}
                 </p>
               </div>
               <div class="cta card-footer text-center">
                 <RouterLink
                   to="/projects/community-engine"
-                  title="Better Together Community Engine"
+                  :title="t('btv.pages.open_source_software.community_engine.name')"
                   class="btn btn-primary card-action"
                 >
-                  Learn more
+                  {{ t('bt.actions.learn_more') }}
                 </RouterLink>
               </div>
             </div>
@@ -59,26 +47,24 @@
                     class="card-title"
                     href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
                     target="draw"
-                    title="DRAW: Data Rescue Archives and Weather"
+                    :title="t('btv.pages.open_source_software.draw.name')"
                   >
-                    DRAW: Data Rescue Archives and Weather
+                    {{ t('btv.pages.open_source_software.draw.name') }}
                   </a>
                 </h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
-                  DRAW is a citizen science project that aims to engage citizens
-                  to recover historic weather observations from the archives and
-                  make the data available for use in climate research.
+                  {{ t('btv.pages.open_source_software.draw.description') }}
                 </p>
               </div>
               <div class="cta card-footer text-center">
                 <a
                   href="https://citsci.geog.mcgill.ca/?utm_source=better-together&utm_medium=partner&utm_campaign=partnership"
                   target="draw"
-                  title="DRAW: Data Rescue Archives and Weather"
+                  :title="t('btv.pages.open_source_software.draw.name')"
                   class="btn btn-primary card-action"
-                >Learn more</a>
+                >{{ t('bt.actions.learn_more') }}</a>
               </div>
             </div>
           </div>
@@ -89,7 +75,10 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
+
+const { t } = useI18n()
 </script>
 
 <style lang="scss">

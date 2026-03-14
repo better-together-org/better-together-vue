@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "lint": "eslint src --ext .vue,.js --fix",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "i18n:check": "node scripts/i18n-check.mjs"
   },
   "dependencies": {
     "@bettertogether/community-engine-vue": "file:../community-engine-vue",
@@ -25,6 +26,7 @@
     "pinia": "^2.3.0",
     "pinia-plugin-persistedstate": "^4.2.0",
     "vue": "^3.5.0",
+    "vue-i18n": "^9.14.0",
     "vue-router": "^4.4.0"
   },
   "devDependencies": {

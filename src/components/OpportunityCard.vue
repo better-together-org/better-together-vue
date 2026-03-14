@@ -19,7 +19,7 @@
       </h4>
       <p class="card-subtitle text-muted mb-2">
         <span :title="community">{{ community }}</span>,<br>
-        <span title="Publication Date">{{ publishedAt }}</span>
+        <span :title="t('btv.opportunity_card.publication_date')">{{ publishedAt }}</span>
       </p>
       <div class="text-center">
         <BBadge
@@ -35,7 +35,7 @@
       <p class="card-subtitle text-muted my-2">
         <!-- eslint-disable-next-line vue/no-v-html -->
         <span
-          title="Location"
+          :title="t('btv.opportunity_card.location')"
           v-html="location"
         />
       </p>
@@ -60,14 +60,17 @@
         variant="primary"
         :target="urlTarget"
       >
-        Learn more
+        {{ t('bt.actions.learn_more') }}
       </BButton>
     </template>
   </BCard>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
 import { BCard, BBadge, BButton, BLink } from 'bootstrap-vue-next'
+
+const { t } = useI18n()
 
 defineProps({
   id: { type: Number, required: true },

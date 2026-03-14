@@ -118,3 +118,38 @@ jobs:
       - name: Build
         working-directory: better-together-vue
         run: yarn build
+
+  i18n-health:
+    name: i18n Health Check
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    steps:
+      - name: Checkout better-together-vue
+        uses: actions/checkout@v4
+        with:
+          path: better-together-vue
+
+      - name: Checkout community-engine-vue
+        uses: actions/checkout@v4
+        with:
+          repository: better-together-org/community-engine-vue
+          ref: vue3-migration
+          path: community-engine-vue
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: yarn
+          cache-dependency-path: better-together-vue/yarn.lock
+
+      - name: Install CEV dependencies
+        working-directory: community-engine-vue
+        run: yarn install --frozen-lockfile
+
+      - name: Install BTV dependencies
+        working-directory: better-together-vue
+        run: yarn install --frozen-lockfile
+
+      - name: Check i18n keys
+        working-directory: better-together-vue
+        run: yarn i18n:check
