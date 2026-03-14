@@ -12,7 +12,7 @@
     "i18n:check": "node scripts/i18n-check.mjs"
   },
   "dependencies": {
-    "@bettertogether/community-engine-vue": "file:../community-engine-vue",
+    "@bettertogether/community-engine-vue": "^0.2.0",
     "@electric-sql/pglite": "^0.3.16",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
@@ -38,6 +38,8 @@
     "jsdom": "^25.0.1",
     "sass": "^1.32.0",
     "vite": "^6.2.0",
-    "vitest": "^3.0.8"
+    "vite-plugin-pwa": "^1.2.0",
+    "vitest": "^3.0.8",
+    "workbox-window": "^7.4.0"
   }
 }

@@ -1,6 +1,29 @@
 <template>
   <div id="app">
+    <BAlert
+      v-if="updateAvailable"
+      variant="info"
+      class="pwa-update-banner mb-0 rounded-0 text-center"
+      :model-value="true"
+      dismissible
+    >
+      {{ t('btv.pwa.update_available') }}
+      <BButton size="sm" variant="primary" class="ms-2" @click="applyUpdate">
+        {{ t('btv.pwa.reload') }}
+      </BButton>
+    </BAlert>
+
     <BtHeader />
+
+    <div v-if="canInstall" class="pwa-install-bar text-center py-2 bg-light border-bottom">
+      <BButton size="sm" variant="outline-success" @click="install">
+        {{ t('btv.pwa.install') }}
+      </BButton>
+      <BButton size="sm" variant="link" class="ms-1 text-muted" @click="dismiss">
+        {{ t('btv.pwa.install_dismiss') }}
+      </BButton>
+    </div>
+
     <BtMainContent />
   </div>
 </template>
@@ -8,10 +31,15 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { BAlert, BButton } from 'bootstrap-vue-next'
 import { BtHeader, BtMainContent, useMenuStore } from '@bettertogether/community-engine-vue'
+import { useSwUpdate, useInstallPrompt } from './pwa/index.js'
 
 const { t } = useI18n()
 const menuStore = useMenuStore()
+
+const { updateAvailable, applyUpdate } = useSwUpdate()
+const { canInstall, install, dismiss } = useInstallPrompt()
 
 onMounted(() => {
   menuStore.setHeaderMenuItems([

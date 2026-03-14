@@ -333,6 +333,12 @@
         "p3": "Buyers will discover the inventory of the stores around them and place an order for pick up or delivery. Local businesses would have the benefit of managing their inventory and showcasing it to the local community as well as offering expansion opportunities by tapping into the global e-commerce market.",
         "p4": "Create your online store and you will get your own storefront to market to your customers as well as have your products appear in a platform-wide storefront along with those of other co-op members."
       }
+    },
+    "pwa": {
+      "update_available": "A new version is available.",
+      "reload": "Reload",
+      "install": "Install App",
+      "install_dismiss": "Not now"
     }
   }
 }

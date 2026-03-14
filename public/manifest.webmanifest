@@ -1,0 +1,14 @@
+{
+  "name": "Better Together",
+  "short_name": "BetterTogether",
+  "description": "Community organizing and co-operative tools",
+  "theme_color": "#4a7c59",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    { "src": "/icons/pwa-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/pwa-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

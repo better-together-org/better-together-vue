@@ -119,6 +119,11 @@ jobs:
         working-directory: better-together-vue
         run: yarn build
 
+      - name: Verify PWA service worker in build
+        working-directory: better-together-vue
+        run: |
+          test -f dist/sw.js && echo "✅ sw.js present" || (echo "❌ sw.js missing" && exit 1)
+
   i18n-health:
     name: i18n Health Check
     runs-on: ubuntu-latest

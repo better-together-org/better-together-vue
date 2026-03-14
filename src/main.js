@@ -5,11 +5,10 @@ import CommunityEngineVue from '@bettertogether/community-engine-vue'
 import { i18n } from './i18n'
 import router from './router'
 import App from './App.vue'
+import { setupServiceWorker } from './pwa/register.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
-
-// TODO: Re-enable PWA with vite-plugin-pwa in Phase 7
 
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
@@ -22,3 +21,5 @@ app.use(i18n)
 app.use(CommunityEngineVue)
 
 app.mount('#app')
+
+setupServiceWorker()
