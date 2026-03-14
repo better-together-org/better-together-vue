@@ -109,7 +109,8 @@ const localRoutes = [
     meta: { title: 'Contact Us | Be Better Together' },
   },
   // BtRoutes includes auth routes, community routes, and Error404 catch-all from CEV
-  ...BtRoutes,
+  // Filter out '/' — BTV defines its own home page above
+  ...BtRoutes.filter((r) => r.path !== '/'),
 ]
 
 const router = createRouter({

@@ -809,10 +809,10 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
-"@bettertogether/community-engine-vue@0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@bettertogether/community-engine-vue/-/community-engine-vue-0.2.4.tgz#9cd37a864f65e1342900c961423c2d2850a230ab"
-  integrity sha512-smuFuLJDtB/0eZjQFhff2HrbUB3qglZ0c3E4H7z/6zNG2fLzHycZnJmKjANyMTEKrtYXe7Jx8ZvpL88SnbWQyg==
+"@bettertogether/community-engine-vue@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@bettertogether/community-engine-vue/-/community-engine-vue-0.2.5.tgz#acc542f72568cf1461f0e1434c8d5d605e9fac60"
+  integrity sha512-7y3Q81953EzGW1CzkqhGQlx6jxVJnBi9fGRZ8dl5kOMz6uUx1zI0CIwx+eUL0JpY+7xwsoRVBOp6vKspQoVQyQ==
   dependencies:
     "@electric-sql/pglite" "^0.3.16"
     "@fortawesome/fontawesome-svg-core" "^1.2.34"

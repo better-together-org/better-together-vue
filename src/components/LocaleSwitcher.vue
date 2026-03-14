@@ -1,21 +1,25 @@
 <template>
-  <div class="locale-switcher d-flex align-items-center gap-1">
-    <button
+  <BDropdown
+    :text="currentLocale.label"
+    variant="outline-light"
+    size="sm"
+    class="locale-switcher"
+  >
+    <BDropdownItem
       v-for="loc in locales"
       :key="loc.code"
-      class="btn btn-sm locale-btn"
-      :class="locale === loc.code ? 'btn-light active' : 'btn-outline-light'"
-      :aria-label="loc.label"
-      :aria-pressed="locale === loc.code"
+      :active="locale === loc.code"
       @click="setLocale(loc.code)"
     >
-      {{ loc.code.toUpperCase() }}
-    </button>
-  </div>
+      {{ loc.label }}
+    </BDropdownItem>
+  </BDropdown>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { BDropdown, BDropdownItem } from 'bootstrap-vue-next'
 
 const { locale } = useI18n()
 
@@ -26,23 +30,10 @@ const locales = [
   { code: 'uk', label: 'Українська' },
 ]
 
+const currentLocale = computed(() => locales.find((l) => l.code === locale.value) || locales[0])
+
 function setLocale(code) {
   locale.value = code
   localStorage.setItem('btv-locale', code)
 }
 </script>
-
-<style scoped>
-.locale-switcher {
-  gap: 0.25rem;
-}
-
-.locale-btn {
-  font-size: 0.7rem;
-  padding: 0.15rem 0.4rem;
-  font-weight: bold;
-  letter-spacing: 0.03em;
-  border-radius: 3px;
-  line-height: 1.4;
-}
-</style>
