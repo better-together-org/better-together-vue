@@ -1,183 +1,175 @@
 <template>
-  <section
-    id="objectives"
-  >
+  <section id="objectives">
     <div class="row">
       <div class="col">
-        <h2>Goals</h2>
+        <h2>{{ t('btv.pages.goals.heading') }}</h2>
       </div>
     </div>
 
     <div class="row">
       <div class="col">
-        <div class="card-deck">
-          <div class="card text-center">
-            <div class="card-header">
-              <h5>
-                <router-link
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-header">
+                <h5>
+                  <RouterLink
+                    to="#"
+                    :title="t('btv.pages.goals.community.name')"
+                  >
+                    {{ t('btv.pages.goals.community.name') }}
+                  </RouterLink>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p>{{ t('btv.pages.goals.community.body') }}</p>
+              </div>
+              <div class="card-footer">
+                <RouterLink
                   to="#"
-                  title="Community"
-                  class=""
+                  :title="t('btv.pages.goals.community.name')"
+                  class="btn btn-primary card-action"
                 >
-                  Community
-                </router-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p>
-                Community building
-              </p>
-            </div>
-            <div class="card-footer">
-              <router-link
-                to="#"
-                title="Community"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </router-link>
+                  {{ t('bt.actions.learn_more') }}
+                </RouterLink>
+              </div>
             </div>
           </div>
 
-          <div class="card text-center">
-            <div class="card-header">
-              <h5>
-                <router-link
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-header">
+                <h5>
+                  <RouterLink
+                    to="#"
+                    :title="t('btv.pages.goals.clean_energy.name')"
+                  >
+                    {{ t('btv.pages.goals.clean_energy.name') }}
+                  </RouterLink>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p>{{ t('btv.pages.goals.clean_energy.body') }}</p>
+              </div>
+              <div class="card-footer">
+                <RouterLink
                   to="#"
-                  title="Clean Energy"
-                  class=""
+                  :title="t('btv.pages.goals.clean_energy.name')"
+                  class="btn btn-primary card-action"
                 >
-                  Clean Energy
-                </router-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p>
-                Clean Energy
-              </p>
-            </div>
-            <div class="card-footer">
-              <router-link
-                to="#"
-                title="Clean Energy"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </router-link>
+                  {{ t('bt.actions.learn_more') }}
+                </RouterLink>
+              </div>
             </div>
           </div>
 
-          <div class="card text-center">
-            <div class="card-header">
-              <h5>
-                <router-link
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-header">
+                <h5>
+                  <RouterLink
+                    to="#"
+                    :title="t('btv.pages.goals.social_justice.name')"
+                  >
+                    {{ t('btv.pages.goals.social_justice.name') }}
+                  </RouterLink>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p>{{ t('btv.pages.goals.social_justice.body') }}</p>
+              </div>
+              <div class="card-footer">
+                <RouterLink
                   to="#"
-                  title="Social Justice"
-                  class=""
+                  :title="t('btv.pages.goals.social_justice.name')"
+                  class="btn btn-primary card-action"
                 >
-                  Social Justice
-                </router-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p>
-                Social Justice building
-              </p>
-            </div>
-            <div class="card-footer">
-              <router-link
-                to="#"
-                title="Social Justice"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </router-link>
+                  {{ t('bt.actions.learn_more') }}
+                </RouterLink>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card-deck mt-5">
-          <div class="card text-center">
-            <div class="card-header">
-              <h5>
-                <router-link
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-header">
+                <h5>
+                  <RouterLink
+                    to="#"
+                    :title="t('btv.pages.goals.sustainability.name')"
+                  >
+                    {{ t('btv.pages.goals.sustainability.name') }}
+                  </RouterLink>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p>{{ t('btv.pages.goals.sustainability.body') }}</p>
+              </div>
+              <div class="card-footer">
+                <RouterLink
                   to="#"
-                  title="Sustainability"
-                  class=""
+                  :title="t('btv.pages.goals.sustainability.name')"
+                  class="btn btn-primary card-action"
                 >
-                  Sustainability
-                </router-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p>
-                Sustainability
-              </p>
-            </div>
-            <div class="card-footer">
-              <router-link
-                to="#"
-                title="Sustainability"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </router-link>
+                  {{ t('bt.actions.learn_more') }}
+                </RouterLink>
+              </div>
             </div>
           </div>
 
-          <div class="card text-center">
-            <div class="card-header">
-              <h5>
-                <router-link
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-header">
+                <h5>
+                  <RouterLink
+                    to="#"
+                    :title="t('btv.pages.goals.climate_change.name')"
+                  >
+                    {{ t('btv.pages.goals.climate_change.name') }}
+                  </RouterLink>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p>{{ t('btv.pages.goals.climate_change.body') }}</p>
+              </div>
+              <div class="card-footer">
+                <RouterLink
                   to="#"
-                  title="Climate Change"
-                  class=""
+                  :title="t('btv.pages.goals.climate_change.name')"
+                  class="btn btn-primary card-action"
                 >
-                  Climate Change
-                </router-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p>
-                Climate Change
-              </p>
-            </div>
-            <div class="card-footer">
-              <router-link
-                to="#"
-                title="Climate Change"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </router-link>
+                  {{ t('bt.actions.learn_more') }}
+                </RouterLink>
+              </div>
             </div>
           </div>
 
-          <div class="card text-center">
-            <div class="card-header">
-              <h5>
-                <router-link
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-header">
+                <h5>
+                  <RouterLink
+                    to="#"
+                    :title="t('btv.pages.goals.cooperatives.name')"
+                  >
+                    {{ t('btv.pages.goals.cooperatives.name') }}
+                  </RouterLink>
+                </h5>
+              </div>
+              <div class="card-body">
+                <p>{{ t('btv.pages.goals.cooperatives.body') }}</p>
+              </div>
+              <div class="card-footer">
+                <RouterLink
                   to="#"
-                  title="Cooperatives"
-                  class=""
+                  :title="t('btv.pages.goals.cooperatives.name')"
+                  class="btn btn-primary card-action"
                 >
-                  Cooperatives
-                </router-link>
-              </h5>
-            </div>
-            <div class="card-body">
-              <p>
-                Cooperatives
-              </p>
-            </div>
-            <div class="card-footer">
-              <router-link
-                to="#"
-                title="Cooperatives"
-                class="btn btn-primary card-action"
-              >
-                Learn more
-              </router-link>
+                  {{ t('bt.actions.learn_more') }}
+                </RouterLink>
+              </div>
             </div>
           </div>
         </div>
@@ -186,12 +178,11 @@
   </section>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
+import { useI18n } from 'vue-i18n'
+import { RouterLink } from 'vue-router'
 
-export default {
-  name: 'Goals',
-}
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">

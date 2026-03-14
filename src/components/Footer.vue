@@ -3,32 +3,25 @@
     id="footer"
     class="container-fluid"
   >
-    <b-navbar
+    <BNavbar
       toggleable="lg"
       type="dark"
       variant="dark"
     >
       <BtBrandingLogo class="m-auto" />
-    </b-navbar>
+    </BNavbar>
   </footer>
 </template>
 
-<script>
+<script setup>
+import { BNavbar } from 'bootstrap-vue-next'
 import BtBrandingLogo from './BrandingLogo.vue'
-
-export default {
-  name: 'BtFooter',
-  components: {
-    BtBrandingLogo,
-  },
-}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import 'bootstrap/scss/_functions.scss';
-@import 'bootstrap/scss/_variables.scss';
-@import 'bootstrap/scss/_mixins.scss';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
 #footer {
   position: fixed;

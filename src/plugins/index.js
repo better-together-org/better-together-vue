@@ -1,4 +1,2 @@
-import './bootstrap-vue'
-import './community-engine-vue'
-import './vue-form-generator'
-import './vue-loading'
+// Plugins are installed in src/main.js
+// This file is kept for import side effects (fonts, etc.)

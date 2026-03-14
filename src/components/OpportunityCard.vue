@@ -1,5 +1,5 @@
 <template>
-  <b-card
+  <BCard
     :img-src="imageUrl"
     :img-alt="name"
     img-top
@@ -7,22 +7,22 @@
   >
     <template #header>
       <h4 class="card-title">
-        <b-link
+        <BLink
           v-if="url"
           :href="url"
           :title="name"
           :target="urlTarget"
         >
           {{ name }}
-        </b-link>
+        </BLink>
         <span v-else>{{ name }}</span>
       </h4>
-      <b-card-sub-title class="mb-2">
-        <span title="Community">{{ community }}</span>,<br>
-        <span title="Publication Date">{{ publishedAt }}</span>
-      </b-card-sub-title>
+      <p class="card-subtitle text-muted mb-2">
+        <span :title="community">{{ community }}</span>,<br>
+        <span :title="t('btv.opportunity_card.publication_date')">{{ publishedAt }}</span>
+      </p>
       <div class="text-center">
-        <b-badge
+        <BBadge
           v-for="tag in tags"
           :key="tag"
           pill
@@ -30,115 +30,66 @@
           :title="tag"
         >
           {{ tag }}
-        </b-badge>
+        </BBadge>
       </div>
-      <b-card-sub-title
-        class="my-2"
-      >
-        <!-- eslint-disable vue/no-v-html -->
-        <!-- location is server-provided structured text (e.g. "City, Province<br>Country") -->
+      <p class="card-subtitle text-muted my-2">
+        <!-- eslint-disable-next-line vue/no-v-html -->
         <span
-          title="Location"
+          :title="t('btv.opportunity_card.location')"
           v-html="location"
         />
-        <!-- eslint-enable vue/no-v-html -->
-      </b-card-sub-title>
+      </p>
     </template>
-    <b-card-text>
-      {{ description }}
-    </b-card-text>
-    <!-- eslint-disable vue/no-v-html -->
-    <!-- attribution is server-provided HTML (e.g. links to photo credits) -->
-    <b-card-text
-      v-if="attribution"
-      class="text-muted"
-      text-tag="small"
-      v-html="attribution"
-    />
-    <!-- eslint-enable vue/no-v-html -->
 
-    <template
-      #footer
+    <p class="card-text">
+      {{ description }}
+    </p>
+    <!-- eslint-disable-next-line vue/no-v-html -->
+    <p
+      v-if="attribution"
+      class="card-text text-muted"
     >
-      <b-button
+      <small v-html="attribution" />
+    </p>
+
+    <template #footer>
+      <BButton
         v-if="url"
         class="card-action"
         :href="url"
         variant="primary"
-        title="Learn more"
         :target="urlTarget"
       >
-        Learn more
-      </b-button>
+        {{ t('bt.actions.learn_more') }}
+      </BButton>
     </template>
-  </b-card>
+  </BCard>
 </template>
 
-<script>
-export default {
-  name: 'Opportunity',
-  props: {
-    id: {
-      type: Number,
-      required: true,
-    },
-    community: {
-      type: String,
-      required: true,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    location: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-    url: {
-      type: String,
-      required: false,
-      default: () => '',
-    },
-    urlTarget: {
-      type: String,
-      required: false,
-      default: () => '',
-    },
-    imageUrl: {
-      type: String,
-      required: false,
-      default: () => '',
-    },
-    attribution: {
-      type: String,
-      required: false,
-      default: () => '',
-    },
-    publishedAt: {
-      type: String,
-      required: true,
-    },
-    tags: {
-      type: Array,
-      required: false,
-      default: () => [],
-    },
-  },
-}
+<script setup>
+import { useI18n } from 'vue-i18n'
+import { BCard, BBadge, BButton, BLink } from 'bootstrap-vue-next'
+
+const { t } = useI18n()
+
+defineProps({
+  id: { type: Number, required: true },
+  community: { type: String, required: true },
+  name: { type: String, required: true },
+  location: { type: String, required: true },
+  description: { type: String, required: true },
+  url: { type: String, default: '' },
+  urlTarget: { type: String, default: '' },
+  imageUrl: { type: String, default: '' },
+  attribution: { type: String, default: '' },
+  publishedAt: { type: String, required: true },
+  tags: { type: Array, default: () => [] },
+})
 </script>
 
 <style scoped lang="scss">
-  .card {
-    &:hover {
-      background-color: #F5F5F5;
-    }
-
-    .badge + .badge {
-      margin-left: 2px;
-    }
-  }
+.card {
+  &:hover { background-color: #F5F5F5; }
+  .badge + .badge { margin-left: 2px; }
+}
 </style>

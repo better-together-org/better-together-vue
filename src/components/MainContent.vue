@@ -3,25 +3,20 @@
     id="main-content"
     class="container"
   >
-    <router-view />
+    <RouterView />
   </main>
 </template>
 
-<script>
-export default {
-  name: 'BtMainContent',
-}
+<script setup>
+import { RouterView } from 'vue-router'
 </script>
 
 <style lang="scss">
-@import 'bootstrap/scss/_functions.scss';
-@import 'bootstrap/scss/_variables.scss';
-@import 'bootstrap/scss/_mixins.scss';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
 #main-content {
-  // height: 70vh;
-  // overflow-y: scroll;
-  // padding-top: 2.5vh;
   margin-bottom: 5vh;
 
   h1, h2, h3, h4, h5, h6 {

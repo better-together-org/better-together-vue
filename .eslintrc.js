@@ -1,61 +1,43 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es6: true,
-    jest: true,
+    es2021: true,
+    node: true,
   },
   extends: [
     'eslint:recommended',
-    // 'plugin:vue/essential',
-    'airbnb-base',
-    'plugin:vue/recommended',
+    'plugin:vue/vue3-recommended',
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
-    parser: 'babel-eslint',
   },
-  plugins: [
-    'vue',
-  ],
+  plugins: ['vue'],
+  globals: {
+    describe: 'readonly',
+    it: 'readonly',
+    expect: 'readonly',
+    beforeEach: 'readonly',
+    vi: 'readonly',
+  },
   rules: {
-    indent: [
-      'error',
-      2,
-    ],
-    'linebreak-style': [
-      'error',
-      'unix',
-    ],
-    quotes: [
-      'error',
-      'single',
-    ],
-    semi: [
-      'error',
-      'never',
-    ],
-    'no-param-reassign': [
-      'error',
-      {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'currentState',
-        ],
-      },
-    ],
+    indent: ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'never'],
+    'vue/multi-word-component-names': 'off',
+    'no-param-reassign': ['error', {
+      props: true,
+      ignorePropertyModificationsFor: ['currentState'],
+    }],
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
   },
   overrides: [
     {
-      // Jest resolves @/ via moduleNameMapper; ESLint import resolver doesn't know about it
-      files: ['tests/**/*.js', 'tests/**/*.ts'],
-      rules: {
-        'import/no-unresolved': 'off',
-      },
+      files: ['tests/**/*.js', '*.spec.js'],
+      rules: { 'import/no-unresolved': 'off' },
     },
   ],
 }

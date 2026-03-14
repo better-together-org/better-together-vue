@@ -1,15 +1,25 @@
-import 'mutationobserver-shim'
-import './plugins'
-import './registerServiceWorker'
-import Vue from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+import CommunityEngineVue from '@bettertogether/community-engine-vue'
+import { i18n } from './i18n'
 import router from './router'
-import store from './store'
+import App from './App.vue'
+import { setupServiceWorker } from './pwa/register.js'
 
-Vue.config.productionTip = false
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount('#app')
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
+
+const app = createApp(App)
+
+app.use(pinia)
+app.use(router)
+app.use(i18n)
+app.use(CommunityEngineVue)
+
+app.mount('#app')
+
+setupServiceWorker()

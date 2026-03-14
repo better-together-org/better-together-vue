@@ -1,4 +1,2 @@
-import Vue from 'vue'
-import CommunityEngineVue from '@bettertogether/community-engine-vue'
-
-Vue.use(CommunityEngineVue)
+// CommunityEngineVue is installed in src/main.js via app.use(CommunityEngineVue)
+export { default } from '@bettertogether/community-engine-vue'

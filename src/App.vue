@@ -1,111 +1,129 @@
 <template>
   <div id="app">
+    <BAlert
+      v-if="updateAvailable"
+      variant="info"
+      class="pwa-update-banner mb-0 rounded-0 text-center"
+      :model-value="true"
+      dismissible
+    >
+      {{ t('btv.pwa.update_available') }}
+      <BButton size="sm" variant="primary" class="ms-2" @click="applyUpdate">
+        {{ t('btv.pwa.reload') }}
+      </BButton>
+    </BAlert>
+
     <BtHeader />
+
+    <div v-if="canInstall" class="pwa-install-bar text-center py-2 bg-light border-bottom">
+      <BButton size="sm" variant="outline-success" @click="install">
+        {{ t('btv.pwa.install') }}
+      </BButton>
+      <BButton size="sm" variant="link" class="ms-1 text-muted" @click="dismiss">
+        {{ t('btv.pwa.install_dismiss') }}
+      </BButton>
+    </div>
+
     <BtMainContent />
   </div>
 </template>
 
-<script>
-import { mapActions } from 'vuex'
-import { BtHeader, BtMainContent } from '@bettertogether/community-engine-vue'
+<script setup>
+import { onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { BAlert, BButton } from 'bootstrap-vue-next'
+import { BtHeader, BtMainContent, useMenuStore } from '@bettertogether/community-engine-vue'
+import { useSwUpdate, useInstallPrompt } from './pwa/index.js'
 
-export default {
-  name: 'BtApp',
-  components: {
-    BtHeader,
-    BtMainContent,
-  },
-  mounted() {
-    this.setHeaderMenuItems([
-      {
-        id: 0,
-        external: false,
-        label: 'About',
-        path: '/about',
-        title: 'About the Better Together Community',
-        sortOrder: 0,
-      },
-      {
-        id: 1,
-        external: false,
-        label: 'Projects',
-        path: '/projects',
-        title: 'Better Together Community Projects',
-        sortOrder: 1,
-      },
-      {
-        id: 2,
-        external: false,
-        label: 'Partners',
-        path: '/partners',
-        title: 'Better Together Community Partners',
-        sortOrder: 2,
-      },
-      {
-        id: 3,
-        external: false,
-        label: 'Opportunities',
-        path: '/opportunities',
-        title: 'Better Together Community Opportunities',
-        sortOrder: 3,
-      },
-      {
-        id: 8,
-        label: 'Community Platforms',
-        target: 'bt-platforms',
-        title: 'Better Together Community Platforms',
-        sortOrder: 4,
-        path: '/community-platforms',
-        children: [
-          {
-            id: 6,
-            external: true,
-            label: 'Community Hub',
-            target: 'bt-comunity-hub',
-            title: 'Better Together Community Hub',
-            sortOrder: 1,
-            url: 'https://hub.bebettertogether.ca/',
-          },
-          {
-            id: 4,
-            external: true,
-            label: 'Community Marketplace',
-            target: 'bt-marketplace',
-            title: 'Better Together Community Marketplace',
-            sortOrder: 2,
-            url: 'https://marketplace.bebettertogether.ca/',
-          },
-          {
-            id: 7,
-            external: true,
-            label: 'Community Cloud',
-            target: 'bt-community-hub',
-            title: 'Better Together Community Cloud',
-            sortOrder: 3,
-            url: 'https://cloud.bebettertogether.ca/',
-          },
-        ],
-      },
-      {
-        id: 5,
-        external: false,
-        label: 'Contact',
-        path: '/contact',
-        title: 'Contact the Better Together Community',
-        sortOrder: 5,
-      },
-    ])
-  },
-  methods: {
-    ...mapActions('CommunityEngine/Menus', ['setHeaderMenuItems']),
-  },
-}
+const { t } = useI18n()
+const menuStore = useMenuStore()
+
+const { updateAvailable, applyUpdate } = useSwUpdate()
+const { canInstall, install, dismiss } = useInstallPrompt()
+
+onMounted(() => {
+  menuStore.setHeaderMenuItems([
+    {
+      id: 0,
+      external: false,
+      label: t('btv.nav.about'),
+      path: '/about',
+      title: t('btv.nav.about_title'),
+      sortOrder: 0,
+    },
+    {
+      id: 1,
+      external: false,
+      label: t('btv.nav.projects'),
+      path: '/projects',
+      title: t('btv.nav.projects_title'),
+      sortOrder: 1,
+    },
+    {
+      id: 2,
+      external: false,
+      label: t('btv.nav.partners'),
+      path: '/partners',
+      title: t('btv.nav.partners_title'),
+      sortOrder: 2,
+    },
+    {
+      id: 3,
+      external: false,
+      label: t('btv.nav.opportunities'),
+      path: '/opportunities',
+      title: t('btv.nav.opportunities_title'),
+      sortOrder: 3,
+    },
+    {
+      id: 8,
+      label: t('btv.nav.community_platforms'),
+      path: '/community-platforms',
+      title: t('btv.nav.community_platforms_title'),
+      sortOrder: 4,
+      children: [
+        {
+          id: 6,
+          external: true,
+          label: t('btv.nav.community_hub'),
+          title: t('btv.nav.community_hub_title'),
+          sortOrder: 1,
+          url: 'https://hub.bebettertogether.ca/',
+        },
+        {
+          id: 4,
+          external: true,
+          label: t('btv.nav.community_marketplace'),
+          title: t('btv.nav.community_marketplace_title'),
+          sortOrder: 2,
+          url: 'https://marketplace.bebettertogether.ca/',
+        },
+        {
+          id: 7,
+          external: true,
+          label: t('btv.nav.community_cloud'),
+          title: t('btv.nav.community_cloud_title'),
+          sortOrder: 3,
+          url: 'https://cloud.bebettertogether.ca/',
+        },
+      ],
+    },
+    {
+      id: 5,
+      external: false,
+      label: t('btv.nav.contact'),
+      path: '/contact',
+      title: t('btv.nav.contact_title'),
+      sortOrder: 5,
+    },
+  ])
+})
 </script>
 
 <style lang="scss">
-@import 'bootstrap/scss/_functions.scss';
-@import 'bootstrap/scss/_variables.scss';
-@import 'bootstrap/scss/_mixins.scss';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 @import 'stylesheets/theme.scss';
 
 #app {
@@ -116,17 +134,13 @@ export default {
 
   a {
     color: $accent-color;
-
-    &:hover {
-      color: $accent-color;
-    }
+    &:hover { color: $accent-color; }
   }
 
   .btn-primary {
     color: $default-text-color-bg-dark;
     background-color: $accent-color;
     border-color: $accent-color;
-
     &:hover, &:focus, &:active {
       color: $default-text-color-bg-dark;
       background-color: #399f71;
@@ -136,8 +150,6 @@ export default {
 
   header,
   footer {
-    // width: 100vw;
-    // height: 15vh;
     padding: 0;
 
     .navbar-nav {
@@ -169,10 +181,5 @@ export default {
       height: 10vh;
     }
   }
-}
-
-.b-toaster.b-toaster-top-center .b-toaster-slot,
-.b-toaster.b-toaster-top-right .b-toaster-slot, {
-  top: 10vh;
 }
 </style>

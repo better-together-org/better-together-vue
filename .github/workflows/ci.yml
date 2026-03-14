@@ -1,0 +1,110 @@
+name: CI
+
+# Requires secret: FORGEJO_NPM_TOKEN
+#   Set at org or repo level in GitHub Actions secrets.
+#   Value: a Forgejo personal access token with write:package + read:package scopes.
+#   Registry: https://git.btsdev.ca/api/packages/better-together-org/npm/
+#   @bettertogether/community-engine-vue is now resolved from the Forgejo registry
+#   rather than a sibling file:../community-engine-vue checkout.
+
+on:
+  push:
+    branches: [production, vue3-migration, 'feat/**', 'fix/**', 'chore/**']
+  pull_request:
+
+jobs:
+  lint:
+    name: Lint (Node ${{ matrix.node-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Lint
+        run: yarn lint --no-fix
+
+  test:
+    name: Unit Tests (Node ${{ matrix.node-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Run unit tests
+        run: yarn test:run
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+  build:
+    name: Build (Node ${{ matrix.node-version }})
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Build
+        run: yarn build
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Verify PWA service worker in build
+        run: |
+          test -f dist/sw.js && echo "✅ sw.js present" || (echo "❌ sw.js missing" && exit 1)
+
+  i18n-health:
+    name: i18n Health Check
+    runs-on: ubuntu-latest
+    continue-on-error: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        env:
+          FORGEJO_NPM_TOKEN: ${{ secrets.FORGEJO_NPM_TOKEN }}
+
+      - name: Check i18n keys
+        run: yarn i18n:check
+

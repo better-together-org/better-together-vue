@@ -6,14 +6,13 @@
     >
       <div class="row heading">
         <div class="col-md">
-          <h2>Contact Us</h2>
+          <h2>{{ t('btv.pages.contact.heading') }}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md">
           <p>
-            If you're interested in learning more or want to contribute,
-            please send us an email at
+            {{ t('btv.pages.contact.body') }}
             <a href="mailto: info@bettertogethersolutions.com">
               info@bettertogethersolutions.com
             </a>
@@ -25,26 +24,15 @@
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
+import { useI18n } from 'vue-i18n'
 import ContactNewsletter from '../components/ContactNewsletter.vue'
 
-export default {
-  name: 'Contact',
-  components: {
-    ContactNewsletter,
-  },
-}
+const { t } = useI18n()
 </script>
 
-<!-- <link
-  href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-  rel="stylesheet"
-  type="text/css"
-> -->
-
 <style scoped lang="scss">
-  label {
-    font-weight: bold;
-  }
+label {
+  font-weight: bold;
+}
 </style>

@@ -1,46 +1,31 @@
 <template>
-  <div
-    id="projects"
-  >
+  <div id="projects">
     <section>
       <div class="row heading">
         <div class="col-md">
-          <h2>Projects</h2>
+          <h2>{{ t('btv.pages.projects.heading') }}</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md">
-          <p>
-            Better Together aims to bring people together to build great
-            things!
-            These are some of the projects that Better Together and our
-            partners have been working on.
-          </p>
+          <p>{{ t('btv.pages.projects.intro') }}</p>
         </div>
       </div>
     </section>
 
     <FeaturedProjects />
-
     <TechForGood />
     <CommunityCommerce />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
+import { useI18n } from 'vue-i18n'
 import CommunityCommerce from './ProjectsCommunityCommerce.vue'
 import TechForGood from './TechForGood.vue'
 import FeaturedProjects from '../components/FeaturedProjects.vue'
 
-export default {
-  name: 'Projects',
-  components: {
-    CommunityCommerce,
-    TechForGood,
-    FeaturedProjects,
-  },
-}
+const { t } = useI18n()
 </script>
 
 <style lang="scss">

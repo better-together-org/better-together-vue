@@ -5,7 +5,7 @@
   >
     <div class="row heading">
       <div class="col-md">
-        <h2>Subscribe to Our Mailing List</h2>
+        <h2>{{ t('btv.newsletter.heading') }}</h2>
       </div>
     </div>
     <div class="row mt-4 mb-4">
@@ -15,8 +15,7 @@
           <div id="mc_embed_signup">
             <form
               id="mc-embedded-subscribe-form"
-              action="https://bebettertogether.us18.list-manage.com/subscribe/
-              post?u=0be40107acc153f4e778be0bd&amp;id=c5bb99f5c5"
+              action="https://bebettertogether.us18.list-manage.com/subscribe/post?u=0be40107acc153f4e778be0bd&amp;id=c5bb99f5c5"
               method="post"
               name="mc-embedded-subscribe-form"
               class="validate"
@@ -25,11 +24,10 @@
             >
               <div id="mc_embed_signup_scroll">
                 <div class="indicates-required mb-2">
-                  <span class="asterisk">*</span> indicates required
+                  <span class="asterisk">*</span> {{ t('btv.newsletter.indicates_required') }}
                 </div>
                 <div class="mc-field-group">
-                  <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                  </label>
+                  <label for="mce-EMAIL">{{ t('btv.newsletter.email_address') }} <span class="asterisk">*</span></label>
                   <input
                     id="mce-EMAIL"
                     type="email"
@@ -40,7 +38,7 @@
                   >
                 </div>
                 <div class="mc-field-group">
-                  <label for="mce-FNAME">First Name </label>
+                  <label for="mce-FNAME">{{ t('btv.newsletter.first_name') }}</label>
                   <input
                     id="mce-FNAME"
                     type="text"
@@ -50,7 +48,7 @@
                   >
                 </div>
                 <div class="mc-field-group">
-                  <label for="mce-LNAME">Last Name </label>
+                  <label for="mce-LNAME">{{ t('btv.newsletter.last_name') }}</label>
                   <input
                     id="mce-LNAME"
                     type="text"
@@ -74,8 +72,7 @@
                     style="display:none"
                   />
                 </div>
-                <!-- real people should not fill this in and expect good
-                  things - do not remove this or risk form bot signups-->
+                <!-- real people should not fill this in -->
                 <div
                   style="position: absolute; left: -5000px;"
                   aria-hidden="true"
@@ -91,7 +88,7 @@
                   <input
                     id="mc-embedded-subscribe"
                     type="submit"
-                    value="Subscribe"
+                    :value="t('btv.newsletter.subscribe')"
                     name="subscribe"
                     class="button btn btn-primary"
                   >
@@ -106,22 +103,14 @@
   </section>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
+import { useI18n } from 'vue-i18n'
 
-export default {
-  name: 'ContactNewsletter',
-}
+const { t } = useI18n()
 </script>
 
-<!-- <link
-  href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-  rel="stylesheet"
-  type="text/css"
-> -->
-
 <style scoped lang="scss">
-  label {
-    font-weight: bold;
-  }
+label {
+  font-weight: bold;
+}
 </style>

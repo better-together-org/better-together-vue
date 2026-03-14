@@ -1,23 +1,24 @@
 <template>
-  <b-navbar-brand href="/">
+  <BNavbarBrand href="/">
     <img
       class="logo"
       src="../assets/better-together-logo.png"
-      alt="Better Together"
+      :alt="t('btv.app.title')"
     >
-  </b-navbar-brand>
+  </BNavbarBrand>
 </template>
 
-<script>
-export default {
-  name: 'BtBrandingLogo',
-}
+<script setup>
+import { useI18n } from 'vue-i18n'
+import { BNavbarBrand } from 'bootstrap-vue-next'
+
+const { t } = useI18n()
 </script>
 
 <style scoped lang="scss">
-@import 'bootstrap/scss/_functions.scss';
-@import 'bootstrap/scss/_variables.scss';
-@import 'bootstrap/scss/_mixins.scss';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
 
 .logo {
   height: 10vh;

@@ -1,7 +1,3 @@
-import Vue from 'vue'
-
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-Vue.use(BootstrapVue)
+// BVN is installed by CommunityEngineVue plugin — see src/main.js
+// This file is kept for documentation purposes only
+export {}
