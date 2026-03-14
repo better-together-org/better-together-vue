@@ -62,6 +62,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       ...cevAlias,
     },
+    // Force single instances of shared deps when CEV is resolved from its local src
+    dedupe: ['vue', 'pinia', 'vue-router', 'vue-i18n', 'bootstrap-vue-next'],
   },
 
   server: {
