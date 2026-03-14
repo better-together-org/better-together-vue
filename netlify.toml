@@ -1,0 +1,6 @@
+[build]
+  command = "echo '//git.btsdev.ca/api/packages/better-together-org/npm/:_authToken='$FORGEJO_NPM_TOKEN >> .npmrc && yarn install --frozen-lockfile && yarn build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
