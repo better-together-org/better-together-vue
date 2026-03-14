@@ -3,6 +3,13 @@ import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 import { fileURLToPath, URL } from 'node:url'
 import path from 'node:path'
+import { existsSync } from 'node:fs'
+
+// Local sibling checkout takes priority for dev hot-reload; CI uses the npm package.
+const cevLocalPath = path.resolve(__dirname, '../community-engine-vue/src/index.js')
+const cevAlias = existsSync(cevLocalPath)
+  ? { '@bettertogether/community-engine-vue': cevLocalPath }
+  : {}
 
 export default defineConfig({
   plugins: [
@@ -53,10 +60,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@bettertogether/community-engine-vue': path.resolve(
-        __dirname,
-        '../community-engine-vue/src/index.js',
-      ),
+      ...cevAlias,
     },
   },
 
