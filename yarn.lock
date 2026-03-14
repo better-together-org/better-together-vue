@@ -809,18 +809,18 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
-"@bettertogether/community-engine-vue@^0.2.0":
-  version "0.2.0"
-  resolved "https://git.btsdev.ca/api/packages/better-together-org/npm/%40bettertogether%2Fcommunity-engine-vue/-/0.2.0/community-engine-vue-0.2.0.tgz#82ae9bf451e2c814decca019363b0f938fcb102e"
-  integrity sha512-m6i2H27Pq1or3kJz8ijmGMxtlYRiGiyl6pEIH3//ErOvMruEQxRGY4x3CRxiVZb40MfE4Zzhd+x2u7a8KtExdA==
+"@bettertogether/community-engine-vue@0.2.2":
+  version "0.2.2"
+  resolved "https://git.btsdev.ca/api/packages/better-together-org/npm/%40bettertogether%2Fcommunity-engine-vue/-/0.2.2/community-engine-vue-0.2.2.tgz#501307e23434ab2eab8c71b6952fd760d11000b6"
+  integrity sha512-ry77DSimJYOtL1SEwnGVljrSXCLUYkgmxQFa4FxF4LqDBsG184NA+RtjnBYGA+u46JG1GbN1ias/QTzkxx8X8Q==
   dependencies:
     "@electric-sql/pglite" "^0.3.16"
     "@fortawesome/fontawesome-svg-core" "^1.2.34"
     "@fortawesome/free-solid-svg-icons" "^5.15.2"
     "@fortawesome/vue-fontawesome" "^3.0.6"
-    axios "^1.6.0"
+    axios "^1.8.4"
     bootstrap "^5.3.3"
-    bootstrap-vue-next "^0.27.0"
+    bootstrap-vue-next "^0.43.9"
     core-js "^3.31.1"
     devour-client "^3.1.5"
     nprogress "^0.2.0"
@@ -1970,7 +1970,7 @@ axios@^1.1.3, axios@^1.9.0:
     form-data "^4.0.4"
     proxy-from-env "^1.1.0"
 
-axios@^1.6.0:
+axios@^1.8.4:
   version "1.13.6"
   resolved "https://registry.yarnpkg.com/axios/-/axios-1.13.6.tgz#c3f92da917dc209a15dd29936d20d5089b6b6c98"
   integrity sha512-ChTCHMouEe2kn713WHbQGcuYrr6fXTBiu460OTwWrWob16g1bXn4vtz07Ope7ewMozJAnEquLk5lWQWtBig9DQ==
@@ -2022,6 +2022,11 @@ bootstrap-vue-next@^0.27.0:
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/bootstrap-vue-next/-/bootstrap-vue-next-0.27.0.tgz#8703c097f906cac7a246011ce5dd4e7627e397b8"
   integrity sha512-hwkQJaq7LvZORFAEDznkL/DczSzRwphIitmDevSMQmSHqKIf56RuUvPdlAQOsOMUjXizJuU/Mk7XOiUCxoniNw==
+
+bootstrap-vue-next@^0.43.9:
+  version "0.43.9"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue-next/-/bootstrap-vue-next-0.43.9.tgz#9dfe462824ec5286a1fab0b2ec812b25be8a76b7"
+  integrity sha512-bhqdVR9eFgcVMcae0lvbYJBKDR8KwGtSfoBGZa2q01Eg1SMBVwM+rh8qKHwt+YIe9rwU6b0d0KO+sPJMOnyCPQ==
 
 bootstrap@^5.3.3:
   version "5.3.8"
