@@ -14,7 +14,7 @@
     "test:unit:watch": "vitest"
   },
   "dependencies": {
-    "@bettertogether/community-engine-vue": "0.2.2",
+    "@bettertogether/community-engine-vue": "0.2.3",
     "@electric-sql/pglite": "^0.3.16",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
