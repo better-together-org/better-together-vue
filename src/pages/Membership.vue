@@ -29,21 +29,24 @@
         </ul>
       </div>
     </div>
-    <div class="cta">
-      <RouterLink
-        to="/contact"
-        :title="t('btv.pages.membership.cta')"
-        class="btn btn-primary"
-      >
-        {{ t('btv.pages.membership.cta') }}
-      </RouterLink>
+    <div class="row mt-4">
+      <div class="col-md-8">
+        <!-- TODO: replace local import with @bettertogether/community-engine-vue once
+             BtMembershipRequestForm is published in CEV >= 0.3.0 -->
+        <BtMembershipRequestForm :community-id="hostCommunityId" />
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { RouterLink } from 'vue-router'
+import BtMembershipRequestForm from '@/components/membership_request/BtMembershipRequestForm.vue'
 
 const { t } = useI18n()
+
+const hostCommunityId = computed(
+  () => import.meta.env.VITE_BT_HOST_COMMUNITY_ID || null
+)
 </script>
