@@ -32,6 +32,7 @@
     </div>
 
     <BtMainContent />
+    <AppFooter />
   </div>
 </template>
 
@@ -43,6 +44,7 @@ import { BtHeader, BtMainContent, useMenuStore } from '@bettertogether/community
 import { useSwUpdate, useInstallPrompt } from './pwa/index.js'
 import BtBrandingLogo from './components/BrandingLogo.vue'
 import LocaleSwitcher from './components/LocaleSwitcher.vue'
+import AppFooter from './components/Footer.vue'
 
 const { t } = useI18n()
 const menuStore = useMenuStore()
@@ -185,8 +187,7 @@ onMounted(() => {
   }
 
   @include media-breakpoint-down(lg) {
-    header,
-    footer {
+    header {
       height: 10vh;
     }
   }

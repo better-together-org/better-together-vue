@@ -339,6 +339,14 @@
       "reload": "Reload",
       "install": "Install App",
       "install_dismiss": "Not now"
+    },
+    "footer": {
+      "tagline": "Building public community infrastructure together.",
+      "copyright": "© {year} Better Together Community. All rights reserved.",
+      "nav_heading": "Navigate",
+      "contact_heading": "Connect",
+      "email_label": "Email us",
+      "social_heading": "Follow us"
     }
   }
 }

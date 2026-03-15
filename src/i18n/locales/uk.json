@@ -339,6 +339,14 @@
       "reload": "Оновити",
       "install": "Встановити додаток",
       "install_dismiss": "Не зараз"
+    },
+    "footer": {
+      "tagline": "Разом будуємо публічну громадську інфраструктуру.",
+      "copyright": "© {year} Better Together Community. Усі права захищені.",
+      "nav_heading": "Навігація",
+      "contact_heading": "Зв'язок",
+      "email_label": "Написати нам",
+      "social_heading": "Стежте за нами"
     }
   }
 }

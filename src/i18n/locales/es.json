@@ -339,6 +339,14 @@
       "reload": "Recargar",
       "install": "Instalar la aplicación",
       "install_dismiss": "Ahora no"
+    },
+    "footer": {
+      "tagline": "Construyendo juntos infraestructura comunitaria pública.",
+      "copyright": "© {year} Better Together Community. Todos los derechos reservados.",
+      "nav_heading": "Navegar",
+      "contact_heading": "Contacto",
+      "email_label": "Escríbenos",
+      "social_heading": "Síguenos"
     }
   }
 }
