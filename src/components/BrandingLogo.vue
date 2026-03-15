@@ -1,16 +1,19 @@
 <template>
-  <BNavbarBrand href="/">
+  <RouterLink
+    to="/"
+    class="navbar-brand"
+  >
     <img
       class="logo"
       src="../assets/better-together-logo.png"
       :alt="t('btv.app.title')"
     >
-  </BNavbarBrand>
+  </RouterLink>
 </template>
 
 <script setup>
+import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { BNavbarBrand } from 'bootstrap-vue-next'
 
 const { t } = useI18n()
 </script>

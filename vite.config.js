@@ -7,8 +7,17 @@ import { existsSync } from 'node:fs'
 
 // Local sibling checkout takes priority for dev hot-reload; CI uses the npm package.
 const cevLocalPath = path.resolve(__dirname, '../community-engine-vue/src/index.js')
+// When loading CEV from local sibling, force shared deps to resolve from BTV's node_modules.
+// dedupe alone is not sufficient for bare imports inside sibling directories.
 const cevAlias = existsSync(cevLocalPath)
-  ? { '@bettertogether/community-engine-vue': cevLocalPath }
+  ? {
+      '@bettertogether/community-engine-vue': cevLocalPath,
+      'vue-router': path.resolve(__dirname, 'node_modules/vue-router'),
+      'vue': path.resolve(__dirname, 'node_modules/vue'),
+      'pinia': path.resolve(__dirname, 'node_modules/pinia'),
+      'vue-i18n': path.resolve(__dirname, 'node_modules/vue-i18n'),
+      'bootstrap-vue-next': path.resolve(__dirname, 'node_modules/bootstrap-vue-next'),
+    }
   : {}
 
 export default defineConfig({
