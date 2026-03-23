@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@bettertogether/community-engine-vue": "0.2.7",
-    "@electric-sql/pglite": "^0.3.16",
+    "@electric-sql/pglite": "^0.4.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/vue-fontawesome": "^3.0.6",
