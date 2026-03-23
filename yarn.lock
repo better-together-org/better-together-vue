@@ -2018,7 +2018,12 @@ boolbase@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap-vue-next@0.43.9, bootstrap-vue-next@^0.43.9:
+bootstrap-vue-next@0.44.0:
+  version "0.44.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue-next/-/bootstrap-vue-next-0.44.0.tgz#0afba3eb551d7878bbf690769d96e6999c8da8bf"
+  integrity sha512-gfWzBMI9Unpl1E+Kp1kBVB7Mut3rI7wuQUCRFWrlXeMblomqqOQT5On8Ga9H32FoPUySrvY9xjwnYIx+SAoEig==
+
+bootstrap-vue-next@^0.43.9:
   version "0.43.9"
   resolved "https://registry.yarnpkg.com/bootstrap-vue-next/-/bootstrap-vue-next-0.43.9.tgz#9dfe462824ec5286a1fab0b2ec812b25be8a76b7"
   integrity sha512-bhqdVR9eFgcVMcae0lvbYJBKDR8KwGtSfoBGZa2q01Eg1SMBVwM+rh8qKHwt+YIe9rwU6b0d0KO+sPJMOnyCPQ==
