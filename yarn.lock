@@ -2334,9 +2334,9 @@ detect-libc@^1.0.3:
   integrity sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==
 
 devour-client@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/devour-client/-/devour-client-3.1.5.tgz#88998cad8eb09031e281f363055e2d55e17b817c"
-  integrity sha512-0fxQLHDAbed8g8NNUoBj1GkEjS9tTYNFgV4cA7gN6pRCxBpsgnimiANsLA6Zn62qHGae06zfTa2ddIF1PFxLUA==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/devour-client/-/devour-client-3.2.0.tgz#8b98e6df13cc82c7c052eacf6bbdfd00f07a0a36"
+  integrity sha512-uEpxTqbNBWNet3XWOqQHBec46XH6ryXFdSumfLrWqUcDplWWSqzNXl9CJkNFqN8Abb6qm1d+iQKaNrWhWQNxXw==
   dependencies:
     axios "^1.1.3"
     es6-promise ">=3.1.2 <5.0.0"
