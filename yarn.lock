@@ -950,10 +950,10 @@
   resolved "https://registry.yarnpkg.com/@electric-sql/pglite/-/pglite-0.3.16.tgz#a89c432a6bc35359617922dc9b24589af4a63812"
   integrity sha512-mZkZfOd9OqTMHsK+1cje8OSzfAQcpD7JmILXTl5ahdempjUDdmg4euf1biDex5/LfQIDJ3gvCu6qDgdnDxfJmA==
 
-"@electric-sql/pglite@^0.4.2":
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/@electric-sql/pglite/-/pglite-0.4.6.tgz#9a0b606e6aaf40a6fdbe323b470dde0f415f18b4"
-  integrity sha512-qmlmfN8UyKCee35qkV0r/MBp+Znl8FjBz7OpoglNvww3GJpw0/DLP0o1ZymvLNmcD5DTLOQdzKPtF8Hd3mdl1w==
+"@electric-sql/pglite@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@electric-sql/pglite/-/pglite-0.5.1.tgz#dac1912b03ccdfa6733102cae80e545429d9ebda"
+  integrity sha512-h2Vc+qkQqsEL5kvyN5nBAxn3Vbyvka7QfDW7Io+CdcwU1+X8JbCAN2og+5dI11S3eJuDfroUCxzJaap6k+ezEw==
 
 "@esbuild/aix-ppc64@0.25.12":
   version "0.25.12"
