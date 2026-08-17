@@ -1270,12 +1270,12 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@floating-ui/core@^1.7.5":
-  version "1.7.5"
-  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.7.5.tgz#d4af157a03330af5a60e69da7a4692507ada0622"
-  integrity sha512-1Ih4WTWyw0+lKyFMcBHGbb5U5FtuHJuujoyyr5zTaWS5EYMeT6Jb2AuDeftsCsEuchO+mM2ij5+q9crhydzLhQ==
+"@floating-ui/core@^1.7.5", "@floating-ui/core@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.8.0.tgz#d01c0bbea02e4a57f6fd7d5de6fc2c5c7dca40e1"
+  integrity sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==
   dependencies:
-    "@floating-ui/utils" "^0.2.11"
+    "@floating-ui/utils" "^0.2.12"
 
 "@floating-ui/dom@^1.6.13", "@floating-ui/dom@^1.7.6":
   version "1.7.6"
@@ -1285,12 +1285,25 @@
     "@floating-ui/core" "^1.7.5"
     "@floating-ui/utils" "^0.2.11"
 
+"@floating-ui/dom@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.8.0.tgz#8a20e6facbe2456afdbeb6c8b968a72df689cf63"
+  integrity sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg==
+  dependencies:
+    "@floating-ui/core" "^1.8.0"
+    "@floating-ui/utils" "^0.2.12"
+
 "@floating-ui/utils@^0.2.11":
   version "0.2.11"
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.11.tgz#a269e055e40e2f45873bae9d1a2fdccbd314ea3f"
   integrity sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==
 
-"@floating-ui/vue@^1.1.11", "@floating-ui/vue@^1.1.6":
+"@floating-ui/utils@^0.2.12":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.12.tgz#afefe785949f16ac4cdd1e695935a321572dd56a"
+  integrity sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==
+
+"@floating-ui/vue@^1.1.6":
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/@floating-ui/vue/-/vue-1.1.11.tgz#94fb1e62f6e157f91258a315a78b17079dd260e3"
   integrity sha512-HzHKCNVxnGS35r9fCHBc3+uCnjw9IWIlCPL683cGgM9Kgj2BiAl8x1mS7vtvP6F9S/e/q4O6MApwSHj8hNLGfw==
@@ -1298,6 +1311,14 @@
     "@floating-ui/dom" "^1.7.6"
     "@floating-ui/utils" "^0.2.11"
     vue-demi ">=0.13.0"
+
+"@floating-ui/vue@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/vue/-/vue-2.0.1.tgz#987976853159255ce8be3a39239706192228485c"
+  integrity sha512-043dyEKD9TDSfz080YH2vobubgg+NIo/9Fw4RAl7sEMpD8Am1DNrrSTl/GpMBjyGHoD/FbJY2QLawY+HSQsEIA==
+  dependencies:
+    "@floating-ui/dom" "^1.8.0"
+    "@floating-ui/utils" "^0.2.12"
 
 "@fortawesome/fontawesome-common-types@^0.2.36":
   version "0.2.36"
@@ -1968,7 +1989,7 @@
     js-beautify "^1.14.9"
     vue-component-type-helpers "^2.0.0"
 
-"@vueuse/core@^14.1.0", "@vueuse/core@^14.2.1":
+"@vueuse/core@^14.1.0", "@vueuse/core@~14.2.1":
   version "14.2.1"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-14.2.1.tgz#b5cf36a07b4ea973381e18523ad0ed6ddc98a5be"
   integrity sha512-3vwDzV+GDUNpdegRY6kzpLm4Igptq+GA0QkJ3W61Iv27YWwW/ufSlOfgQIpN6FZRMG0mkaz4gglJRtq5SeJyIQ==
@@ -2217,15 +2238,15 @@ boolbase@^1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
 
-bootstrap-vue-next@0.45.10:
-  version "0.45.10"
-  resolved "https://registry.yarnpkg.com/bootstrap-vue-next/-/bootstrap-vue-next-0.45.10.tgz#8a4ea4877dd10bbeed3027ec295ab58bb95a3e7a"
-  integrity sha512-9HkNYQ0pS6E48qFsSifR/S04qdTNBy+E5+Qxe+R0ORUAVe3z/R9dhq2fnjGjKV3yOPJzLxC1y/fqvkzVV3dZbQ==
+bootstrap-vue-next@0.46.0:
+  version "0.46.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue-next/-/bootstrap-vue-next-0.46.0.tgz#50857b5ff673100d9716cd6402c88b801ea15d7f"
+  integrity sha512-NRQmvywqIlHIbe5s9EmPuBVsijWsuraEgNGItfse+77QHX6sG1P4J9WUpnvQfnRr8PtQSOh9V654elYuHRr5yQ==
   dependencies:
-    "@floating-ui/core" "^1.7.5"
-    "@floating-ui/vue" "^1.1.11"
-    "@vueuse/core" "^14.2.1"
-    reka-ui "^2.9.2"
+    "@floating-ui/core" "^1.8.0"
+    "@floating-ui/vue" "^2.0.1"
+    "@vueuse/core" "~14.2.1"
+    reka-ui "^2.10.3"
 
 bootstrap-vue-next@^0.43.9:
   version "0.43.9"
@@ -4251,10 +4272,10 @@ regjsparser@^0.13.0:
   dependencies:
     jsesc "~3.1.0"
 
-reka-ui@^2.9.2:
-  version "2.9.5"
-  resolved "https://registry.yarnpkg.com/reka-ui/-/reka-ui-2.9.5.tgz#b7c28ae5c5747c950b3f5edd5c11dcc0961d8abc"
-  integrity sha512-6cZGIMgEeslpFLJ7IihaCSMPp1cJgl2eDkZ2vBMdl+HPUVBaV/iDPMWu3abT2KUkj1lir+oyHq5KelOTT9OheQ==
+reka-ui@^2.10.3:
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/reka-ui/-/reka-ui-2.10.3.tgz#29cc4e836c04f9874f4894306f0e9d3bbc7e2a5a"
+  integrity sha512-nJGZbwcha8AcP2wbnjodfzsciTKBqp1mIzepC9Pi2xDI/YK3++ej3vpJOSPyxqrkq1Oorj4K+BdJkbVCV6x6ag==
   dependencies:
     "@floating-ui/dom" "^1.6.13"
     "@floating-ui/vue" "^1.1.6"
