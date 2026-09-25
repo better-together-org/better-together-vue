@@ -8,6 +8,9 @@
     <div class="row">
       <div class="col-md">
         <p>{{ t('btv.pages.membership.body') }}</p>
+        <p class="text-muted">
+          {{ t('btv.pages.membership.coop_trajectory') }}
+        </p>
         <h5 class="text-start">
           {{ t('btv.pages.membership.types_heading') }}
         </h5>
