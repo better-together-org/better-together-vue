@@ -49,9 +49,9 @@
     },
     "pages": {
       "home": {
-        "heading": "We are Better Together",
-        "intro_p1": "The Better Together movement is a vibrant community dedicated to fostering interconnectedness, growth, and positive change. Grounded in the belief that unity, compassion, and collective action can transform our world, we draw strength from our diverse perspectives and shared commitment to making a difference.",
-        "intro_p2": "Better Together is more than just a movement; it's a promise—a promise to build a future where compassion, diversity, and action converge to create lasting change. We invite you to join us on this journey, to bring your unique voice and vision to our collective efforts."
+        "heading": "Better Together Solutions",
+        "intro_p1": "Every community holds more than it realizes — skills, tools, time, knowledge, care, and solidarity. Most of it stays invisible because our platforms aren’t built to find it.",
+        "intro_p2": "Better Together Solutions is a community technology collective. We build open-source infrastructure so communities can discover what they have, connect with one another, and act on the wealth they already hold — independent of corporate platforms and disappearing grants."
       },
       "about": {
         "movement": {
@@ -137,6 +137,14 @@
         "cta": {
           "heading": "Join Us",
           "body": "Better Together is more than just a movement; it's a promise—a promise to build a future where compassion, diversity, and action converge to create lasting change. We invite you to join us on this journey, to bring your unique voice and vision to our collective efforts. Together, we can build a world that reflects our deepest values and highest aspirations."
+        },
+        "collective": {
+          "heading": "A Community Technology Collective",
+          "body": "Better Together Solutions is a community technology collective based in Newfoundland & Labrador. We build open-source platforms and infrastructure for communities to organize, share resources, and sustain themselves. We are working toward worker-owned cooperative stewardship of the tools we build."
+        },
+        "community_engine_section": {
+          "heading": "Community Engine",
+          "body": "We build and maintain Community Engine — a free, open-source Rails platform (LGPLv3) for community membership, resource exchange, and governance. CE powers Newcomer Navigator NL, NL Venues, Newfoundland & Labrador Online, and our own communityengine.app."
         }
       },
       "not_found": {
@@ -174,7 +182,7 @@
       },
       "membership": {
         "heading": "Join Better Together",
-        "body": "Better Together is looking to connect with those who want to make a difference. Join us as we work together to make the world a better place!",
+        "body": "Better Together Solutions is a community technology collective working toward a worker-owned cooperative model. We invite people and organizations who share our values to join us in building community-owned digital infrastructure.",
         "types_heading": "Membership Types",
         "types": {
           "individual": "Individual",
@@ -190,7 +198,8 @@
           "communications_specialists": "communications specialists",
           "and_more": "and more!"
         },
-        "cta": "Join us!"
+        "cta": "Join us!",
+        "coop_trajectory": "We are actively working toward worker-owned cooperative stewardship through the SETA program. Members who join now are shaping the direction of that future."
       },
       "contact": {
         "heading": "Contact Us",
@@ -342,11 +351,15 @@
     },
     "footer": {
       "tagline": "Building public community infrastructure together.",
-      "copyright": "© {year} Better Together Community. All rights reserved.",
+      "copyright": "© {year} Better Together Solutions. All rights reserved.",
       "nav_heading": "Navigate",
       "contact_heading": "Connect",
       "email_label": "Email us",
-      "social_heading": "Follow us"
+      "social_heading": "Follow us",
+      "ecosystem_heading": "Our Platform",
+      "ecosystem_body": "We build and maintain Community Engine — open-source platform infrastructure for communities.",
+      "ecosystem_ce_label": "Community Engine",
+      "ecosystem_implementations_heading": "Live Platforms"
     }
   }
 }

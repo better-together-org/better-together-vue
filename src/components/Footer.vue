@@ -69,6 +69,46 @@
           </div>
         </div>
       </div>
+
+      <!-- Ecosystem strip -->
+      <div class="row mt-4 pt-3 border-top border-secondary">
+        <div class="col-12 col-md-6">
+          <h6 class="footer-heading">
+            {{ t('btv.footer.ecosystem_heading') }}
+          </h6>
+          <p class="footer-tagline mb-2">
+            {{ t('btv.footer.ecosystem_body') }}
+          </p>
+          <a
+            href="https://communityengine.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="d-inline-block mb-0"
+          >{{ t('btv.footer.ecosystem_ce_label') }} ↗</a>
+        </div>
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
+          <h6 class="footer-heading">
+            {{ t('btv.footer.ecosystem_implementations_heading') }}
+          </h6>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://newcomernavigatornl.ca" target="_blank" rel="noopener noreferrer">
+                Newcomer Navigator NL ↗
+              </a>
+            </li>
+            <li>
+              <a href="https://nlvenues.com" target="_blank" rel="noopener noreferrer">
+                NL Venues ↗
+              </a>
+            </li>
+            <li>
+              <a href="https://newfoundlandlabrador.online" target="_blank" rel="noopener noreferrer">
+                Newfoundland &amp; Labrador Online ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
 </template>

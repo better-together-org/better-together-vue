@@ -1,5 +1,10 @@
 <template>
   <div id="about">
+    <section class="collective-identity">
+      <h2>{{ t('btv.pages.about.collective.heading') }}</h2>
+      <p>{{ t('btv.pages.about.collective.body') }}</p>
+    </section>
+
     <section class="movement-vision">
       <h2>{{ t('btv.pages.about.movement.heading') }}</h2>
       <p>{{ t('btv.pages.about.movement.body') }}</p>
@@ -56,6 +61,19 @@
         <h4>{{ pathway.name }}</h4>
         <p>{{ pathway.description }}</p>
       </div>
+    </section>
+
+    <section class="community-engine-section">
+      <h2>{{ t('btv.pages.about.community_engine_section.heading') }}</h2>
+      <p>{{ t('btv.pages.about.community_engine_section.body') }}</p>
+      <a
+        href="https://communityengine.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-outline-primary"
+      >
+        Visit Community Engine ↗
+      </a>
     </section>
 
     <section class="call-to-action">
