@@ -8,7 +8,17 @@ updates:
       time: "07:00"
       timezone: UTC
     versioning-strategy: increase-if-necessary
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
     open-pull-requests-limit: 10
+    groups:
+      security-updates:
+        applies-to: security-updates
+        patterns:
+        - "*"
+    ignore:
+    - dependency-name: "*"
+      update-types: ["version-update:semver-major"]
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
