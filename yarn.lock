@@ -2274,9 +2274,9 @@ bootstrap-vue-next@^0.43.9:
   integrity sha512-bhqdVR9eFgcVMcae0lvbYJBKDR8KwGtSfoBGZa2q01Eg1SMBVwM+rh8qKHwt+YIe9rwU6b0d0KO+sPJMOnyCPQ==
 
 bootstrap@^5.3.3:
-  version "5.3.8"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.8.tgz#6401a10057a22752d21f4e19055508980656aeed"
-  integrity sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg==
+  version "5.3.9"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.9.tgz#08e4c0e371fc43ab2c501cd2d3be445739cd8b13"
+  integrity sha512-20cU0rcfw8WdxtVbmfU+xT2EjvVTw9Ror/h1Qvd7DXCujRg8OO9mdBCsmTHdJFf3BuadmBNJtgIuUXsBqSkk/w==
 
 brace-expansion@^2.0.2:
   version "2.1.7"
